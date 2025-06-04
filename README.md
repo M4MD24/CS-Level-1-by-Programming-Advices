@@ -22,3 +22,10 @@
         11. CLR Structure
         12. .NET Framework Class Library
     4. What is C#? and Why to Learn It?
+    5. Syntax
+        1. Console App
+            1. Output
+                1. WriteLine
+                2. Write
+                3. Formatted String
+                4. Escape Characters
