@@ -21,3 +21,4 @@
         10. Managed vs Unmanaged Code
         11. CLR Structure
         12. .NET Framework Class Library
+    4. What is C#? and Why to Learn It?
