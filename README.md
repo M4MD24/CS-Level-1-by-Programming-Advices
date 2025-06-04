@@ -29,3 +29,4 @@
                 2. Write
                 3. Formatted String
                 4. Escape Characters
+            2. Comments
