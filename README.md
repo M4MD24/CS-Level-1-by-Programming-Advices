@@ -19,3 +19,4 @@
         8. Assemblies & Metadata (Manifest)
         9. CLR Functions
         10. Managed vs Unmanaged Code
+        11. CLR Structure
