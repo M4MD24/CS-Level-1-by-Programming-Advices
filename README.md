@@ -11,3 +11,4 @@
     3. .NET Framework
         1. .NET Framework Architecture
         2. What is CLR?
+        3. CLR Main Components
