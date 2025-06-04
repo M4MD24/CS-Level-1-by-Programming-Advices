@@ -7,3 +7,4 @@
         2. .NET Core vs .NET Framework?
         3. What can we do with .NET?
         4. What to Learn .NET Framework or .NET Core?
+        5. Compilation in .NET
