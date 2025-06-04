@@ -15,3 +15,4 @@
         4. Common Type System (CTS)
         5. Common Language Specification (CLS)
         6. Garbage Collector (GC)
+        7. Just In Time Compilation (JIT)
