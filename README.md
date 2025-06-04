@@ -38,3 +38,4 @@
                 3. Implicitly Typed Variables
             4. Data Types
                 1. Data Types
+                2. Predefined Data Types
