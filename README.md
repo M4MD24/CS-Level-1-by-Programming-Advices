@@ -13,3 +13,4 @@
         2. What is CLR?
         3. CLR Main Components
         4. Common Type System (CTS)
+        5. Common Language Specification (CLS)
