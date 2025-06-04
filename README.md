@@ -1,5 +1,7 @@
 # C# Level 1
 
+**Important Note:** To Run Any File Rename Main Method from "main" to "Main", Because can't run 2 Static "Main" Methods in One Project
+
 1. Concepts
     1. Library, Framework and Platform
     2. .NET
