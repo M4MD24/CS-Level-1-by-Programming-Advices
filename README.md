@@ -8,3 +8,5 @@
         3. What can we do with .NET?
         4. What to Learn .NET Framework or .NET Core?
         5. Compilation in .NET
+    3. .NET Framework
+        1. .NET Framework Architecture
