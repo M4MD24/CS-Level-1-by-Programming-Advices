@@ -14,3 +14,4 @@
         3. CLR Main Components
         4. Common Type System (CTS)
         5. Common Language Specification (CLS)
+        6. Garbage Collector (GC)
