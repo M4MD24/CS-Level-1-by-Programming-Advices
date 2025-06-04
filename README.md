@@ -16,3 +16,4 @@
         5. Common Language Specification (CLS)
         6. Garbage Collector (GC)
         7. Just In Time Compilation (JIT)
+        8. Assemblies & Metadata (Manifest)
