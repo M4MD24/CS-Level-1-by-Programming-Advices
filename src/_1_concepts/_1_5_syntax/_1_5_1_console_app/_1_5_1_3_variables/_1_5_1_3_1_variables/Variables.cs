@@ -3,7 +3,7 @@ using System;
 namespace CS_Level_1_by_Programming_Advices._1_concepts._1_5_syntax._1_5_1_console_app._1_5_1_3_variables._1_5_1_3_1_variables;
 
 internal class Variables {
-    public static void Main(
+    public static void main(
         string[] args
     ) {
         string name = "Mohamed Sadawy";
