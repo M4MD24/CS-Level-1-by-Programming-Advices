@@ -36,3 +36,5 @@
                 1. Variables
                 2. Rules for Naming Variables
                 3. Implicitly Typed Variables
+            4. Data Types
+                1. Data Types
