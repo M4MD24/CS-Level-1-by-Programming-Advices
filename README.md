@@ -27,3 +27,4 @@
             1. Output
                 1. WriteLine
                 2. Write
+                3. Formatted String
