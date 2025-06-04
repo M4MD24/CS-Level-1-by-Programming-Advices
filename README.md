@@ -26,3 +26,4 @@
         1. Console App
             1. Output
                 1. WriteLine
+                2. Write
