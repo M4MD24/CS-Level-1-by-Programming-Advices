@@ -32,3 +32,4 @@
             2. Comments
             3. Variables
                 1. Variables
+                2. Rules for Naming Variables
