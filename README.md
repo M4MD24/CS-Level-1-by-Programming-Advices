@@ -48,3 +48,4 @@
                 9. Dynamic Type
             5. [Date & Time](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_5_date_and_time)
                 1. Set
+                2. Get
