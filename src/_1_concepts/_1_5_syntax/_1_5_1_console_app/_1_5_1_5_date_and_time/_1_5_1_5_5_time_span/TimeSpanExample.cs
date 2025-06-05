@@ -3,7 +3,7 @@ using System;
 namespace CS_Level_1_by_Programming_Advices._1_concepts._1_5_syntax._1_5_1_console_app._1_5_1_5_date_and_time._1_5_1_5_5_time_span;
 
 internal class TimeSpanExample {
-    public static void Main(
+    public static void main(
         string[] args
     ) {
         DateTime current = DateTime.Now;

@@ -52,3 +52,4 @@
                 3. Ticks
                 4. Static Fields
                 5. TimeSpan
+                6. Operators
