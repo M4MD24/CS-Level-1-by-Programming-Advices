@@ -43,3 +43,4 @@
                 4. Default Values
                 5. Enums
                 6. Nullable Types
+                7. Anonymous Types
