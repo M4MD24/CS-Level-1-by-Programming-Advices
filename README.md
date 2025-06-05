@@ -53,3 +53,4 @@
                 4. Static Fields
                 5. TimeSpan
                 6. Operators
+                7. Convert String to DateTime
