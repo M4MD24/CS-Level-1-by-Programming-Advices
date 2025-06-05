@@ -44,3 +44,4 @@
                 5. Enums
                 6. Nullable Types
                 7. Anonymous Types
+                8. Structures
