@@ -16,6 +16,11 @@ internal class DynamicTypes {
             "String: " + value + ", Type: " + value.GetType()
         );
 
+        value = DateTime.Now;
+        Console.WriteLine(
+            "DateTime: " + value + ", Type: " + value.GetType()
+        );
+
         value = new {
             Name = "Mohamed",
             Age  = 22
