@@ -6,46 +6,46 @@ internal class DataTypes {
     public static void main(
         string[] args
     ) {
-        byte    maxByte          = Byte.MaxValue;
-        sbyte   minSignedByte    = SByte.MaxValue;
-        short   minShort         = Int16.MaxValue;
-        ushort  maxUnsignedShort = UInt16.MaxValue;
-        int     maxInt           = Int32.MaxValue;
-        uint    maxUnsignedInt   = UInt32.MaxValue;
-        long    maxLong          = Int64.MaxValue;
-        ulong   maxUnsignedLong  = UInt64.MaxValue;
-        float   floatValue       = float.MaxValue;
-        double  doubleValue      = Double.MaxValue;
-        decimal decimalValue     = Decimal.MaxValue;
-        char    character        = char.MaxValue;
-        bool    isTrue           = true;
+        byte    byteValue          = Byte.MaxValue;
+        sbyte   signedByteValue    = SByte.MaxValue;
+        short   shortValue         = Int16.MaxValue;
+        ushort  unsignedShortValue = UInt16.MaxValue;
+        int     intValue           = Int32.MaxValue;
+        uint    unsignedIntValue   = UInt32.MaxValue;
+        long    longValue          = Int64.MaxValue;
+        ulong   unsignedLongValue  = UInt64.MaxValue;
+        float   floatValue         = float.MaxValue;
+        double  doubleValue        = Double.MaxValue;
+        decimal decimalValue       = Decimal.MaxValue;
+        char    characterValue     = char.MaxValue;
+        bool    booleanValue       = true;
 
-        string message       = "Hello, Developers!";
-        object genericObject = new object();
+        string stringValue = "Hello, Developers!";
+        object objectValue = new object();
 
         Console.WriteLine(
-            "byte: " + maxByte
+            "byte: " + byteValue
         );
         Console.WriteLine(
-            "signed byte: " + minSignedByte
+            "signed byte: " + signedByteValue
         );
         Console.WriteLine(
-            "short: " + minShort
+            "short: " + shortValue
         );
         Console.WriteLine(
-            "unsinged short: " + maxUnsignedShort
+            "unsinged short: " + unsignedShortValue
         );
         Console.WriteLine(
-            "int: " + maxInt
+            "int: " + intValue
         );
         Console.WriteLine(
-            "unsinged int: " + maxUnsignedInt
+            "unsinged int: " + unsignedIntValue
         );
         Console.WriteLine(
-            "long: " + maxLong
+            "long: " + longValue
         );
         Console.WriteLine(
-            "unsinged long: " + maxUnsignedLong
+            "unsinged long: " + unsignedLongValue
         );
         Console.WriteLine(
             "float: " + floatValue
@@ -57,16 +57,16 @@ internal class DataTypes {
             "decimal: " + decimalValue
         );
         Console.WriteLine(
-            "char: " + character
+            "char: " + characterValue
         );
         Console.WriteLine(
-            "bool: " + isTrue
+            "bool: " + booleanValue
         );
         Console.WriteLine(
-            "string: " + message
+            "string: " + stringValue
         );
         Console.WriteLine(
-            "object: " + genericObject
+            "object: " + objectValue
         );
     }
 }
