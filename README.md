@@ -41,3 +41,4 @@
                 2. Predefined Data Types
                 3. Literals
                 4. Default Values
+                5. Enums
