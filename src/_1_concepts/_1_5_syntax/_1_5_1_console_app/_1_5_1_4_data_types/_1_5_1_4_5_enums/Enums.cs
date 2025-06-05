@@ -13,7 +13,7 @@ internal class Enums {
         Friday     // 6
     }
 
-    public static void Main(
+    public static void main(
         string[] args
     ) {
         Days day = Days.Friday;
