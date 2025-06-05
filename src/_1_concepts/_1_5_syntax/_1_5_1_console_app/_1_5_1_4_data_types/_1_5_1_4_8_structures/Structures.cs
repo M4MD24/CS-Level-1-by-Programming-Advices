@@ -8,7 +8,7 @@ internal class Structures {
                       secondName;
     }
 
-    public static void Main(
+    public static void main(
         string[] args
     ) {
         Person person;
