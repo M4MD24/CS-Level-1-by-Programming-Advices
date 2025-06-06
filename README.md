@@ -61,3 +61,4 @@
                 1. Implicit Casting
                 2. Explicit Casting
                 3. Type Conversion Methods
+                4. Casting Enums

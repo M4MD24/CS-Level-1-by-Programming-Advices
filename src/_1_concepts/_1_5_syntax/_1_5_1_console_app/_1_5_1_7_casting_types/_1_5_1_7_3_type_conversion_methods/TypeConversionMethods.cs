@@ -3,7 +3,7 @@ using System;
 namespace CS_Level_1_by_Programming_Advices._1_concepts._1_5_syntax._1_5_1_console_app._1_5_1_7_casting_types._1_5_1_7_3_type_conversion_methods;
 
 internal class TypeConversionMethods {
-    public static void Main(
+    public static void main(
         string[] args
     ) {
         // Example 1: Using Convert class
