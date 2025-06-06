@@ -57,3 +57,5 @@
             6. [Strings](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_6_strings)
                 1. String Methods
                 2. String Interpolation
+            7. [Casting Types](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_7_casting_types)
+                1. Implicit Casting
