@@ -13,7 +13,7 @@ internal class EnumsConversion {
         Burgundy
     }
 
-    public static void Main(
+    public static void main(
         string[] args
     ) {
         Color color     = Color.DeepSkyBlue;
