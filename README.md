@@ -62,3 +62,6 @@
                 2. Explicit Casting
                 3. Type Conversion Methods
                 4. Casting Enums
+            8. [User Input](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_8_user_input)
+                1. ReadLine
+                2. Input Number 
