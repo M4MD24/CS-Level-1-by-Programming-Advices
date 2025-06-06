@@ -56,3 +56,4 @@
                 7. Convert String to DateTime
             6. [Strings](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_6_strings)
                 1. String Methods
+                2. String Interpolation
