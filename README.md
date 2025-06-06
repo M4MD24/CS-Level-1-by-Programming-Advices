@@ -68,3 +68,4 @@
             9. [Operators](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_9_operators)
                 1. Assignment Operators
                 2. Arithmetic Operators
+                3. Relational Operators
