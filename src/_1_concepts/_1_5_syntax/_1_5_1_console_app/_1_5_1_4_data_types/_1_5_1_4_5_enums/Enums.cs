@@ -3,7 +3,7 @@ using System;
 namespace CS_Level_1_by_Programming_Advices._1_concepts._1_5_syntax._1_5_1_console_app._1_5_1_4_data_types._1_5_1_4_5_enums;
 
 internal class Enums {
-    private enum Days {
+    private enum Day {
         Saturday,  // 0
         Sunday,    // 1
         Monday,    // 2
@@ -16,7 +16,7 @@ internal class Enums {
     public static void main(
         string[] args
     ) {
-        Days day = Days.Friday;
+        Day day = Day.Friday;
         Console.Write(
             day
         );
