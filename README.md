@@ -79,3 +79,4 @@
                 3. Ternary Operator
                 4. For Loop
                 5. While Loop
+                6. Do While Loop
