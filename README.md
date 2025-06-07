@@ -75,3 +75,4 @@
                 7. Bitwise and Bit Shift Operators
             10. [Control Flow](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_10_control_flow)
                 1. If Condition
+                2. Switch Statement
