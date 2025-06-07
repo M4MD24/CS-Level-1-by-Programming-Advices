@@ -71,3 +71,4 @@
                 3. Relational Operators
                 4. Logical Operators
                 5. Unary Operators
+                6. Ternary Operator
