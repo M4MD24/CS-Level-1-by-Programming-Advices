@@ -80,3 +80,4 @@
                 4. For Loop
                 5. While Loop
                 6. Do While Loop
+                7. Break Statement
