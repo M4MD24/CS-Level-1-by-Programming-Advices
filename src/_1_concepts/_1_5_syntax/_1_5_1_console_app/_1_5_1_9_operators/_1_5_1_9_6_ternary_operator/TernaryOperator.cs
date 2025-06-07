@@ -13,7 +13,7 @@ internal class TernaryOperator {
                                 ? "Even"
                                 : "Odd";
 
-        Console.WriteLine(
+        Console.Write(
             $"The number {number} is {result}."
         );
     }
