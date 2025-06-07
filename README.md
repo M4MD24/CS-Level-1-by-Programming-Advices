@@ -64,4 +64,12 @@
                 4. Casting Enums
             8. [User Input](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_8_user_input)
                 1. ReadLine
-                2. Input Number 
+                2. Input Number
+            9. [Operators](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_9_operators)
+                1. Assignment Operators
+                2. Arithmetic Operators
+                3. Relational Operators
+                4. Logical Operators
+                5. Unary Operators
+                6. Ternary Operator
+                7. Bitwise and Bit Shift Operators
