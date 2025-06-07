@@ -72,3 +72,4 @@
                 4. Logical Operators
                 5. Unary Operators
                 6. Ternary Operator
+                7. Bitwise and Bit Shift Operators
