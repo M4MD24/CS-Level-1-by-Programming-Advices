@@ -90,3 +90,4 @@
                 5. Two Dimensional Array
                 6. For Each Loop
             12. [Array Operations using System.Linq](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_12_array_operators_with_system_dot_linq)
+            13. [Math](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_13_math)
