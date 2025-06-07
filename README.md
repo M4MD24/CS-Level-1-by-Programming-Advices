@@ -82,3 +82,10 @@
                 6. Do While Loop
                 7. Break Statement
                 8. Continue Statement
+            11. [Arrays](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_11_arrays)
+                1. Arrays Are Bound
+                2. Array Declaration
+                3. Array Initialization
+                4. Access Array Elements
+                5. Two Dimensional Array
+                6. For Each Loop
