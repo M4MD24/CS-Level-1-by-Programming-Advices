@@ -99,3 +99,4 @@
                 5. Named Arguments
                 6. Method Overloading
             15. [Exceptions](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_15_exceptions)
+            16. [Random Method](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_16_random_method)
