@@ -77,3 +77,4 @@
                 1. If Condition
                 2. Switch Statement
                 3. Ternary Operator
+                4. For Loop
