@@ -93,3 +93,4 @@
             13. [Math](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_13_math)
             14. [Methods](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_14_methods)
                 1. Create Methods
+                2. Method Parameter
