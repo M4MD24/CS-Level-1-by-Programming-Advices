@@ -3,7 +3,7 @@ using System;
 namespace CS_Level_1_by_Programming_Advices._1_concepts._1_5_syntax._1_5_1_console_app._1_5_1_9_operators._1_5_1_9_7_bitwise_and_bit_shift_operators;
 
 internal class BitwiseAndBitShiftOperators {
-    public static void Main(
+    public static void main(
         string[] args
     ) {
         int firstNumber  = 5; // 0101 in binary

@@ -73,3 +73,12 @@
                 5. Unary Operators
                 6. Ternary Operator
                 7. Bitwise and Bit Shift Operators
+            10. [Control Flow](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_10_control_flow)
+                1. If Condition
+                2. Switch Statement
+                3. Ternary Operator
+                4. For Loop
+                5. While Loop
+                6. Do While Loop
+                7. Break Statement
+                8. Continue Statement
