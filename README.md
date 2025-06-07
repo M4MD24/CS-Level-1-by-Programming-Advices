@@ -84,3 +84,4 @@
                 8. Continue Statement
             11. [Arrays](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_11_arrays)
                 1. Arrays Are Bound
+                2. Array Declaration
