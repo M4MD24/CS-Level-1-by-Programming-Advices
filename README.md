@@ -86,3 +86,4 @@
                 1. Arrays Are Bound
                 2. Array Declaration
                 3. Array Initialization
+                4. Access Array Elements
