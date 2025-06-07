@@ -98,3 +98,4 @@
                 4. Return Value
                 5. Named Arguments
                 6. Method Overloading
+            15. [Exceptions](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_15_exceptions)
