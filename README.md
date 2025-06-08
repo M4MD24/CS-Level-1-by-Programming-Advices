@@ -106,4 +106,5 @@
                 2. Introduction About Controls
                     1. Introduction About Controls
                     2. Designer Toolbox & Properties & Events
-                    3. TextBox & Button & Form & Label
+                    3. TextBoxes & Button & Form & Label
+                    4. Flat Appearance

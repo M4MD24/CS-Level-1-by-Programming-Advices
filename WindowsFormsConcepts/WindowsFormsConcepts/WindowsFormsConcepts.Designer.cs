@@ -29,8 +29,9 @@ partial class WindowsFormsConcepts {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        textBoxesAndButtons = new System.Windows.Forms.Button();
-        title               = new System.Windows.Forms.Label();
+        textBoxesAndButtons     = new System.Windows.Forms.Button();
+        title                   = new System.Windows.Forms.Label();
+        formattingAndAlignments = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtons
@@ -44,7 +45,7 @@ partial class WindowsFormsConcepts {
             275,
             50
         );
-        textBoxesAndButtons.TabIndex                =  0;
+        textBoxesAndButtons.TabIndex                =  1;
         textBoxesAndButtons.Text                    =  "TextBoxes and Buttons and Forms and Labels";
         textBoxesAndButtons.UseVisualStyleBackColor =  true;
         textBoxesAndButtons.Click                   += textBoxesAndButtons_Click;
@@ -68,9 +69,25 @@ partial class WindowsFormsConcepts {
             550,
             50
         );
-        title.TabIndex  = 1;
+        title.TabIndex  = 0;
         title.Text      = "Windows Forms Concepts";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // formattingAndAlignments
+        // 
+        formattingAndAlignments.Location = new System.Drawing.Point(
+            350,
+            175
+        );
+        formattingAndAlignments.Name = "formattingAndAlignments";
+        formattingAndAlignments.Size = new System.Drawing.Size(
+            200,
+            50
+        );
+        formattingAndAlignments.TabIndex                =  2;
+        formattingAndAlignments.Text                    =  "Formatting and Alignments";
+        formattingAndAlignments.UseVisualStyleBackColor =  true;
+        formattingAndAlignments.Click                   += formattingAndAlignments_Click;
         // 
         // WindowsFormsConcepts
         // 
@@ -84,6 +101,9 @@ partial class WindowsFormsConcepts {
             311
         );
         Controls.Add(
+            formattingAndAlignments
+        );
+        Controls.Add(
             title
         );
         Controls.Add(
@@ -95,6 +115,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button formattingAndAlignments;
 
     private System.Windows.Forms.Label title;
 

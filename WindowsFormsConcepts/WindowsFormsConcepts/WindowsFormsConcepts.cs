@@ -11,4 +11,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new TextBoxesAndButtonsAndFormsAndLabels().Show();
     }
+
+    private void formattingAndAlignments_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new FlatAppearance().Show();
+    }
 }
