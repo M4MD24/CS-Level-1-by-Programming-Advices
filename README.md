@@ -108,3 +108,4 @@
                     2. Designer Toolbox & Properties & Events
                     3. TextBoxes & Button & Form & Label
                     4. Flat Appearance
+                    5. TabIndex & TabStop

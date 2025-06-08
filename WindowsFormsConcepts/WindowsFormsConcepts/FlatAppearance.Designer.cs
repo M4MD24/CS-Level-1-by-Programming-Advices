@@ -78,7 +78,7 @@ partial class FlatAppearance {
             400,
             50
         );
-        title.TabIndex  = 1;
+        title.TabIndex  = 0;
         title.Text      = "Flat Appearance";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
@@ -99,11 +99,11 @@ partial class FlatAppearance {
             300,
             50
         );
-        customButtonWithFlatAppearance.TabIndex                = 2;
+        customButtonWithFlatAppearance.TabIndex                = 1;
         customButtonWithFlatAppearance.Text                    = "Custom Button with Flat Appearance";
         customButtonWithFlatAppearance.UseVisualStyleBackColor = false;
         // 
-        // FormattingAndAlignments
+        // FlatAppearance
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,

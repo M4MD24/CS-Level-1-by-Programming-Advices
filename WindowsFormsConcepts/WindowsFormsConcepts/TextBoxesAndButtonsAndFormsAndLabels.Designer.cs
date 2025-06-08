@@ -90,6 +90,7 @@ partial class TextBoxesAndButtonsAndFormsAndLabels {
             23
         );
         copyist.TabIndex = 13;
+        copyist.TabStop  = false;
         // 
         // pasteByHover
         // 
