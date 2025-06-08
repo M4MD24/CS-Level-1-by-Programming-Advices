@@ -100,7 +100,9 @@
                 6. Method Overloading
             15. [Exceptions](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_15_exceptions)
             16. [Random Method](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_16_random_method)
-        2. [Windows Forms](src/_1_concepts/_1_5_syntax/_1_5_2_windows_forms)
-            1. Web vs Desktop Applications
-            2. [Introduction About Controls](src/_1_concepts/_1_5_syntax/_1_5_2_windows_forms/_1_5_2_2_introduction_about_controls)
-                1. Introduction About Controls
+        2. Windows Forms
+            1. [Concepts](WindowsFormsConcepts)
+                1. Web vs Desktop Applications
+                2. Introduction About Controls
+                    1. Introduction About Controls
+                    2. Designer Toolbox & Properties & Events
