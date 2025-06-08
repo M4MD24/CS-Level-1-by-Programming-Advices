@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 namespace WindowsFormsConcepts;
 
-partial class WindowsFormsConcepts {
+partial class NewForms {
     /// <summary>
     /// Required designer variable.
     /// </summary>
@@ -31,48 +31,67 @@ partial class WindowsFormsConcepts {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title                     = new System.Windows.Forms.Label();
-        introductionAboutControls = new System.Windows.Forms.Button();
+        title          = new System.Windows.Forms.Label();
+        showForm       = new System.Windows.Forms.Button();
+        showDialogForm = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // title
         // 
         title.Font = new System.Drawing.Font(
-            "Segoe UI",
+            "Fira Code",
             27F,
-            System.Drawing.FontStyle.Bold
+            System.Drawing.FontStyle.Bold,
+            System.Drawing.GraphicsUnit.Point,
+            ((byte) 0)
         );
-        title.ForeColor = System.Drawing.Color.DarkOrange;
+        title.ForeColor = System.Drawing.Color.Chocolate;
         title.Location = new System.Drawing.Point(
-            125,
-            27
+            50,
+            50
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
-            500,
+            300,
             50
         );
         title.TabIndex  = 0;
-        title.Text      = "Windows Forms Concepts";
+        title.Text      = "New Forms";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // introductionAboutControls
+        // showForm
         // 
-        introductionAboutControls.Location = new System.Drawing.Point(
+        showForm.Location = new System.Drawing.Point(
             50,
-            275
+            176
         );
-        introductionAboutControls.Name = "introductionAboutControls";
-        introductionAboutControls.Size = new System.Drawing.Size(
-            200,
+        showForm.Name = "showForm";
+        showForm.Size = new System.Drawing.Size(
+            100,
             50
         );
-        introductionAboutControls.TabIndex                =  1;
-        introductionAboutControls.Text                    =  "Introduction About Controls";
-        introductionAboutControls.UseVisualStyleBackColor =  true;
-        introductionAboutControls.Click                   += introductionAboutControls_Click;
+        showForm.TabIndex                =  1;
+        showForm.Text                    =  "Show Form";
+        showForm.UseVisualStyleBackColor =  true;
+        showForm.Click                   += showForm_Click;
         // 
-        // WindowsFormsConcepts
+        // showDialogForm
+        // 
+        showDialogForm.Location = new System.Drawing.Point(
+            225,
+            176
+        );
+        showDialogForm.Name = "showDialogForm";
+        showDialogForm.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        showDialogForm.TabIndex                =  2;
+        showDialogForm.Text                    =  "Show Dialog Form";
+        showDialogForm.UseVisualStyleBackColor =  true;
+        showDialogForm.Click                   += showDialogForm_Click;
+        // 
+        // NewForms
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
@@ -80,23 +99,28 @@ partial class WindowsFormsConcepts {
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            784,
-            361
+            384,
+            261
         );
         Controls.Add(
-            introductionAboutControls
+            showDialogForm
+        );
+        Controls.Add(
+            showForm
         );
         Controls.Add(
             title
         );
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          = "Windows Forms Concepts";
+        Text          = "New Forms";
         ResumeLayout(
             false
         );
     }
 
-    private System.Windows.Forms.Button introductionAboutControls;
+    private System.Windows.Forms.Button showDialogForm;
+
+    private System.Windows.Forms.Button showForm;
 
     private System.Windows.Forms.Label title;
 

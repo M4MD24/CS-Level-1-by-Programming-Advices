@@ -1,8 +1,8 @@
 using System.ComponentModel;
 
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.Forms;
 
-partial class WindowsFormsConcepts {
+partial class ExampleForm {
     /// <summary>
     /// Required designer variable.
     /// </summary>
@@ -31,48 +31,33 @@ partial class WindowsFormsConcepts {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title                     = new System.Windows.Forms.Label();
-        introductionAboutControls = new System.Windows.Forms.Button();
+        title = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // title
         // 
         title.Font = new System.Drawing.Font(
-            "Segoe UI",
+            "Fira Code",
             27F,
-            System.Drawing.FontStyle.Bold
+            System.Drawing.FontStyle.Bold,
+            System.Drawing.GraphicsUnit.Point,
+            ((byte) 0)
         );
-        title.ForeColor = System.Drawing.Color.DarkOrange;
+        title.ForeColor = System.Drawing.Color.Navy;
         title.Location = new System.Drawing.Point(
-            125,
-            27
+            50,
+            50
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
-            500,
+            300,
             50
         );
         title.TabIndex  = 0;
-        title.Text      = "Windows Forms Concepts";
+        title.Text      = "Example Form";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // introductionAboutControls
-        // 
-        introductionAboutControls.Location = new System.Drawing.Point(
-            50,
-            275
-        );
-        introductionAboutControls.Name = "introductionAboutControls";
-        introductionAboutControls.Size = new System.Drawing.Size(
-            200,
-            50
-        );
-        introductionAboutControls.TabIndex                =  1;
-        introductionAboutControls.Text                    =  "Introduction About Controls";
-        introductionAboutControls.UseVisualStyleBackColor =  true;
-        introductionAboutControls.Click                   += introductionAboutControls_Click;
-        // 
-        // WindowsFormsConcepts
+        // ExampleForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
@@ -80,23 +65,18 @@ partial class WindowsFormsConcepts {
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            784,
-            361
-        );
-        Controls.Add(
-            introductionAboutControls
+            384,
+            161
         );
         Controls.Add(
             title
         );
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          = "Windows Forms Concepts";
+        Text          = "Example Form";
         ResumeLayout(
             false
         );
     }
-
-    private System.Windows.Forms.Button introductionAboutControls;
 
     private System.Windows.Forms.Label title;
 

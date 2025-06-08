@@ -101,11 +101,16 @@
             15. [Exceptions](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_15_exceptions)
             16. [Random Method](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_16_random_method)
         2. Windows Forms
-            1. [Concepts](WindowsFormsConcepts)
+            1. [Concepts](WindowsFormsConcepts/WindowsFormsConcepts/WindowsFormsConcepts.cs)
                 1. Web vs Desktop Applications
-                2. Introduction About Controls
+                2. [Introduction About Controls](WindowsFormsConcepts/WindowsFormsConcepts/IntroductionAboutControls.cs)
                     1. Introduction About Controls
                     2. Designer Toolbox & Properties & Events
-                    3. TextBoxes & Button & Form & Label
-                    4. Flat Appearance
+                    3. [TextBoxes & Button & Form & Label](WindowsFormsConcepts/WindowsFormsConcepts/TextBoxesAndButtonsAndFormsAndLabels.cs)
+                    4. [Flat Appearance](WindowsFormsConcepts/WindowsFormsConcepts/FlatAppearance.cs)
                     5. TabIndex & TabStop
+                    6. [New Forms](WindowsFormsConcepts/WindowsFormsConcepts/NewForms)
+                        1. Default
+                        2. Show
+                        3. ShowDialog
+                        4. Close

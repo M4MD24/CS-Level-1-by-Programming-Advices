@@ -15,6 +15,15 @@
       <Compile Update="FlatAppearance.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="WindowsFormsConcepts.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="NewForms\NewForms.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="NewForms\Forms\ExampleForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

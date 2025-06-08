@@ -5,17 +5,10 @@ public partial class WindowsFormsConcepts : Form {
         InitializeComponent();
     }
 
-    private void textBoxesAndButtons_Click(
+    private void introductionAboutControls_Click(
         object    sender,
         EventArgs e
     ) {
-        new TextBoxesAndButtonsAndFormsAndLabels().Show();
-    }
-
-    private void formattingAndAlignments_Click(
-        object    sender,
-        EventArgs e
-    ) {
-        new FlatAppearance().Show();
+        new IntroductionAboutControls().Show();
     }
 }
