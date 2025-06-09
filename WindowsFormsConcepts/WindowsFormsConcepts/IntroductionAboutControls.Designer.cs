@@ -29,11 +29,12 @@ partial class IntroductionAboutControls {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        textBoxesAndButtonsAndFormsAndLabels = new System.Windows.Forms.Button();
-        title                                = new System.Windows.Forms.Label();
-        flatAppearance                       = new System.Windows.Forms.Button();
-        newForms                             = new System.Windows.Forms.Button();
-        messageBox                           = new System.Windows.Forms.Button();
+        textBoxesAndButtonsAndFormsAndLabels    = new System.Windows.Forms.Button();
+        title                                   = new System.Windows.Forms.Label();
+        flatAppearance                          = new System.Windows.Forms.Button();
+        newForms                                = new System.Windows.Forms.Button();
+        messageBox                              = new System.Windows.Forms.Button();
+        checkBoxAndRadioButtonAndGroupBoxAndTag = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
@@ -63,12 +64,12 @@ partial class IntroductionAboutControls {
         );
         title.ForeColor = System.Drawing.Color.LimeGreen;
         title.Location = new System.Drawing.Point(
-            125,
+            50,
             25
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
-            650,
+            700,
             50
         );
         title.TabIndex  = 0;
@@ -123,6 +124,22 @@ partial class IntroductionAboutControls {
         messageBox.UseVisualStyleBackColor =  true;
         messageBox.Click                   += messageBox_Click;
         // 
+        // checkBoxAndRadioButtonAndGroupBoxAndTag
+        // 
+        checkBoxAndRadioButtonAndGroupBoxAndTag.Location = new System.Drawing.Point(
+            50,
+            225
+        );
+        checkBoxAndRadioButtonAndGroupBoxAndTag.Name = "checkBoxAndRadioButtonAndGroupBoxAndTag";
+        checkBoxAndRadioButtonAndGroupBoxAndTag.Size = new System.Drawing.Size(
+            300,
+            50
+        );
+        checkBoxAndRadioButtonAndGroupBoxAndTag.TabIndex                =  5;
+        checkBoxAndRadioButtonAndGroupBoxAndTag.Text                    =  "CheckBox and RadioButton and GroupBox and Tag";
+        checkBoxAndRadioButtonAndGroupBoxAndTag.UseVisualStyleBackColor =  true;
+        checkBoxAndRadioButtonAndGroupBoxAndTag.Click                   += checkBoxAndRadioButtonAndGroupBoxAndTag_Click;
+        // 
         // IntroductionAboutControls
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -131,8 +148,11 @@ partial class IntroductionAboutControls {
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            884,
-            261
+            809,
+            311
+        );
+        Controls.Add(
+            checkBoxAndRadioButtonAndGroupBoxAndTag
         );
         Controls.Add(
             messageBox
@@ -155,6 +175,8 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button checkBoxAndRadioButtonAndGroupBoxAndTag;
 
     private System.Windows.Forms.Button messageBox;
 

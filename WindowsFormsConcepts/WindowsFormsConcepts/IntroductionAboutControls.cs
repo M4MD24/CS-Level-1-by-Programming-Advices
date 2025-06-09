@@ -30,6 +30,13 @@ public partial class IntroductionAboutControls : Form {
         object    sender,
         EventArgs e
     ) {
-        new MessageBoxExample().ShowDialog();
+        new MessageBoxExample().Show();
+    }
+
+    private void checkBoxAndRadioButtonAndGroupBoxAndTag_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new CheckBoxAndRadioButtonAndGroupBoxAndTag().Show();
     }
 }

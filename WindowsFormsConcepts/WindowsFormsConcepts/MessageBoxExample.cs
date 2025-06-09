@@ -14,17 +14,17 @@ public partial class MessageBoxExample : Form {
         );
     }
 
-    private void showMessageBoxWithTitle_Click(
+    private void showMessageBoxWithCaption_Click(
         object    sender,
         EventArgs e
     ) {
         MessageBox.Show(
             "Hello, this is a message",
-            "Hello, this is a title"
+            "Hello, this is a caption"
         );
     }
 
-    private void showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton_Click(
+    private void showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton_Click(
         object    sender,
         EventArgs e
     ) {

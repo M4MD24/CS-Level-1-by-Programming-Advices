@@ -31,10 +31,10 @@ partial class MessageBoxExample {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title                                                         = new System.Windows.Forms.Label();
-        showMessageBox                                                = new System.Windows.Forms.Button();
-        showMessageBoxWithTitle                                       = new System.Windows.Forms.Button();
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton = new System.Windows.Forms.Button();
+        title                                                           = new System.Windows.Forms.Label();
+        showMessageBox                                                  = new System.Windows.Forms.Button();
+        showMessageBoxWithCaption                                       = new System.Windows.Forms.Button();
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // title
@@ -76,37 +76,37 @@ partial class MessageBoxExample {
         showMessageBox.UseVisualStyleBackColor =  true;
         showMessageBox.Click                   += showMessageBox_Click;
         // 
-        // showMessageBoxWithTitle
+        // showMessageBoxWithCaption
         // 
-        showMessageBoxWithTitle.Location = new System.Drawing.Point(
+        showMessageBoxWithCaption.Location = new System.Drawing.Point(
             350,
             150
         );
-        showMessageBoxWithTitle.Name = "showMessageBoxWithTitle";
-        showMessageBoxWithTitle.Size = new System.Drawing.Size(
+        showMessageBoxWithCaption.Name = "showMessageBoxWithCaption";
+        showMessageBoxWithCaption.Size = new System.Drawing.Size(
             200,
             50
         );
-        showMessageBoxWithTitle.TabIndex                =  2;
-        showMessageBoxWithTitle.Text                    =  "Show MessageBox with Title";
-        showMessageBoxWithTitle.UseVisualStyleBackColor =  true;
-        showMessageBoxWithTitle.Click                   += showMessageBoxWithTitle_Click;
+        showMessageBoxWithCaption.TabIndex                =  2;
+        showMessageBoxWithCaption.Text                    =  "Show MessageBox with Caption";
+        showMessageBoxWithCaption.UseVisualStyleBackColor =  true;
+        showMessageBoxWithCaption.Click                   += showMessageBoxWithCaption_Click;
         // 
-        // showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton
+        // showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton
         // 
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton.Location = new System.Drawing.Point(
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton.Location = new System.Drawing.Point(
             50,
             225
         );
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton.Name = "showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton";
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton.Size = new System.Drawing.Size(
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton.Name = "showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton";
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton.Size = new System.Drawing.Size(
             500,
             50
         );
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton.TabIndex                =  3;
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton.Text                    =  "Show MessageBox with Title and Other Buttons and Icon and Default Button";
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton.UseVisualStyleBackColor =  true;
-        showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton.Click                   += showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton_Click;
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton.TabIndex                =  3;
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton.Text                    =  "Show MessageBox with Title and Other Buttons and Icon and Default Button";
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton.UseVisualStyleBackColor =  true;
+        showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton.Click                   += showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton_Click;
         // 
         // MessageBoxExample
         // 
@@ -120,10 +120,10 @@ partial class MessageBoxExample {
             311
         );
         Controls.Add(
-            showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton
+            showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton
         );
         Controls.Add(
-            showMessageBoxWithTitle
+            showMessageBoxWithCaption
         );
         Controls.Add(
             showMessageBox
@@ -138,9 +138,9 @@ partial class MessageBoxExample {
         );
     }
 
-    private System.Windows.Forms.Button showMessageBoxWithTitleAndOtherButtonsAndIconAndDefaultButton;
+    private System.Windows.Forms.Button showMessageBoxWithCaptionAndOtherButtonsAndIconAndDefaultButton;
 
-    private System.Windows.Forms.Button showMessageBoxWithTitle;
+    private System.Windows.Forms.Button showMessageBoxWithCaption;
 
     private System.Windows.Forms.Button showMessageBox;
 
