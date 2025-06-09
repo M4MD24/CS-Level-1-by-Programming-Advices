@@ -110,7 +110,4 @@
                     4. [Flat Appearance](WindowsFormsConcepts/WindowsFormsConcepts/FlatAppearance.cs)
                     5. TabIndex & TabStop
                     6. [New Forms](WindowsFormsConcepts/WindowsFormsConcepts/NewForms)
-                        1. Default
-                        2. Show
-                        3. ShowDialog
-                        4. Close
+                    7. [MessageBox](WindowsFormsConcepts/WindowsFormsConcepts/MessageBoxExample.cs)

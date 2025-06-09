@@ -25,4 +25,11 @@ public partial class IntroductionAboutControls : Form {
     ) {
         new NewForms().Show();
     }
+
+    private void messageBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new MessageBoxExample().ShowDialog();
+    }
 }

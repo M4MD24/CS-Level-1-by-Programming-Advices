@@ -33,13 +33,14 @@ partial class IntroductionAboutControls {
         title                                = new System.Windows.Forms.Label();
         flatAppearance                       = new System.Windows.Forms.Button();
         newForms                             = new System.Windows.Forms.Button();
+        messageBox                           = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
         // 
         textBoxesAndButtonsAndFormsAndLabels.Location = new System.Drawing.Point(
             50,
-            175
+            150
         );
         textBoxesAndButtonsAndFormsAndLabels.Name = "textBoxesAndButtonsAndFormsAndLabels";
         textBoxesAndButtonsAndFormsAndLabels.Size = new System.Drawing.Size(
@@ -62,8 +63,8 @@ partial class IntroductionAboutControls {
         );
         title.ForeColor = System.Drawing.Color.LimeGreen;
         title.Location = new System.Drawing.Point(
-            50,
-            50
+            125,
+            25
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
@@ -78,7 +79,7 @@ partial class IntroductionAboutControls {
         // 
         flatAppearance.Location = new System.Drawing.Point(
             350,
-            175
+            150
         );
         flatAppearance.Name = "flatAppearance";
         flatAppearance.Size = new System.Drawing.Size(
@@ -94,7 +95,7 @@ partial class IntroductionAboutControls {
         // 
         newForms.Location = new System.Drawing.Point(
             525,
-            175
+            150
         );
         newForms.Name = "newForms";
         newForms.Size = new System.Drawing.Size(
@@ -106,6 +107,22 @@ partial class IntroductionAboutControls {
         newForms.UseVisualStyleBackColor =  true;
         newForms.Click                   += newForms_Click;
         // 
+        // messageBox
+        // 
+        messageBox.Location = new System.Drawing.Point(
+            650,
+            150
+        );
+        messageBox.Name = "messageBox";
+        messageBox.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        messageBox.TabIndex                =  4;
+        messageBox.Text                    =  "Message Box";
+        messageBox.UseVisualStyleBackColor =  true;
+        messageBox.Click                   += messageBox_Click;
+        // 
         // IntroductionAboutControls
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -114,8 +131,11 @@ partial class IntroductionAboutControls {
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            734,
-            311
+            884,
+            261
+        );
+        Controls.Add(
+            messageBox
         );
         Controls.Add(
             newForms
@@ -135,6 +155,8 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button messageBox;
 
     private System.Windows.Forms.Button newForms;
 

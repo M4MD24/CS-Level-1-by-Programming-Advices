@@ -24,6 +24,9 @@
       <Compile Update="NewForms\Forms\ExampleForm.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="MessageBoxExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
