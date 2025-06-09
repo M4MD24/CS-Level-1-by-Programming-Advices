@@ -101,14 +101,14 @@
             15. [Exceptions](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_15_exceptions)
             16. [Random Method](src/_1_concepts/_1_5_syntax/_1_5_1_console_app/_1_5_1_16_random_method)
         2. Windows Forms
-            1. [Concepts](WindowsFormsConcepts/WindowsFormsConcepts/WindowsFormsConcepts.cs)
+            1. [Concepts](WindowsFormsConcepts/WindowsFormsConcepts.cs)
                 1. Web vs Desktop Applications
-                2. [Introduction About Controls](WindowsFormsConcepts/WindowsFormsConcepts/IntroductionAboutControls.cs)
+                2. [Introduction About Controls](WindowsFormsConcepts/IntroductionAboutControls.cs)
                     1. Introduction About Controls
                     2. Designer Toolbox & Properties & Events
-                    3. [TextBoxes & Button & Form & Label](WindowsFormsConcepts/WindowsFormsConcepts/TextBoxesAndButtonsAndFormsAndLabels.cs)
-                    4. [Flat Appearance](WindowsFormsConcepts/WindowsFormsConcepts/FlatAppearance.cs)
+                    3. [TextBoxes & Button & Form & Label](WindowsFormsConcepts/TextBoxesAndButtonsAndFormsAndLabels.cs)
+                    4. [Flat Appearance](WindowsFormsConcepts/FlatAppearance.cs)
                     5. TabIndex & TabStop
-                    6. [New Forms](WindowsFormsConcepts/WindowsFormsConcepts/NewForms)
-                    7. [MessageBox](WindowsFormsConcepts/WindowsFormsConcepts/MessageBoxExample.cs)
-                    8. [CheckBox & RadioButton & GroupBox & Tag](WindowsFormsConcepts/WindowsFormsConcepts/CheckBoxAndRadioButtonAndGroupBoxAndTag.cs)
+                    6. [New Forms](WindowsFormsConcepts/NewForms)
+                    7. [MessageBox](WindowsFormsConcepts/MessageBoxExample.cs)
+                    8. [CheckBox & RadioButton & GroupBox & Tag](WindowsFormsConcepts/CheckBoxAndRadioButtonAndGroupBoxAndTag.cs)
