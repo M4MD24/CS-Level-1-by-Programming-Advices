@@ -27,10 +27,19 @@
 
     <ItemGroup>
         <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs"/>
+        <Compile Remove="WindowsFormsConcepts\**" />
     </ItemGroup>
 
     <ItemGroup>
         <Folder Include="src\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="WindowsFormsConcepts\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="WindowsFormsConcepts\**" />
     </ItemGroup>
 
 </Project>
