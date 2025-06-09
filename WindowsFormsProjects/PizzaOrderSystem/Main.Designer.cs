@@ -54,7 +54,7 @@ partial class Main {
         totalPriceQuestion    = new System.Windows.Forms.Label();
         whereToEatInformation = new System.Windows.Forms.Label();
         whereToEatQuestion    = new System.Windows.Forms.Label();
-        label3                = new System.Windows.Forms.Label();
+        crushTypeInformation  = new System.Windows.Forms.Label();
         crustTypeQuestion     = new System.Windows.Forms.Label();
         toppingsInformation   = new System.Windows.Forms.Label();
         toppingsQuestion      = new System.Windows.Forms.Label();
@@ -659,7 +659,7 @@ partial class Main {
             whereToEatQuestion
         );
         orderInformation.Controls.Add(
-            label3
+            crushTypeInformation
         );
         orderInformation.Controls.Add(
             crustTypeQuestion
@@ -808,25 +808,25 @@ partial class Main {
         whereToEatQuestion.Text      = "Where to Eat:";
         whereToEatQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
         //
-        // label3
+        // crushTypeInformation
         //
-        label3.Font = new System.Drawing.Font(
+        crushTypeInformation.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
         );
-        label3.ForeColor  = System.Drawing.Color.Black;
-        label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        label3.Location = new System.Drawing.Point(
+        crushTypeInformation.ForeColor  = System.Drawing.Color.Black;
+        crushTypeInformation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        crushTypeInformation.Location = new System.Drawing.Point(
             90,
             130
         );
-        label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(
+        crushTypeInformation.Name = "crushTypeInformation";
+        crushTypeInformation.Size = new System.Drawing.Size(
             145,
             25
         );
-        label3.TabIndex  = 25;
-        label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        crushTypeInformation.TabIndex  = 25;
+        crushTypeInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
         //
         // crustTypeQuestion
         //
@@ -969,9 +969,10 @@ partial class Main {
             100,
             30
         );
-        reset.TabIndex                = 31;
-        reset.Text                    = "Reset";
-        reset.UseVisualStyleBackColor = false;
+        reset.TabIndex                =  31;
+        reset.Text                    =  "Reset";
+        reset.UseVisualStyleBackColor =  false;
+        reset.Click                   += reset_Click;
         // 
         // Main
         // 
@@ -1049,7 +1050,7 @@ partial class Main {
     private System.Windows.Forms.Label whereToEatInformation;
     private System.Windows.Forms.Label whereToEatQuestion;
 
-    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label crushTypeInformation;
     private System.Windows.Forms.Label crustTypeQuestion;
 
     private System.Windows.Forms.Label toppingsInformation;
