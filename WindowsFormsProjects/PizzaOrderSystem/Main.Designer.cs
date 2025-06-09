@@ -37,7 +37,6 @@ partial class Main {
         large            = new System.Windows.Forms.RadioButton();
         medium           = new System.Windows.Forms.RadioButton();
         small            = new System.Windows.Forms.RadioButton();
-        openFileDialog1  = new System.Windows.Forms.OpenFileDialog();
         toppings         = new System.Windows.Forms.GroupBox();
         greenPeppers     = new System.Windows.Forms.CheckBox();
         olives           = new System.Windows.Forms.CheckBox();
@@ -49,9 +48,9 @@ partial class Main {
         thick            = new System.Windows.Forms.RadioButton();
         thin             = new System.Windows.Forms.RadioButton();
         whereToEat       = new System.Windows.Forms.GroupBox();
+        delivery         = new System.Windows.Forms.RadioButton();
         takeaway         = new System.Windows.Forms.RadioButton();
         dineInRestaurant = new System.Windows.Forms.RadioButton();
-        delivery         = new System.Windows.Forms.RadioButton();
         size.SuspendLayout();
         toppings.SuspendLayout();
         crustType.SuspendLayout();
@@ -209,10 +208,6 @@ partial class Main {
         small.TabStop                 = true;
         small.Text                    = "Small";
         small.UseVisualStyleBackColor = true;
-        // 
-        // openFileDialog1
-        // 
-        openFileDialog1.FileName = "openFileDialog1";
         // 
         // toppings
         // 
@@ -556,6 +551,33 @@ partial class Main {
         whereToEat.TabStop  = false;
         whereToEat.Text     = "Where to Eat";
         // 
+        // delivery
+        // 
+        delivery.Font = new System.Drawing.Font(
+            "Segoe UI",
+            9F
+        );
+        delivery.ForeColor = System.Drawing.Color.Black;
+        delivery.Location = new System.Drawing.Point(
+            15,
+            95
+        );
+        delivery.Margin = new System.Windows.Forms.Padding(
+            4,
+            3,
+            4,
+            3
+        );
+        delivery.Name = "delivery";
+        delivery.Size = new System.Drawing.Size(
+            100,
+            25
+        );
+        delivery.TabIndex                = 18;
+        delivery.TabStop                 = true;
+        delivery.Text                    = "Delivery";
+        delivery.UseVisualStyleBackColor = true;
+        // 
         // takeaway
         // 
         takeaway.Font = new System.Drawing.Font(
@@ -610,33 +632,6 @@ partial class Main {
         dineInRestaurant.Text                    = "Dine in Restaurant";
         dineInRestaurant.UseVisualStyleBackColor = true;
         // 
-        // delivery
-        // 
-        delivery.Font = new System.Drawing.Font(
-            "Segoe UI",
-            9F
-        );
-        delivery.ForeColor = System.Drawing.Color.Black;
-        delivery.Location = new System.Drawing.Point(
-            15,
-            95
-        );
-        delivery.Margin = new System.Windows.Forms.Padding(
-            4,
-            3,
-            4,
-            3
-        );
-        delivery.Name = "delivery";
-        delivery.Size = new System.Drawing.Size(
-            100,
-            25
-        );
-        delivery.TabIndex                = 18;
-        delivery.TabStop                 = true;
-        delivery.Text                    = "Delivery";
-        delivery.UseVisualStyleBackColor = true;
-        // 
         // Main
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -645,7 +640,7 @@ partial class Main {
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            983,
+            984,
             561
         );
         Controls.Add(
@@ -691,41 +686,27 @@ partial class Main {
         );
     }
 
-    private System.Windows.Forms.RadioButton delivery;
-
-    private System.Windows.Forms.RadioButton dineInRestaurant;
-
     private System.Windows.Forms.GroupBox    whereToEat;
     private System.Windows.Forms.RadioButton takeaway;
-    private System.Windows.Forms.RadioButton radioButton2;
+    private System.Windows.Forms.RadioButton dineInRestaurant;
+    private System.Windows.Forms.RadioButton delivery;
 
     private System.Windows.Forms.GroupBox    crustType;
     private System.Windows.Forms.RadioButton thick;
     private System.Windows.Forms.RadioButton thin;
 
+    private System.Windows.Forms.GroupBox toppings;
     private System.Windows.Forms.CheckBox onion;
-
     private System.Windows.Forms.CheckBox greenPeppers;
-
     private System.Windows.Forms.CheckBox olives;
-
     private System.Windows.Forms.CheckBox tomatoes;
-
     private System.Windows.Forms.CheckBox mushrooms;
-
     private System.Windows.Forms.CheckBox extraCheese;
 
-    private System.Windows.Forms.RadioButton small;
-
     private System.Windows.Forms.GroupBox size;
-
-    private System.Windows.Forms.RadioButton large;
-
+    private System.Windows.Forms.RadioButton small;
     private System.Windows.Forms.RadioButton medium;
-
-    private System.Windows.Forms.OpenFileDialog openFileDialog1;
-
-    private System.Windows.Forms.GroupBox toppings;
+    private System.Windows.Forms.RadioButton large;
 
     private System.Windows.Forms.Label title;
 
