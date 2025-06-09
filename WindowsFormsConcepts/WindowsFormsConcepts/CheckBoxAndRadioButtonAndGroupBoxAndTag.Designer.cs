@@ -58,18 +58,18 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
-            1050,
-            50
+            650,
+            150
         );
         title.TabIndex  = 0;
         title.Text      = "CheckBox and RadioButton and GroupBox and Tag";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
+        //
         // checkBoxExample
-        // 
+        //
         checkBoxExample.Location = new System.Drawing.Point(
             50,
-            125
+            235
         );
         checkBoxExample.Name = "checkBoxExample";
         checkBoxExample.Size = new System.Drawing.Size(
@@ -80,13 +80,13 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         checkBoxExample.Text                    =  "CheckBox Example";
         checkBoxExample.UseVisualStyleBackColor =  true;
         checkBoxExample.CheckedChanged          += checkBoxExample_CheckedChanged;
-        // 
+        //
         // submitCheckBoxStatus
-        // 
+        //
         submitCheckBoxStatus.Enabled = false;
         submitCheckBoxStatus.Location = new System.Drawing.Point(
             50,
-            165
+            275
         );
         submitCheckBoxStatus.Name = "submitCheckBoxStatus";
         submitCheckBoxStatus.Size = new System.Drawing.Size(
@@ -97,9 +97,9 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         submitCheckBoxStatus.Text                    =  "Submit CheckBox Status";
         submitCheckBoxStatus.UseVisualStyleBackColor =  true;
         submitCheckBoxStatus.Click                   += submitCheckBoxStatus_Click;
-        // 
+        //
         // groupBoxExample
-        // 
+        //
         groupBoxExample.Controls.Add(
             thirdChoice
         );
@@ -111,7 +111,7 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         );
         groupBoxExample.Location = new System.Drawing.Point(
             250,
-            125
+            235
         );
         groupBoxExample.Name = "groupBoxExample";
         groupBoxExample.Size = new System.Drawing.Size(
@@ -121,9 +121,9 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         groupBoxExample.TabIndex = 3;
         groupBoxExample.TabStop  = false;
         groupBoxExample.Text     = "GroupBox Example";
-        // 
+        //
         // thirdChoice
-        // 
+        //
         thirdChoice.Location = new System.Drawing.Point(
             25,
             100
@@ -137,9 +137,9 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         thirdChoice.TabStop                 = true;
         thirdChoice.Text                    = "Third Choice";
         thirdChoice.UseVisualStyleBackColor = true;
-        // 
+        //
         // secondChoice
-        // 
+        //
         secondChoice.Location = new System.Drawing.Point(
             25,
             65
@@ -153,9 +153,9 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         secondChoice.TabStop                 = true;
         secondChoice.Text                    = "Second Choice";
         secondChoice.UseVisualStyleBackColor = true;
-        // 
+        //
         // firstChoice
-        // 
+        //
         firstChoice.Location = new System.Drawing.Point(
             25,
             30
@@ -169,12 +169,12 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         firstChoice.TabStop                 = true;
         firstChoice.Text                    = "First Choice";
         firstChoice.UseVisualStyleBackColor = true;
-        // 
+        //
         // submitChoice
-        // 
+        //
         submitChoice.Location = new System.Drawing.Point(
             275,
-            290
+            400
         );
         submitChoice.Name = "submitChoice";
         submitChoice.Size = new System.Drawing.Size(
@@ -185,17 +185,17 @@ partial class CheckBoxAndRadioButtonAndGroupBoxAndTag {
         submitChoice.Text                    =  "Submit Choice";
         submitChoice.UseVisualStyleBackColor =  true;
         submitChoice.Click                   += submitChoice_Click;
-        // 
+        //
         // CheckBoxAndRadioButtonAndGroupBoxAndTag
-        // 
+        //
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            1134,
-            561
+            734,
+            461
         );
         Controls.Add(
             submitChoice
