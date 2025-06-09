@@ -24,4 +24,25 @@ public partial class CheckBoxAndRadioButtonAndGroupBoxAndTag : Form {
             MessageBoxIcon.Information
         );
     }
+
+    private void submitChoice_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        string choice;
+        if (firstChoice.Checked)
+            choice = firstChoice.Text;
+        else if (secondChoice.Checked)
+            choice = secondChoice.Text;
+        else if (thirdChoice.Checked)
+            choice = thirdChoice.Text;
+        else
+            choice = "Nothing";
+        MessageBox.Show(
+            choice,
+            "RadioButton Choice",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information
+        );
+    }
 }
