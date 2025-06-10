@@ -295,7 +295,6 @@ partial class Main {
             25
         );
         greenPeppers.TabIndex                =  11;
-        greenPeppers.Tag                     =  "Green Peppers";
         greenPeppers.Text                    =  "Green Peppers";
         greenPeppers.UseVisualStyleBackColor =  true;
         greenPeppers.CheckedChanged          += greenPeppers_CheckedChanged;
@@ -323,7 +322,6 @@ partial class Main {
             25
         );
         olives.TabIndex                =  10;
-        olives.Tag                     =  "Olives";
         olives.Text                    =  "Olives";
         olives.UseVisualStyleBackColor =  true;
         olives.CheckedChanged          += olives_CheckedChanged;
@@ -351,7 +349,6 @@ partial class Main {
             25
         );
         onion.TabIndex                =  9;
-        onion.Tag                     =  "Onion";
         onion.Text                    =  "Onion";
         onion.UseVisualStyleBackColor =  true;
         onion.CheckedChanged          += onion_CheckedChanged;
@@ -379,7 +376,6 @@ partial class Main {
             25
         );
         tomatoes.TabIndex                =  8;
-        tomatoes.Tag                     =  "Tomatoes";
         tomatoes.Text                    =  "Tomatoes";
         tomatoes.UseVisualStyleBackColor =  true;
         tomatoes.CheckedChanged          += tomatoes_CheckedChanged;
@@ -407,7 +403,6 @@ partial class Main {
             25
         );
         mushrooms.TabIndex                =  7;
-        mushrooms.Tag                     =  "Mushrooms";
         mushrooms.Text                    =  "Mushrooms";
         mushrooms.UseVisualStyleBackColor =  true;
         mushrooms.CheckedChanged          += mushrooms_CheckedChanged;
@@ -435,13 +430,12 @@ partial class Main {
             25
         );
         extraCheese.TabIndex                =  6;
-        extraCheese.Tag                     =  "Extra Cheese";
         extraCheese.Text                    =  "Extra Cheese";
         extraCheese.UseVisualStyleBackColor =  true;
         extraCheese.CheckedChanged          += extraCheese_CheckedChanged;
-        // 
+        //
         // crustType
-        // 
+        //
         crustType.Controls.Add(
             thick
         );
@@ -478,9 +472,9 @@ partial class Main {
         crustType.TabIndex = 12;
         crustType.TabStop  = false;
         crustType.Text     = "Crust Type";
-        // 
+        //
         // thick
-        // 
+        //
         thick.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -506,9 +500,9 @@ partial class Main {
         thick.Text                    =  "Thick";
         thick.UseVisualStyleBackColor =  true;
         thick.CheckedChanged          += thick_CheckedChanged;
-        // 
+        //
         // thin
-        // 
+        //
         thin.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -534,9 +528,9 @@ partial class Main {
         thin.Text                    =  "Thin";
         thin.UseVisualStyleBackColor =  true;
         thin.CheckedChanged          += thin_CheckedChanged;
-        // 
+        //
         // whereToEat
-        // 
+        //
         whereToEat.Controls.Add(
             delivery
         );
@@ -576,9 +570,9 @@ partial class Main {
         whereToEat.TabIndex = 15;
         whereToEat.TabStop  = false;
         whereToEat.Text     = "Where to Eat";
-        // 
+        //
         // delivery
-        // 
+        //
         delivery.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -604,9 +598,9 @@ partial class Main {
         delivery.Text                    =  "Delivery";
         delivery.UseVisualStyleBackColor =  true;
         delivery.CheckedChanged          += delivery_CheckedChanged;
-        // 
+        //
         // takeaway
-        // 
+        //
         takeaway.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -632,9 +626,9 @@ partial class Main {
         takeaway.Text                    =  "Takeaway";
         takeaway.UseVisualStyleBackColor =  true;
         takeaway.CheckedChanged          += takeaway_CheckedChanged;
-        // 
+        //
         // dineInRestaurant
-        // 
+        //
         dineInRestaurant.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -660,9 +654,9 @@ partial class Main {
         dineInRestaurant.Text                    =  "Dine in Restaurant";
         dineInRestaurant.UseVisualStyleBackColor =  true;
         dineInRestaurant.CheckedChanged          += dineInRestaurant_CheckedChanged;
-        // 
+        //
         // orderInformation
-        // 
+        //
         orderInformation.Controls.Add(
             symbol
         );
@@ -726,9 +720,9 @@ partial class Main {
         orderInformation.TabIndex = 19;
         orderInformation.TabStop  = false;
         orderInformation.Text     = "Order Information";
-        // 
+        //
         // symbol
-        // 
+        //
         symbol.Font = new System.Drawing.Font(
             "Segoe UI",
             9F,
@@ -737,7 +731,7 @@ partial class Main {
         symbol.ForeColor  = System.Drawing.Color.DarkOrange;
         symbol.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
         symbol.Location = new System.Drawing.Point(
-            125,
+            135,
             200
         );
         symbol.Name = "symbol";
@@ -748,9 +742,9 @@ partial class Main {
         symbol.TabIndex  = 30;
         symbol.Text      = "EGP";
         symbol.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // totalPriceInformation
-        // 
+        //
         totalPriceInformation.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -762,14 +756,15 @@ partial class Main {
         );
         totalPriceInformation.Name = "totalPriceInformation";
         totalPriceInformation.Size = new System.Drawing.Size(
-            30,
+            40,
             25
         );
         totalPriceInformation.TabIndex  = 29;
+        totalPriceInformation.Text      = "0";
         totalPriceInformation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
+        //
         // totalPriceQuestion
-        // 
+        //
         totalPriceQuestion.Font = new System.Drawing.Font(
             "Segoe UI",
             9F,
@@ -787,9 +782,9 @@ partial class Main {
         totalPriceQuestion.TabIndex  = 28;
         totalPriceQuestion.Text      = "Total Price:";
         totalPriceQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // whereToEatInformation
-        // 
+        //
         whereToEatInformation.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -807,9 +802,9 @@ partial class Main {
         );
         whereToEatInformation.TabIndex  = 27;
         whereToEatInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // whereToEatQuestion
-        // 
+        //
         whereToEatQuestion.Font = new System.Drawing.Font(
             "Segoe UI",
             9F,
@@ -827,9 +822,9 @@ partial class Main {
         whereToEatQuestion.TabIndex  = 26;
         whereToEatQuestion.Text      = "Where to Eat:";
         whereToEatQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // crustTypeInformation
-        // 
+        //
         crustTypeInformation.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -847,9 +842,9 @@ partial class Main {
         );
         crustTypeInformation.TabIndex  = 25;
         crustTypeInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // crustTypeQuestion
-        // 
+        //
         crustTypeQuestion.Font = new System.Drawing.Font(
             "Segoe UI",
             9F,
@@ -867,9 +862,9 @@ partial class Main {
         crustTypeQuestion.TabIndex  = 24;
         crustTypeQuestion.Text      = "Crust Type:";
         crustTypeQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // toppingsInformation
-        // 
+        //
         toppingsInformation.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -886,9 +881,9 @@ partial class Main {
             30
         );
         toppingsInformation.TabIndex = 23;
-        // 
+        //
         // toppingsQuestion
-        // 
+        //
         toppingsQuestion.Font = new System.Drawing.Font(
             "Segoe UI",
             9F,
@@ -906,9 +901,9 @@ partial class Main {
         toppingsQuestion.TabIndex  = 22;
         toppingsQuestion.Text      = "Toppings:";
         toppingsQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // sizeInformation
-        // 
+        //
         sizeInformation.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -926,9 +921,9 @@ partial class Main {
         );
         sizeInformation.TabIndex  = 21;
         sizeInformation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // sizeQuestion
-        // 
+        //
         sizeQuestion.Font = new System.Drawing.Font(
             "Segoe UI",
             9F,
@@ -946,9 +941,9 @@ partial class Main {
         sizeQuestion.TabIndex  = 20;
         sizeQuestion.Text      = "Size:";
         sizeQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // order
-        // 
+        //
         order.Font = new System.Drawing.Font(
             "Corbel",
             12F,
@@ -969,9 +964,9 @@ partial class Main {
         order.TabIndex                = 32;
         order.Text                    = "Order";
         order.UseVisualStyleBackColor = false;
-        // 
+        //
         // reset
-        // 
+        //
         reset.Font = new System.Drawing.Font(
             "Corbel",
             12F,
@@ -993,9 +988,9 @@ partial class Main {
         reset.Text                    =  "Reset";
         reset.UseVisualStyleBackColor =  false;
         reset.Click                   += reset_Click;
-        // 
+        //
         // Main
-        // 
+        //
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
@@ -1035,8 +1030,9 @@ partial class Main {
             4,
             3
         );
-        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          = "Pizza Order System";
+        StartPosition =  System.Windows.Forms.FormStartPosition.CenterScreen;
+        Text          =  "Pizza Order System";
+        Load          += Main_Load;
         size.ResumeLayout(
             false
         );
