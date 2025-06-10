@@ -162,9 +162,10 @@ partial class Main {
             100,
             25
         );
-        large.TabIndex                = 4;
-        large.Text                    = "Large";
-        large.UseVisualStyleBackColor = true;
+        large.TabIndex                =  4;
+        large.Text                    =  "Large";
+        large.UseVisualStyleBackColor =  true;
+        large.CheckedChanged          += large_CheckedChanged;
         //
         // medium
         //
@@ -188,9 +189,10 @@ partial class Main {
             100,
             25
         );
-        medium.TabIndex                = 3;
-        medium.Text                    = "Medium";
-        medium.UseVisualStyleBackColor = true;
+        medium.TabIndex                =  3;
+        medium.Text                    =  "Medium";
+        medium.UseVisualStyleBackColor =  true;
+        medium.CheckedChanged          += medium_CheckedChanged;
         //
         // small
         //
@@ -214,9 +216,10 @@ partial class Main {
             100,
             25
         );
-        small.TabIndex                = 2;
-        small.Text                    = "Small";
-        small.UseVisualStyleBackColor = true;
+        small.TabIndex                =  2;
+        small.Text                    =  "Small";
+        small.UseVisualStyleBackColor =  true;
+        small.CheckedChanged          += small_CheckedChanged;
         //
         // toppings
         //

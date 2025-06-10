@@ -49,4 +49,25 @@ public partial class Main : Form {
         medium.Checked = false;
         large.Checked  = false;
     }
+
+    private void small_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        sizeInformation.Text = small.Text;
+    }
+
+    private void medium_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        sizeInformation.Text = medium.Text;
+    }
+
+    private void large_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        sizeInformation.Text = large.Text;
+    }
 }
