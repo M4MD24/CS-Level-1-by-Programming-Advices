@@ -19,7 +19,7 @@ public partial class Main : Form {
     private void resetOrderInformation() {
         sizeInformation.Text       = "";
         toppingsInformation.Text   = "";
-        crushTypeInformation.Text  = "";
+        crustTypeInformation.Text  = "";
         whereToEatInformation.Text = "";
         totalPriceInformation.Text = "";
     }
@@ -69,5 +69,19 @@ public partial class Main : Form {
         EventArgs e
     ) {
         sizeInformation.Text = large.Text;
+    }
+
+    private void thin_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        crustTypeInformation.Text = thin.Text;
+    }
+
+    private void thick_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        crustTypeInformation.Text = thick.Text;
     }
 }
