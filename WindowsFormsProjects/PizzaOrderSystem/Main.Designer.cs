@@ -294,12 +294,14 @@ partial class Main {
             110,
             25
         );
-        greenPeppers.TabIndex                = 11;
-        greenPeppers.Text                    = "Green Peppers";
-        greenPeppers.UseVisualStyleBackColor = true;
-        // 
+        greenPeppers.TabIndex                =  11;
+        greenPeppers.Tag                     =  "Green Peppers";
+        greenPeppers.Text                    =  "Green Peppers";
+        greenPeppers.UseVisualStyleBackColor =  true;
+        greenPeppers.CheckedChanged          += greenPeppers_CheckedChanged;
+        //
         // olives
-        // 
+        //
         olives.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -320,12 +322,14 @@ partial class Main {
             100,
             25
         );
-        olives.TabIndex                = 10;
-        olives.Text                    = "Olives";
-        olives.UseVisualStyleBackColor = true;
-        // 
+        olives.TabIndex                =  10;
+        olives.Tag                     =  "Olives";
+        olives.Text                    =  "Olives";
+        olives.UseVisualStyleBackColor =  true;
+        olives.CheckedChanged          += olives_CheckedChanged;
+        //
         // onion
-        // 
+        //
         onion.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -346,12 +350,14 @@ partial class Main {
             100,
             25
         );
-        onion.TabIndex                = 9;
-        onion.Text                    = "Onion";
-        onion.UseVisualStyleBackColor = true;
-        // 
+        onion.TabIndex                =  9;
+        onion.Tag                     =  "Onion";
+        onion.Text                    =  "Onion";
+        onion.UseVisualStyleBackColor =  true;
+        onion.CheckedChanged          += onion_CheckedChanged;
+        //
         // tomatoes
-        // 
+        //
         tomatoes.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -372,12 +378,14 @@ partial class Main {
             100,
             25
         );
-        tomatoes.TabIndex                = 8;
-        tomatoes.Text                    = "Tomatoes";
-        tomatoes.UseVisualStyleBackColor = true;
-        // 
+        tomatoes.TabIndex                =  8;
+        tomatoes.Tag                     =  "Tomatoes";
+        tomatoes.Text                    =  "Tomatoes";
+        tomatoes.UseVisualStyleBackColor =  true;
+        tomatoes.CheckedChanged          += tomatoes_CheckedChanged;
+        //
         // mushrooms
-        // 
+        //
         mushrooms.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -398,12 +406,14 @@ partial class Main {
             100,
             25
         );
-        mushrooms.TabIndex                = 7;
-        mushrooms.Text                    = "Mushrooms";
-        mushrooms.UseVisualStyleBackColor = true;
-        // 
+        mushrooms.TabIndex                =  7;
+        mushrooms.Tag                     =  "Mushrooms";
+        mushrooms.Text                    =  "Mushrooms";
+        mushrooms.UseVisualStyleBackColor =  true;
+        mushrooms.CheckedChanged          += mushrooms_CheckedChanged;
+        //
         // extraCheese
-        // 
+        //
         extraCheese.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -424,9 +434,11 @@ partial class Main {
             100,
             25
         );
-        extraCheese.TabIndex                = 6;
-        extraCheese.Text                    = "Extra Cheese";
-        extraCheese.UseVisualStyleBackColor = true;
+        extraCheese.TabIndex                =  6;
+        extraCheese.Tag                     =  "Extra Cheese";
+        extraCheese.Text                    =  "Extra Cheese";
+        extraCheese.UseVisualStyleBackColor =  true;
+        extraCheese.CheckedChanged          += extraCheese_CheckedChanged;
         // 
         // crustType
         // 

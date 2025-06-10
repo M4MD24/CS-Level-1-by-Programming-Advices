@@ -1,6 +1,8 @@
 namespace PizzaOrderSystem;
 
 public partial class Main : Form {
+    private List<string?> choices = [];
+
     public Main() {
         InitializeComponent();
     }
@@ -104,5 +106,81 @@ public partial class Main : Form {
         EventArgs e
     ) {
         whereToEatInformation.Text = delivery.Text;
+    }
+
+    private void extraCheese_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        updateToppings(
+            extraCheese
+        );
+    }
+
+    private void mushrooms_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        updateToppings(
+            mushrooms
+        );
+    }
+
+    private void tomatoes_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        updateToppings(
+            tomatoes
+        );
+    }
+
+    private void onion_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        updateToppings(
+            onion
+        );
+    }
+
+    private void olives_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        updateToppings(
+            olives
+        );
+    }
+
+    private void greenPeppers_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        updateToppings(
+            greenPeppers
+        );
+    }
+
+    private void updateToppings(
+        CheckBox choice
+    ) {
+        string value = choice.Tag!.ToString()!;
+        if (choice.Checked)
+            choices.Add(
+                value
+            );
+        else
+            choices.Remove(
+                value
+            );
+        updateToppingsInformation();
+    }
+
+    private void updateToppingsInformation() {
+        toppingsInformation.Text = string.Join(
+            ", ",
+            choices
+        );
     }
 }
