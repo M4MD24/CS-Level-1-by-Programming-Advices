@@ -587,10 +587,11 @@ partial class Main {
             100,
             25
         );
-        delivery.TabIndex                = 18;
-        delivery.TabStop                 = true;
-        delivery.Text                    = "Delivery";
-        delivery.UseVisualStyleBackColor = true;
+        delivery.TabIndex                =  18;
+        delivery.TabStop                 =  true;
+        delivery.Text                    =  "Delivery";
+        delivery.UseVisualStyleBackColor =  true;
+        delivery.CheckedChanged          += delivery_CheckedChanged;
         // 
         // takeaway
         // 
@@ -614,10 +615,11 @@ partial class Main {
             100,
             25
         );
-        takeaway.TabIndex                = 17;
-        takeaway.TabStop                 = true;
-        takeaway.Text                    = "Takeaway";
-        takeaway.UseVisualStyleBackColor = true;
+        takeaway.TabIndex                =  17;
+        takeaway.TabStop                 =  true;
+        takeaway.Text                    =  "Takeaway";
+        takeaway.UseVisualStyleBackColor =  true;
+        takeaway.CheckedChanged          += takeaway_CheckedChanged;
         // 
         // dineInRestaurant
         // 
@@ -641,10 +643,11 @@ partial class Main {
             125,
             25
         );
-        dineInRestaurant.TabIndex                = 16;
-        dineInRestaurant.TabStop                 = true;
-        dineInRestaurant.Text                    = "Dine in Restaurant";
-        dineInRestaurant.UseVisualStyleBackColor = true;
+        dineInRestaurant.TabIndex                =  16;
+        dineInRestaurant.TabStop                 =  true;
+        dineInRestaurant.Text                    =  "Dine in Restaurant";
+        dineInRestaurant.UseVisualStyleBackColor =  true;
+        dineInRestaurant.CheckedChanged          += dineInRestaurant_CheckedChanged;
         // 
         // orderInformation
         // 

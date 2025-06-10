@@ -84,4 +84,25 @@ public partial class Main : Form {
     ) {
         crustTypeInformation.Text = thick.Text;
     }
+
+    private void dineInRestaurant_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        whereToEatInformation.Text = dineInRestaurant.Text;
+    }
+
+    private void takeaway_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        whereToEatInformation.Text = takeaway.Text;
+    }
+
+    private void delivery_CheckedChanged(
+        object    sender,
+        EventArgs e
+    ) {
+        whereToEatInformation.Text = delivery.Text;
+    }
 }
