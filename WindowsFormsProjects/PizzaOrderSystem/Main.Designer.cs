@@ -961,9 +961,10 @@ partial class Main {
             100,
             30
         );
-        order.TabIndex                = 32;
-        order.Text                    = "Order";
-        order.UseVisualStyleBackColor = false;
+        order.TabIndex                =  32;
+        order.Text                    =  "Order";
+        order.UseVisualStyleBackColor =  false;
+        order.Click                   += order_Click;
         //
         // reset
         //

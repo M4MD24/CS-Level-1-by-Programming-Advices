@@ -1,8 +1,11 @@
+using PizzaOrderSystem.models;
+
 namespace PizzaOrderSystem;
 
 public partial class Main : Form {
-    private List<string?> choices = [];
-    private double        totalPrice;
+    private readonly List<string?> choices = [];
+    private          double        totalPrice;
+    private          Order         currentOrder = new();
 
     public Main() {
         InitializeComponent();
@@ -41,168 +44,119 @@ public partial class Main : Form {
         resetCrustType();
         resetWhereToEat();
         resetOrderInformation();
+        order.Enabled = true;
+        currentOrder  = new Order();
     }
 
     private void resetOrderInformation() {
-        sizeInformation.Text       = "";
-        toppingsInformation.Text   = "";
-        crustTypeInformation.Text  = "";
-        whereToEatInformation.Text = "";
+        sizeInformation.Text = toppingsInformation.Text
+                                       = crustTypeInformation.Text
+                                                 = whereToEatInformation.Text = "";
         totalPriceInformation.Text = "0";
     }
 
     private void resetWhereToEat() {
-        dineInRestaurant.Checked = false;
-        takeaway.Checked         = false;
-        delivery.Checked         = false;
+        foreach (RadioButton radioButton in whereToEat.Controls.OfType<RadioButton>())
+            radioButton.Checked = false;
+        whereToEat.Enabled = true;
     }
 
     private void resetCrustType() {
-        thin.Checked  = false;
-        thick.Checked = false;
+        foreach (RadioButton radioButton in crustType.Controls.OfType<RadioButton>())
+            radioButton.Checked = false;
+        crustType.Enabled = true;
     }
 
     private void resetToppings() {
-        extraCheese.Checked  = false;
-        mushrooms.Checked    = false;
-        tomatoes.Checked     = false;
-        onion.Checked        = false;
-        olives.Checked       = false;
-        greenPeppers.Checked = false;
+        foreach (CheckBox checkBox in toppings.Controls.OfType<CheckBox>())
+            checkBox.Checked = false;
+        toppings.Enabled = true;
     }
 
     private void resetSize() {
-        small.Checked  = false;
-        medium.Checked = false;
-        large.Checked  = false;
+        foreach (RadioButton radioButton in size.Controls.OfType<RadioButton>())
+            radioButton.Checked = false;
+        size.Enabled = true;
     }
 
     private void small_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        sizeInformation.Text = small.Text;
-        if (small.Checked)
-            totalPrice += Convert.ToDouble(
-                small.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                small.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            small,
+            sizeInformation
+        );
     }
 
     private void medium_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        sizeInformation.Text = medium.Text;
-        if (medium.Checked)
-            totalPrice += Convert.ToDouble(
-                medium.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                medium.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            medium,
+            sizeInformation
+        );
     }
 
     private void large_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        sizeInformation.Text = large.Text;
-        if (large.Checked)
-            totalPrice += Convert.ToDouble(
-                large.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                large.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            large,
+            sizeInformation
+        );
     }
 
     private void thin_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        crustTypeInformation.Text = thin.Text;
-        if (thin.Checked)
-            totalPrice += Convert.ToDouble(
-                thin.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                thin.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            thin,
+            crustTypeInformation
+        );
     }
 
     private void thick_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        crustTypeInformation.Text = thick.Text;
-        if (thick.Checked)
-            totalPrice += Convert.ToDouble(
-                thick.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                thick.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            thick,
+            crustTypeInformation
+        );
     }
 
     private void dineInRestaurant_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        whereToEatInformation.Text = dineInRestaurant.Text;
-        if (dineInRestaurant.Checked)
-            totalPrice += Convert.ToDouble(
-                dineInRestaurant.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                dineInRestaurant.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            dineInRestaurant,
+            whereToEatInformation
+        );
     }
 
     private void takeaway_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        whereToEatInformation.Text = takeaway.Text;
-        if (takeaway.Checked)
-            totalPrice += Convert.ToDouble(
-                takeaway.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                takeaway.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            takeaway,
+            whereToEatInformation
+        );
     }
 
     private void delivery_CheckedChanged(
         object    sender,
         EventArgs e
     ) {
-        whereToEatInformation.Text = delivery.Text;
-        if (delivery.Checked)
-            totalPrice += Convert.ToDouble(
-                delivery.Tag
-            );
-        else
-            totalPrice -= Convert.ToDouble(
-                delivery.Tag
-            );
-        updateTotalPriceInformation();
+        updateOrderInformation(
+            delivery,
+            whereToEatInformation
+        );
     }
 
     private void extraCheese_CheckedChanged(
@@ -296,6 +250,69 @@ public partial class Main : Form {
     }
 
     private void updateTotalPriceInformation() {
-        totalPriceInformation.Text = totalPrice.ToString();
+        totalPriceInformation.Text = (currentOrder.totalPrice = totalPrice).ToString();
+    }
+
+    private void updateOrderInformation(
+        RadioButton radioButton,
+        Label       information
+    ) {
+        information.Text = radioButton.Text;
+        updateCurrentOrder(
+            radioButton,
+            information
+        );
+        totalPrice += radioButton.Checked
+                              ? Convert.ToDouble(
+                                  radioButton.Tag
+                              )
+                              : -Convert.ToDouble(
+                                    radioButton.Tag
+                                );
+        updateTotalPriceInformation();
+    }
+
+    private void updateCurrentOrder(
+        RadioButton radioButton,
+        Label       information
+    ) {
+        if (information == sizeInformation)
+            currentOrder.size = radioButton.Text;
+        else if (information == toppingsInformation)
+            currentOrder.toppings = radioButton.Text;
+        else if (information == crustTypeInformation)
+            currentOrder.crustType = radioButton.Text;
+        else if (information == whereToEatInformation)
+            currentOrder.whereToEat = radioButton.Text;
+    }
+
+    private void order_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        if (
+            MessageBox.Show(
+                "Are you sure?",
+                "Confirm",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2
+            ) == DialogResult.No
+        )
+            return;
+
+        if (currentOrder.isComplete()) {
+            size.Enabled       = false;
+            toppings.Enabled   = false;
+            crustType.Enabled  = false;
+            whereToEat.Enabled = false;
+            order.Enabled      = false;
+        } else
+            MessageBox.Show(
+                "Your order is incomplete",
+                "Order Status",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning
+            );
     }
 }
