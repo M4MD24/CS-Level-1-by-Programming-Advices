@@ -2,9 +2,9 @@ namespace PizzaOrderSystem.models;
 
 public class Order {
     public string size       = "",
-           toppings   = "",
-           crustType  = "",
-           whereToEat = "";
+                  toppings   = "",
+                  crustType  = "",
+                  whereToEat = "";
     public double totalPrice = 0.0;
 
     public bool isComplete() {
