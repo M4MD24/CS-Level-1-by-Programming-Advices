@@ -39,4 +39,11 @@ public partial class IntroductionAboutControls : Form {
     ) {
         new CheckBoxAndRadioButtonAndGroupBoxAndTag().Show();
     }
+
+    private void textBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new TextBoxExample().Show();
+    }
 }
