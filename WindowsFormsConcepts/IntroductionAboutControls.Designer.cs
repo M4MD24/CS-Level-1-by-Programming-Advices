@@ -36,6 +36,7 @@ partial class IntroductionAboutControls {
         messageBox                              = new System.Windows.Forms.Button();
         checkBoxAndRadioButtonAndGroupBoxAndTag = new System.Windows.Forms.Button();
         textBox                                 = new System.Windows.Forms.Button();
+        pictureBox                              = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
@@ -157,6 +158,22 @@ partial class IntroductionAboutControls {
         textBox.UseVisualStyleBackColor =  true;
         textBox.Click                   += textBox_Click;
         // 
+        // pictureBox
+        // 
+        pictureBox.Location = new System.Drawing.Point(
+            475,
+            225
+        );
+        pictureBox.Name = "pictureBox";
+        pictureBox.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        pictureBox.TabIndex                =  7;
+        pictureBox.Text                    =  "PictureBox";
+        pictureBox.UseVisualStyleBackColor =  true;
+        pictureBox.Click                   += pictureBox_Click;
+        // 
         // IntroductionAboutControls
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -167,6 +184,9 @@ partial class IntroductionAboutControls {
         ClientSize = new System.Drawing.Size(
             809,
             311
+        );
+        Controls.Add(
+            pictureBox
         );
         Controls.Add(
             textBox
@@ -195,6 +215,8 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button pictureBox;
 
     private System.Windows.Forms.Button textBox;
 

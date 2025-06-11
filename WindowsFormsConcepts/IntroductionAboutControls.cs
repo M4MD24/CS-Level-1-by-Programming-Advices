@@ -1,3 +1,5 @@
+using WindowsFormsConcepts.PictureBox;
+
 namespace WindowsFormsConcepts;
 
 public partial class IntroductionAboutControls : Form {
@@ -45,5 +47,12 @@ public partial class IntroductionAboutControls : Form {
         EventArgs e
     ) {
         new TextBoxExample().Show();
+    }
+
+    private void pictureBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new PictureBoxExample().Show();
     }
 }
