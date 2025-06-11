@@ -125,7 +125,8 @@ partial class FlatAppearance {
             15,
             15
         );
-        Text = "Flat Appearance";
+        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        Text          = "Flat Appearance";
         ResumeLayout(
             false
         );
