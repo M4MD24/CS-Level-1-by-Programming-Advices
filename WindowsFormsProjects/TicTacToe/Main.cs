@@ -3,6 +3,8 @@ using System.Drawing.Drawing2D;
 namespace TicTacToe;
 
 public partial class Main : Form {
+    private bool playerXTurn = true;
+
     public Main() {
         InitializeComponent();
     }
@@ -20,9 +22,24 @@ public partial class Main : Form {
     }
 
     private void initializeGameTable() {
-        position1.Image = position2.Image = position3.Image = position4.Image = position5.Image = position6.Image = position7.Image = position8.Image = position9.Image = Image.FromFile(
-                                                                                                                                                            @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\Nothing.png"
-                                                                                                                                                        );
+        foreach (
+            var position in new[] {
+                position1,
+                position2,
+                position3,
+                position4,
+                position5,
+                position6,
+                position7,
+                position8,
+                position9
+            }
+        ) {
+            position.Image = Image.FromFile(
+                @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\Nothing.png"
+            );
+            position.Tag = null;
+        }
     }
 
     private void game_Paint(
@@ -65,6 +82,107 @@ public partial class Main : Form {
             253,
             375,
             253
+        );
+    }
+
+    private void position1_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position1
+        );
+    }
+
+    private void position2_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position2
+        );
+    }
+
+    private void position3_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position3
+        );
+    }
+
+    private void position4_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position4
+        );
+    }
+
+    private void position5_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position5
+        );
+    }
+
+    private void position6_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position6
+        );
+    }
+
+    private void position7_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position7
+        );
+    }
+
+    private void position8_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position8
+        );
+    }
+
+    private void selectPosition(
+        PictureBox position
+    ) {
+        if (
+            position.Tag != null
+        )
+            return;
+        position.Image = Image.FromFile(
+            $@"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\{
+                (
+                    playerXTurn
+                            ? "X"
+                            : "O"
+                )
+            }.png"
+        );
+        position.Tag = "";
+        playerXTurn  = !playerXTurn;
+    }
+
+    private void position9_MouseClick(
+        object         sender,
+        MouseEventArgs e
+    ) {
+        selectPosition(
+            position9
         );
     }
 }

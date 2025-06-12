@@ -31,6 +31,15 @@ partial class Main {
     private void InitializeComponent() {
         title            = new System.Windows.Forms.Label();
         game             = new System.Windows.Forms.GroupBox();
+        position9        = new System.Windows.Forms.PictureBox();
+        position8        = new System.Windows.Forms.PictureBox();
+        position7        = new System.Windows.Forms.PictureBox();
+        position6        = new System.Windows.Forms.PictureBox();
+        position5        = new System.Windows.Forms.PictureBox();
+        position4        = new System.Windows.Forms.PictureBox();
+        position3        = new System.Windows.Forms.PictureBox();
+        position2        = new System.Windows.Forms.PictureBox();
+        position1        = new System.Windows.Forms.PictureBox();
         round            = new System.Windows.Forms.GroupBox();
         winner           = new System.Windows.Forms.Label();
         turn             = new System.Windows.Forms.Label();
@@ -39,27 +48,18 @@ partial class Main {
         playerX_WinCount = new System.Windows.Forms.Label();
         resetStatistics  = new System.Windows.Forms.Button();
         resetRound       = new System.Windows.Forms.Button();
-        position1        = new System.Windows.Forms.PictureBox();
-        position2        = new System.Windows.Forms.PictureBox();
-        position3        = new System.Windows.Forms.PictureBox();
-        position6        = new System.Windows.Forms.PictureBox();
-        position5        = new System.Windows.Forms.PictureBox();
-        position4        = new System.Windows.Forms.PictureBox();
-        position9        = new System.Windows.Forms.PictureBox();
-        position8        = new System.Windows.Forms.PictureBox();
-        position7        = new System.Windows.Forms.PictureBox();
         game.SuspendLayout();
-        round.SuspendLayout();
-        statistics.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize) position1).BeginInit();
-        ((System.ComponentModel.ISupportInitialize) position2).BeginInit();
-        ((System.ComponentModel.ISupportInitialize) position3).BeginInit();
-        ((System.ComponentModel.ISupportInitialize) position6).BeginInit();
-        ((System.ComponentModel.ISupportInitialize) position5).BeginInit();
-        ((System.ComponentModel.ISupportInitialize) position4).BeginInit();
         ((System.ComponentModel.ISupportInitialize) position9).BeginInit();
         ((System.ComponentModel.ISupportInitialize) position8).BeginInit();
         ((System.ComponentModel.ISupportInitialize) position7).BeginInit();
+        ((System.ComponentModel.ISupportInitialize) position6).BeginInit();
+        ((System.ComponentModel.ISupportInitialize) position5).BeginInit();
+        ((System.ComponentModel.ISupportInitialize) position4).BeginInit();
+        ((System.ComponentModel.ISupportInitialize) position3).BeginInit();
+        ((System.ComponentModel.ISupportInitialize) position2).BeginInit();
+        ((System.ComponentModel.ISupportInitialize) position1).BeginInit();
+        round.SuspendLayout();
+        statistics.SuspendLayout();
         SuspendLayout();
         // 
         // title
@@ -114,7 +114,7 @@ partial class Main {
             position1
         );
         game.Font = new System.Drawing.Font(
-            "Segoe UI",
+            "Kristen ITC",
             12F,
             System.Drawing.FontStyle.Bold
         );
@@ -132,6 +132,150 @@ partial class Main {
         game.Text     =  "Game";
         game.Paint    += game_Paint;
         // 
+        // position9
+        // 
+        position9.Location = new System.Drawing.Point(
+            270,
+            270
+        );
+        position9.Name = "position9";
+        position9.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position9.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position9.TabIndex   =  8;
+        position9.TabStop    =  false;
+        position9.MouseClick += position9_MouseClick;
+        // 
+        // position8
+        // 
+        position8.Location = new System.Drawing.Point(
+            160,
+            270
+        );
+        position8.Name = "position8";
+        position8.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position8.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position8.TabIndex   =  7;
+        position8.TabStop    =  false;
+        position8.MouseClick += position8_MouseClick;
+        // 
+        // position7
+        // 
+        position7.Location = new System.Drawing.Point(
+            50,
+            270
+        );
+        position7.Name = "position7";
+        position7.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position7.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position7.TabIndex   =  6;
+        position7.TabStop    =  false;
+        position7.MouseClick += position7_MouseClick;
+        // 
+        // position6
+        // 
+        position6.Location = new System.Drawing.Point(
+            270,
+            160
+        );
+        position6.Name = "position6";
+        position6.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position6.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position6.TabIndex   =  5;
+        position6.TabStop    =  false;
+        position6.MouseClick += position6_MouseClick;
+        // 
+        // position5
+        // 
+        position5.Location = new System.Drawing.Point(
+            160,
+            160
+        );
+        position5.Name = "position5";
+        position5.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position5.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position5.TabIndex   =  4;
+        position5.TabStop    =  false;
+        position5.MouseClick += position5_MouseClick;
+        // 
+        // position4
+        // 
+        position4.Location = new System.Drawing.Point(
+            50,
+            160
+        );
+        position4.Name = "position4";
+        position4.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position4.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position4.TabIndex   =  3;
+        position4.TabStop    =  false;
+        position4.MouseClick += position4_MouseClick;
+        // 
+        // position3
+        // 
+        position3.Location = new System.Drawing.Point(
+            270,
+            50
+        );
+        position3.Name = "position3";
+        position3.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position3.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position3.TabIndex   =  2;
+        position3.TabStop    =  false;
+        position3.MouseClick += position3_MouseClick;
+        // 
+        // position2
+        // 
+        position2.Location = new System.Drawing.Point(
+            160,
+            50
+        );
+        position2.Name = "position2";
+        position2.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position2.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position2.TabIndex   =  1;
+        position2.TabStop    =  false;
+        position2.MouseClick += position2_MouseClick;
+        // 
+        // position1
+        // 
+        position1.Location = new System.Drawing.Point(
+            50,
+            50
+        );
+        position1.Name = "position1";
+        position1.Size = new System.Drawing.Size(
+            80,
+            80
+        );
+        position1.SizeMode   =  System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        position1.TabIndex   =  0;
+        position1.TabStop    =  false;
+        position1.MouseClick += position1_MouseClick;
+        // 
         // round
         // 
         round.Controls.Add(
@@ -141,7 +285,7 @@ partial class Main {
             turn
         );
         round.Font = new System.Drawing.Font(
-            "Segoe UI",
+            "Kristen ITC",
             12F,
             System.Drawing.FontStyle.Bold
         );
@@ -206,7 +350,7 @@ partial class Main {
             playerX_WinCount
         );
         statistics.Font = new System.Drawing.Font(
-            "Segoe UI",
+            "Kristen ITC",
             12F,
             System.Drawing.FontStyle.Bold
         );
@@ -242,7 +386,6 @@ partial class Main {
         playerO_WinCount.TabIndex  = 3;
         playerO_WinCount.Text      = "Player O = 0 time(s)";
         playerO_WinCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        playerO_WinCount.Visible   = false;
         // 
         // playerX_WinCount
         // 
@@ -263,7 +406,6 @@ partial class Main {
         playerX_WinCount.TabIndex  = 2;
         playerX_WinCount.Text      = "Player X = 0 time(s)";
         playerX_WinCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        playerX_WinCount.Visible   = false;
         // 
         // resetStatistics
         // 
@@ -294,132 +436,6 @@ partial class Main {
         resetRound.TabIndex                = 2;
         resetRound.Text                    = "Reset Round";
         resetRound.UseVisualStyleBackColor = true;
-        // 
-        // position1
-        // 
-        position1.Location = new System.Drawing.Point(
-            50,
-            50
-        );
-        position1.Name = "position1";
-        position1.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position1.TabIndex = 0;
-        position1.TabStop  = false;
-        // 
-        // position2
-        // 
-        position2.Location = new System.Drawing.Point(
-            160,
-            50
-        );
-        position2.Name = "position2";
-        position2.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position2.TabIndex = 1;
-        position2.TabStop  = false;
-        // 
-        // position3
-        // 
-        position3.Location = new System.Drawing.Point(
-            270,
-            50
-        );
-        position3.Name = "position3";
-        position3.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position3.TabIndex = 2;
-        position3.TabStop  = false;
-        // 
-        // position6
-        // 
-        position6.Location = new System.Drawing.Point(
-            270,
-            160
-        );
-        position6.Name = "position6";
-        position6.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position6.TabIndex = 5;
-        position6.TabStop  = false;
-        // 
-        // position5
-        // 
-        position5.Location = new System.Drawing.Point(
-            160,
-            160
-        );
-        position5.Name = "position5";
-        position5.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position5.TabIndex = 4;
-        position5.TabStop  = false;
-        // 
-        // position4
-        // 
-        position4.Location = new System.Drawing.Point(
-            50,
-            160
-        );
-        position4.Name = "position4";
-        position4.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position4.TabIndex = 3;
-        position4.TabStop  = false;
-        // 
-        // position9
-        // 
-        position9.Location = new System.Drawing.Point(
-            270,
-            270
-        );
-        position9.Name = "position9";
-        position9.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position9.TabIndex = 8;
-        position9.TabStop  = false;
-        // 
-        // position8
-        // 
-        position8.Location = new System.Drawing.Point(
-            160,
-            270
-        );
-        position8.Name = "position8";
-        position8.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position8.TabIndex = 7;
-        position8.TabStop  = false;
-        // 
-        // position7
-        // 
-        position7.Location = new System.Drawing.Point(
-            50,
-            270
-        );
-        position7.Name = "position7";
-        position7.Size = new System.Drawing.Size(
-            80,
-            80
-        );
-        position7.TabIndex = 6;
-        position7.TabStop  = false;
         // 
         // Main
         // 
@@ -456,21 +472,21 @@ partial class Main {
         game.ResumeLayout(
             false
         );
+        ((System.ComponentModel.ISupportInitialize) position9).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position8).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position7).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position6).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position5).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position4).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position3).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position2).EndInit();
+        ((System.ComponentModel.ISupportInitialize) position1).EndInit();
         round.ResumeLayout(
             false
         );
         statistics.ResumeLayout(
             false
         );
-        ((System.ComponentModel.ISupportInitialize) position1).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position2).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position3).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position6).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position5).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position4).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position9).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position8).EndInit();
-        ((System.ComponentModel.ISupportInitialize) position7).EndInit();
         ResumeLayout(
             false
         );
