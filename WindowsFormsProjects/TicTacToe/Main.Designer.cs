@@ -29,15 +29,18 @@ partial class Main {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title           = new System.Windows.Forms.Label();
-        game            = new System.Windows.Forms.GroupBox();
-        round           = new System.Windows.Forms.GroupBox();
-        turn            = new System.Windows.Forms.Label();
-        statistics      = new System.Windows.Forms.GroupBox();
-        resetStatistics = new System.Windows.Forms.Button();
-        resetRound      = new System.Windows.Forms.Button();
-        winner          = new System.Windows.Forms.Label();
+        title            = new System.Windows.Forms.Label();
+        game             = new System.Windows.Forms.GroupBox();
+        round            = new System.Windows.Forms.GroupBox();
+        winner           = new System.Windows.Forms.Label();
+        turn             = new System.Windows.Forms.Label();
+        statistics       = new System.Windows.Forms.GroupBox();
+        playerX_WinCount = new System.Windows.Forms.Label();
+        resetStatistics  = new System.Windows.Forms.Button();
+        resetRound       = new System.Windows.Forms.Button();
+        playerO_WinCount = new System.Windows.Forms.Label();
         round.SuspendLayout();
+        statistics.SuspendLayout();
         SuspendLayout();
         //
         // title
@@ -108,6 +111,26 @@ partial class Main {
         round.TabStop  = false;
         round.Text     = "Round 1";
         //
+        // winner
+        //
+        winner.Font = new System.Drawing.Font(
+            "Segoe UI",
+            12F
+        );
+        winner.ForeColor = System.Drawing.Color.Green;
+        winner.Location = new System.Drawing.Point(
+            15,
+            35
+        );
+        winner.Name = "winner";
+        winner.Size = new System.Drawing.Size(
+            120,
+            100
+        );
+        winner.TabIndex  = 1;
+        winner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        winner.Visible   = false;
+        //
         // turn
         //
         turn.Font = new System.Drawing.Font(
@@ -129,6 +152,12 @@ partial class Main {
         //
         // statistics
         //
+        statistics.Controls.Add(
+            playerO_WinCount
+        );
+        statistics.Controls.Add(
+            playerX_WinCount
+        );
         statistics.Font = new System.Drawing.Font(
             "Segoe UI",
             12F,
@@ -146,6 +175,27 @@ partial class Main {
         statistics.TabIndex = 3;
         statistics.TabStop  = false;
         statistics.Text     = "Statistics";
+        //
+        // playerX_WinCount
+        //
+        playerX_WinCount.Font = new System.Drawing.Font(
+            "Segoe UI",
+            9F
+        );
+        playerX_WinCount.ForeColor = System.Drawing.Color.Black;
+        playerX_WinCount.Location = new System.Drawing.Point(
+            15,
+            45
+        );
+        playerX_WinCount.Name = "playerX_WinCount";
+        playerX_WinCount.Size = new System.Drawing.Size(
+            120,
+            25
+        );
+        playerX_WinCount.TabIndex  = 2;
+        playerX_WinCount.Text      = "Player X = 99 time(s)";
+        playerX_WinCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        playerX_WinCount.Visible   = false;
         //
         // resetStatistics
         //
@@ -177,28 +227,29 @@ partial class Main {
         resetRound.Text                    = "Reset Round";
         resetRound.UseVisualStyleBackColor = true;
         //
-        // winner
+        // playerO_WinCount
         //
-        winner.Font = new System.Drawing.Font(
+        playerO_WinCount.Font = new System.Drawing.Font(
             "Segoe UI",
-            12F
+            9F
         );
-        winner.ForeColor = System.Drawing.Color.Green;
-        winner.Location = new System.Drawing.Point(
+        playerO_WinCount.ForeColor = System.Drawing.Color.Black;
+        playerO_WinCount.Location = new System.Drawing.Point(
             15,
-            35
+            90
         );
-        winner.Name = "winner";
-        winner.Size = new System.Drawing.Size(
+        playerO_WinCount.Name = "playerO_WinCount";
+        playerO_WinCount.Size = new System.Drawing.Size(
             120,
-            100
+            25
         );
-        winner.TabIndex  = 1;
-        winner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        winner.Visible   = false;
-        // 
+        playerO_WinCount.TabIndex  = 3;
+        playerO_WinCount.Text      = "Player O = 99 time(s)";
+        playerO_WinCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        playerO_WinCount.Visible   = false;
+        //
         // Main
-        // 
+        //
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
@@ -232,10 +283,17 @@ partial class Main {
         round.ResumeLayout(
             false
         );
+        statistics.ResumeLayout(
+            false
+        );
         ResumeLayout(
             false
         );
     }
+
+    private System.Windows.Forms.Label playerO_WinCount;
+
+    private System.Windows.Forms.Label playerX_WinCount;
 
     private System.Windows.Forms.Label winner;
 

@@ -13,6 +13,6 @@ public partial class Main : Form {
             @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\TicTacToe.ico"
         );
         turn.Text = "Player\nX\nTurn";
-        winner.Text = "Player\nX\nWon";
+        /*winner.Text = "Player\nX\nWon";*/
     }
 }
