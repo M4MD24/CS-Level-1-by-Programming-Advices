@@ -32,9 +32,12 @@ partial class Main {
         title           = new System.Windows.Forms.Label();
         game            = new System.Windows.Forms.GroupBox();
         round           = new System.Windows.Forms.GroupBox();
+        turn            = new System.Windows.Forms.Label();
         statistics      = new System.Windows.Forms.GroupBox();
         resetStatistics = new System.Windows.Forms.Button();
         resetRound      = new System.Windows.Forms.Button();
+        winner          = new System.Windows.Forms.Label();
+        round.SuspendLayout();
         SuspendLayout();
         //
         // title
@@ -63,7 +66,8 @@ partial class Main {
         //
         game.Font = new System.Drawing.Font(
             "Segoe UI",
-            12F
+            12F,
+            System.Drawing.FontStyle.Bold
         );
         game.Location = new System.Drawing.Point(
             250,
@@ -80,9 +84,16 @@ partial class Main {
         //
         // round
         //
+        round.Controls.Add(
+            winner
+        );
+        round.Controls.Add(
+            turn
+        );
         round.Font = new System.Drawing.Font(
             "Segoe UI",
-            12F
+            12F,
+            System.Drawing.FontStyle.Bold
         );
         round.Location = new System.Drawing.Point(
             50,
@@ -97,11 +108,31 @@ partial class Main {
         round.TabStop  = false;
         round.Text     = "Round 1";
         //
+        // turn
+        //
+        turn.Font = new System.Drawing.Font(
+            "Segoe UI",
+            12F
+        );
+        turn.ForeColor = System.Drawing.Color.Blue;
+        turn.Location = new System.Drawing.Point(
+            15,
+            35
+        );
+        turn.Name = "turn";
+        turn.Size = new System.Drawing.Size(
+            120,
+            100
+        );
+        turn.TabIndex  = 0;
+        turn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        //
         // statistics
         //
         statistics.Font = new System.Drawing.Font(
             "Segoe UI",
-            12F
+            12F,
+            System.Drawing.FontStyle.Bold
         );
         statistics.Location = new System.Drawing.Point(
             50,
@@ -146,8 +177,28 @@ partial class Main {
         resetRound.Text                    = "Reset Round";
         resetRound.UseVisualStyleBackColor = true;
         //
-        // Main
+        // winner
         //
+        winner.Font = new System.Drawing.Font(
+            "Segoe UI",
+            12F
+        );
+        winner.ForeColor = System.Drawing.Color.Green;
+        winner.Location = new System.Drawing.Point(
+            15,
+            35
+        );
+        winner.Name = "winner";
+        winner.Size = new System.Drawing.Size(
+            120,
+            100
+        );
+        winner.TabIndex  = 1;
+        winner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        winner.Visible   = false;
+        // 
+        // Main
+        // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
@@ -178,10 +229,17 @@ partial class Main {
         StartPosition =  System.Windows.Forms.FormStartPosition.CenterScreen;
         Text          =  "Tic Tac Toe";
         Load          += Main_Load;
+        round.ResumeLayout(
+            false
+        );
         ResumeLayout(
             false
         );
     }
+
+    private System.Windows.Forms.Label winner;
+
+    private System.Windows.Forms.Label turn;
 
     private System.Windows.Forms.Button resetRound;
 
