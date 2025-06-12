@@ -29,7 +29,30 @@ partial class Main {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
+        title = new System.Windows.Forms.Label();
         SuspendLayout();
+        // 
+        // title
+        // 
+        title.Font = new System.Drawing.Font(
+            "Kristen ITC",
+            27F,
+            System.Drawing.FontStyle.Bold,
+            System.Drawing.GraphicsUnit.Point,
+            ((byte) 0)
+        );
+        title.Location = new System.Drawing.Point(
+            375,
+            25
+        );
+        title.Name = "title";
+        title.Size = new System.Drawing.Size(
+            250,
+            50
+        );
+        title.TabIndex  = 0;
+        title.Text      = "Tic Tac Toe";
+        title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // Main
         // 
@@ -42,12 +65,18 @@ partial class Main {
             984,
             561
         );
-        Text =  "Tic Tac Toe";
-        Load += Main_Load;
+        Controls.Add(
+            title
+        );
+        StartPosition =  System.Windows.Forms.FormStartPosition.CenterScreen;
+        Text          =  "Tic Tac Toe";
+        Load          += Main_Load;
         ResumeLayout(
             false
         );
     }
+
+    private System.Windows.Forms.Label title;
 
     #endregion
 }
