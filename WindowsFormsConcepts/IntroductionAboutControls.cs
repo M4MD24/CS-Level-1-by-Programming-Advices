@@ -55,4 +55,11 @@ public partial class IntroductionAboutControls : Form {
     ) {
         new PictureBoxExample().Show();
     }
+
+    private void drawing_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new Drawing().Show();
+    }
 }

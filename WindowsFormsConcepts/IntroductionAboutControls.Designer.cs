@@ -37,6 +37,7 @@ partial class IntroductionAboutControls {
         checkBoxAndRadioButtonAndGroupBoxAndTag = new System.Windows.Forms.Button();
         textBox                                 = new System.Windows.Forms.Button();
         pictureBox                              = new System.Windows.Forms.Button();
+        drawing                                 = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
@@ -174,6 +175,22 @@ partial class IntroductionAboutControls {
         pictureBox.UseVisualStyleBackColor =  true;
         pictureBox.Click                   += pictureBox_Click;
         // 
+        // drawing
+        // 
+        drawing.Location = new System.Drawing.Point(
+            600,
+            225
+        );
+        drawing.Name = "drawing";
+        drawing.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        drawing.TabIndex                =  8;
+        drawing.Text                    =  "Drawing";
+        drawing.UseVisualStyleBackColor =  true;
+        drawing.Click                   += drawing_Click;
+        // 
         // IntroductionAboutControls
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -184,6 +201,9 @@ partial class IntroductionAboutControls {
         ClientSize = new System.Drawing.Size(
             809,
             311
+        );
+        Controls.Add(
+            drawing
         );
         Controls.Add(
             pictureBox
@@ -215,6 +235,8 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button drawing;
 
     private System.Windows.Forms.Button pictureBox;
 
