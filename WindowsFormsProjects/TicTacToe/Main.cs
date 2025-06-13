@@ -266,20 +266,28 @@ public partial class Main : Form {
             char targetPlayerSymbol = Convert.ToChar(
                 line[0].Tag!.ToString()!
             );
-            if (Convert.ToChar(
+            if (
+                Convert.ToChar(
                     line[1].Tag!
                            .ToString()!
                 ) != targetPlayerSymbol ||
                 Convert.ToChar(
                     line[2].Tag!
                            .ToString()!
-                ) != targetPlayerSymbol)
+                ) != targetPlayerSymbol
+            )
                 continue;
             displayWhoWon(
                 targetPlayerSymbol == 'X'
                         ? RoundStatus.PlayerXWon
                         : RoundStatus.PlayerOWon,
                 Color.Green
+            );
+            displayWinnerPositions(
+                line,
+                targetPlayerSymbol == 'X'
+                        ? RoundStatus.PlayerXWon
+                        : RoundStatus.PlayerOWon
             );
             return;
         }
@@ -290,6 +298,19 @@ public partial class Main : Form {
             RoundStatus.Draw,
             Color.Black
         );
+    }
+
+    private void displayWinnerPositions(
+        PictureBox[] line,
+        RoundStatus  roundStatus
+    ) {
+        char targetPlayerSymbol = roundStatus == RoundStatus.PlayerXWon
+                                          ? 'X'
+                                          : 'O';
+        foreach (PictureBox position in line)
+            position.Image = Image.FromFile(
+                $@"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\{targetPlayerSymbol}_Won.png"
+            );
     }
 
     private void displayWhoWon(
