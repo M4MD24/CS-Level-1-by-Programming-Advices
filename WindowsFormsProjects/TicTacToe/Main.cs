@@ -313,12 +313,12 @@ public partial class Main : Form {
             roundStatus
         );
         if (roundCount != STOP_GAME_AT)
-            playAgain.Visible = true;
+            playAgain.Enabled = true;
         else {
-            round.Enabled           = false;
-            statistics.Enabled      = false;
-            game.Enabled            = false;
-            note.ForeColor          = Color.OliveDrab;
+            round.Enabled      = false;
+            statistics.Enabled = false;
+            game.Enabled       = false;
+            note.ForeColor     = Color.OliveDrab;
         }
     }
 
@@ -355,7 +355,7 @@ public partial class Main : Form {
             sender,
             e
         );
-        playAgain.Visible  = false;
+        playAgain.Enabled  = false;
         round.Text         = $"Round {++roundCount}";
         turn.Visible       = true;
         winner.Visible     = false;
