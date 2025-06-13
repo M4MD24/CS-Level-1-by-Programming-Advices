@@ -433,9 +433,10 @@ partial class Main {
             100,
             25
         );
-        resetRound.TabIndex                = 2;
-        resetRound.Text                    = "Reset Round";
-        resetRound.UseVisualStyleBackColor = true;
+        resetRound.TabIndex                =  2;
+        resetRound.Text                    =  "Reset Round";
+        resetRound.UseVisualStyleBackColor =  true;
+        resetRound.Click                   += resetRound_Click;
         // 
         // Main
         // 

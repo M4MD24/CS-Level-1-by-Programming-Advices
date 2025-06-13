@@ -254,30 +254,50 @@ public partial class Main : Form {
             char targetPlayerSymbol = Convert.ToChar(
                 line[0].Tag!.ToString()!
             );
-            if (
-                Convert.ToChar(
+            if (Convert.ToChar(
                     line[1].Tag!
                            .ToString()!
-                ) == targetPlayerSymbol &&
+                ) != targetPlayerSymbol ||
                 Convert.ToChar(
                     line[2].Tag!
                            .ToString()!
-                ) == targetPlayerSymbol
-            ) {
-                anyoneWon      = true;
-                turn.Visible   = false;
-                winner.Visible = true;
-                winner.Text    = $"Player\n{targetPlayerSymbol}\nWon";
-                return;
-            }
+                ) != targetPlayerSymbol)
+                continue;
+            displayWhoWon(
+                $"Player\n{targetPlayerSymbol}\nWon",
+                Color.Green
+            );
+            return;
         }
 
         if (playerXClicks + playerOClicks != 9)
             return;
-        anyoneWon        = true;
-        turn.Visible     = false;
-        winner.Visible   = true;
-        winner.Text      = "Draw";
-        winner.ForeColor = Color.Black;
+        displayWhoWon(
+            "Draw",
+            Color.Black
+        );
+    }
+
+    private void displayWhoWon(
+        string text,
+        Color  color
+    ) {
+        anyoneWon          = true;
+        turn.Visible       = false;
+        winner.Visible     = true;
+        winner.Text        = text;
+        winner.ForeColor   = color;
+        resetRound.Enabled = false;
+    }
+
+    private void resetRound_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        initializeGameTable();
+        playerXTurn   = true;
+        turn.Text     = "Player\nX\nTurn";
+        playerXClicks = 0;
+        playerOClicks = 0;
     }
 }
