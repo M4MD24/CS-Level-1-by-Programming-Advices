@@ -47,8 +47,8 @@ partial class Main {
         statistics       = new System.Windows.Forms.GroupBox();
         playerO_WinCount = new System.Windows.Forms.Label();
         playerX_WinCount = new System.Windows.Forms.Label();
-        resetStatistics  = new System.Windows.Forms.Button();
         resetRound       = new System.Windows.Forms.Button();
+        note             = new System.Windows.Forms.Label();
         game.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize) position9).BeginInit();
         ((System.ComponentModel.ISupportInitialize) position8).BeginInit();
@@ -62,9 +62,9 @@ partial class Main {
         round.SuspendLayout();
         statistics.SuspendLayout();
         SuspendLayout();
-        // 
+        //
         // title
-        // 
+        //
         title.Font = new System.Drawing.Font(
             "Kristen ITC",
             27F,
@@ -84,9 +84,9 @@ partial class Main {
         title.TabIndex  = 0;
         title.Text      = "Tic Tac Toe";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
+        //
         // game
-        // 
+        //
         game.Controls.Add(
             playAgain
         );
@@ -135,9 +135,9 @@ partial class Main {
         game.TabStop  =  false;
         game.Text     =  "Game";
         game.Paint    += game_Paint;
-        // 
+        //
         // playAgain
-        // 
+        //
         playAgain.Font = new System.Drawing.Font(
             "Segoe UI",
             12F,
@@ -159,9 +159,9 @@ partial class Main {
         playAgain.UseVisualStyleBackColor =  true;
         playAgain.Visible                 =  false;
         playAgain.Click                   += playAgain_Click;
-        // 
+        //
         // position9
-        // 
+        //
         position9.Location = new System.Drawing.Point(
             270,
             270
@@ -175,9 +175,9 @@ partial class Main {
         position9.TabIndex   =  8;
         position9.TabStop    =  false;
         position9.MouseClick += position9_MouseClick;
-        // 
+        //
         // position8
-        // 
+        //
         position8.Location = new System.Drawing.Point(
             160,
             270
@@ -191,9 +191,9 @@ partial class Main {
         position8.TabIndex   =  7;
         position8.TabStop    =  false;
         position8.MouseClick += position8_MouseClick;
-        // 
+        //
         // position7
-        // 
+        //
         position7.Location = new System.Drawing.Point(
             50,
             270
@@ -207,9 +207,9 @@ partial class Main {
         position7.TabIndex   =  6;
         position7.TabStop    =  false;
         position7.MouseClick += position7_MouseClick;
-        // 
+        //
         // position6
-        // 
+        //
         position6.Location = new System.Drawing.Point(
             270,
             160
@@ -223,9 +223,9 @@ partial class Main {
         position6.TabIndex   =  5;
         position6.TabStop    =  false;
         position6.MouseClick += position6_MouseClick;
-        // 
+        //
         // position5
-        // 
+        //
         position5.Location = new System.Drawing.Point(
             160,
             160
@@ -239,9 +239,9 @@ partial class Main {
         position5.TabIndex   =  4;
         position5.TabStop    =  false;
         position5.MouseClick += position5_MouseClick;
-        // 
+        //
         // position4
-        // 
+        //
         position4.Location = new System.Drawing.Point(
             50,
             160
@@ -255,9 +255,9 @@ partial class Main {
         position4.TabIndex   =  3;
         position4.TabStop    =  false;
         position4.MouseClick += position4_MouseClick;
-        // 
+        //
         // position3
-        // 
+        //
         position3.Location = new System.Drawing.Point(
             270,
             50
@@ -271,9 +271,9 @@ partial class Main {
         position3.TabIndex   =  2;
         position3.TabStop    =  false;
         position3.MouseClick += position3_MouseClick;
-        // 
+        //
         // position2
-        // 
+        //
         position2.Location = new System.Drawing.Point(
             160,
             50
@@ -287,9 +287,9 @@ partial class Main {
         position2.TabIndex   =  1;
         position2.TabStop    =  false;
         position2.MouseClick += position2_MouseClick;
-        // 
+        //
         // position1
-        // 
+        //
         position1.Location = new System.Drawing.Point(
             50,
             50
@@ -303,9 +303,9 @@ partial class Main {
         position1.TabIndex   =  0;
         position1.TabStop    =  false;
         position1.MouseClick += position1_MouseClick;
-        // 
+        //
         // round
-        // 
+        //
         round.Controls.Add(
             winner
         );
@@ -329,9 +329,9 @@ partial class Main {
         round.TabIndex = 1;
         round.TabStop  = false;
         round.Text     = "Round 1";
-        // 
+        //
         // winner
-        // 
+        //
         winner.Font = new System.Drawing.Font(
             "Segoe UI",
             12F
@@ -349,9 +349,9 @@ partial class Main {
         winner.TabIndex  = 1;
         winner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         winner.Visible   = false;
-        // 
+        //
         // turn
-        // 
+        //
         turn.Font = new System.Drawing.Font(
             "Segoe UI",
             12F
@@ -368,9 +368,9 @@ partial class Main {
         );
         turn.TabIndex  = 0;
         turn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
+        //
         // statistics
-        // 
+        //
         statistics.Controls.Add(
             playerO_WinCount
         );
@@ -384,7 +384,7 @@ partial class Main {
         );
         statistics.Location = new System.Drawing.Point(
             50,
-            330
+            375
         );
         statistics.Name = "statistics";
         statistics.Size = new System.Drawing.Size(
@@ -394,9 +394,9 @@ partial class Main {
         statistics.TabIndex = 3;
         statistics.TabStop  = false;
         statistics.Text     = "Statistics";
-        // 
+        //
         // playerO_WinCount
-        // 
+        //
         playerO_WinCount.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -414,9 +414,9 @@ partial class Main {
         playerO_WinCount.TabIndex  = 3;
         playerO_WinCount.Text      = "Player O = 0 time(s)";
         playerO_WinCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
+        //
         // playerX_WinCount
-        // 
+        //
         playerX_WinCount.Font = new System.Drawing.Font(
             "Segoe UI",
             9F
@@ -434,27 +434,12 @@ partial class Main {
         playerX_WinCount.TabIndex  = 2;
         playerX_WinCount.Text      = "Player X = 0 time(s)";
         playerX_WinCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        // 
-        // resetStatistics
-        // 
-        resetStatistics.Location = new System.Drawing.Point(
-            75,
-            495
-        );
-        resetStatistics.Name = "resetStatistics";
-        resetStatistics.Size = new System.Drawing.Size(
-            100,
-            25
-        );
-        resetStatistics.TabIndex                = 4;
-        resetStatistics.Text                    = "Reset Statistics";
-        resetStatistics.UseVisualStyleBackColor = true;
-        // 
+        //
         // resetRound
-        // 
+        //
         resetRound.Location = new System.Drawing.Point(
             75,
-            290
+            300
         );
         resetRound.Name = "resetRound";
         resetRound.Size = new System.Drawing.Size(
@@ -465,9 +450,28 @@ partial class Main {
         resetRound.Text                    =  "Reset Round";
         resetRound.UseVisualStyleBackColor =  true;
         resetRound.Click                   += resetRound_Click;
-        // 
+        //
+        // note
+        //
+        note.Font = new System.Drawing.Font(
+            "Kristen ITC",
+            9F,
+            System.Drawing.FontStyle.Bold
+        );
+        note.Location = new System.Drawing.Point(
+            50,
+            575
+        );
+        note.Name = "note";
+        note.Size = new System.Drawing.Size(
+            600,
+            50
+        );
+        note.TabIndex  = 6;
+        note.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        //
         // Main
-        // 
+        //
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
@@ -475,10 +479,10 @@ partial class Main {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             684,
-            561
+            661
         );
         Controls.Add(
-            resetStatistics
+            note
         );
         Controls.Add(
             resetRound
@@ -521,6 +525,8 @@ partial class Main {
         );
     }
 
+    private System.Windows.Forms.Label note;
+
     private System.Windows.Forms.Button playAgain;
 
     private System.Windows.Forms.PictureBox position3;
@@ -544,8 +550,6 @@ partial class Main {
     private System.Windows.Forms.Label turn;
 
     private System.Windows.Forms.Button resetRound;
-
-    private System.Windows.Forms.Button resetStatistics;
 
     private System.Windows.Forms.GroupBox statistics;
 

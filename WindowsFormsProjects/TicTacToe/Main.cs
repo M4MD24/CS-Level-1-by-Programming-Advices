@@ -16,9 +16,11 @@ public partial class Main : Form {
     private byte roundCount = 1;
     private byte xPlayerWonCount,
                  oPlayerWonCount;
+    private const byte STOP_GAME_AT = 10;
 
     public Main() {
         InitializeComponent();
+        note.Text = $"Important Note: You Can Play {STOP_GAME_AT} Rounds Only, Playing for a long time isn't beneficial.";
     }
 
     private void Main_Load(
@@ -310,6 +312,14 @@ public partial class Main : Form {
         increasePlayerWins(
             roundStatus
         );
+        if (roundCount != STOP_GAME_AT)
+            playAgain.Visible = true;
+        else {
+            round.Enabled           = false;
+            statistics.Enabled      = false;
+            game.Enabled            = false;
+            note.ForeColor          = Color.OliveDrab;
+        }
     }
 
     private void increasePlayerWins(
@@ -323,8 +333,6 @@ public partial class Main : Form {
                 playerO_WinCount.Text = $"Player O = {++oPlayerWonCount} time(s)";
             break;
         }
-
-        playAgain.Visible = true;
     }
 
     private void resetRound_Click(
