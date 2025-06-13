@@ -187,6 +187,7 @@ public partial class Main : Form {
             endRound
         )
             return;
+        resetRound.Enabled = true;
         char playerSymbol = playerXTurn
                                     ? 'X'
                                     : 'O';
@@ -340,11 +341,12 @@ public partial class Main : Form {
         EventArgs e
     ) {
         initializeGameTable();
-        playerXTurn   = true;
-        turn.Text     = "Player\nX\nTurn";
-        playerXClicks = 0;
-        playerOClicks = 0;
-        endRound      = false;
+        playerXTurn        = true;
+        turn.Text          = "Player\nX\nTurn";
+        playerXClicks      = 0;
+        playerOClicks      = 0;
+        endRound           = false;
+        resetRound.Enabled = false;
     }
 
     private void playAgain_Click(
@@ -355,10 +357,9 @@ public partial class Main : Form {
             sender,
             e
         );
-        playAgain.Enabled  = false;
-        round.Text         = $"Round {++roundCount}";
-        turn.Visible       = true;
-        winner.Visible     = false;
-        resetRound.Enabled = true;
+        playAgain.Enabled = false;
+        round.Text        = $"Round {++roundCount}";
+        turn.Visible      = true;
+        winner.Visible    = false;
     }
 }

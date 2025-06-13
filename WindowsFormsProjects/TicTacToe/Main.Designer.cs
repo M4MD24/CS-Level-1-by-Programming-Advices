@@ -434,6 +434,7 @@ partial class Main {
         //
         // resetRound
         //
+        resetRound.Enabled = false;
         resetRound.Location = new System.Drawing.Point(
             75,
             300
