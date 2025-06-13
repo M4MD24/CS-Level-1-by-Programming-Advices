@@ -6,7 +6,9 @@ public partial class Main : Form {
     private bool playerXTurn = true;
     private byte playerXClicks = 0,
                  playerOClicks = 0;
-    private bool anyoneWon = false;
+    private bool anyoneWon  = false;
+    private byte xPlayerWonCount = 0,
+                 oPlayerWonCount = 0;
 
     public Main() {
         InitializeComponent();
@@ -288,6 +290,14 @@ public partial class Main : Form {
         winner.Text        = text;
         winner.ForeColor   = color;
         resetRound.Enabled = false;
+        increasePlayerWins();
+    }
+
+    private void increasePlayerWins() {
+        if (!playerXTurn)
+            playerX_WinCount.Text = $"Player X = {++xPlayerWonCount} time(s)";
+        else
+            playerO_WinCount.Text = $"Player O = {++oPlayerWonCount} time(s)";
     }
 
     private void resetRound_Click(
