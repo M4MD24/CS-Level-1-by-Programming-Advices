@@ -4,6 +4,9 @@ namespace TicTacToe;
 
 public partial class Main : Form {
     private bool playerXTurn = true;
+    private byte playerXClicks = 0,
+                 playerOClicks = 0;
+    private bool anyoneWon = false;
 
     public Main() {
         InitializeComponent();
@@ -17,7 +20,6 @@ public partial class Main : Form {
             @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\TicTacToe.ico"
         );
         turn.Text = "Player\nX\nTurn";
-        /*winner.Text = "Player\nX\nWon";*/
         initializeGameTable();
     }
 
@@ -157,26 +159,6 @@ public partial class Main : Form {
         );
     }
 
-    private void selectPosition(
-        PictureBox position
-    ) {
-        if (
-            position.Tag != null
-        )
-            return;
-        position.Image = Image.FromFile(
-            $@"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\{
-                (
-                    playerXTurn
-                            ? "X"
-                            : "O"
-                )
-            }.png"
-        );
-        position.Tag = "";
-        playerXTurn  = !playerXTurn;
-    }
-
     private void position9_MouseClick(
         object         sender,
         MouseEventArgs e
@@ -184,5 +166,118 @@ public partial class Main : Form {
         selectPosition(
             position9
         );
+    }
+
+    private void selectPosition(
+        PictureBox position
+    ) {
+        if (
+            position.Tag != null ||
+            anyoneWon
+        )
+            return;
+        char playerSymbol = playerXTurn
+                                    ? 'X'
+                                    : 'O';
+        position.Image = Image.FromFile(
+            $@"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\TicTacToe\resources\{playerSymbol}.png"
+        );
+        position.Tag = playerSymbol;
+        if (playerXTurn)
+            playerXClicks++;
+        else
+            playerOClicks++;
+        playerXTurn = !playerXTurn;
+        playerSymbol = playerXTurn
+                               ? 'X'
+                               : 'O';
+        turn.Text = $"Player\n{playerSymbol}\nTurn";
+        if (
+            playerXClicks >= 3 ||
+            playerOClicks >= 3
+        )
+            checkWinner();
+    }
+
+    private void checkWinner() {
+        PictureBox[][] lines = [
+            [
+                position1,
+                position2,
+                position3
+            ],
+            [
+                position4,
+                position5,
+                position6
+            ],
+            [
+                position7,
+                position8,
+                position9
+            ],
+            [
+                position1,
+                position4,
+                position7
+            ],
+            [
+                position2,
+                position5,
+                position8
+            ],
+            [
+                position3,
+                position6,
+                position9
+            ],
+            [
+                position1,
+                position5,
+                position9
+            ],
+            [
+                position3,
+                position5,
+                position7
+            ]
+        ];
+
+        foreach (var line in lines) {
+            if (
+                line.Any(
+                    position => position.Tag == null
+                )
+            )
+                continue;
+
+            char targetPlayerSymbol = Convert.ToChar(
+                line[0].Tag!.ToString()!
+            );
+            if (
+                Convert.ToChar(
+                    line[1].Tag!
+                           .ToString()!
+                ) == targetPlayerSymbol &&
+                Convert.ToChar(
+                    line[2].Tag!
+                           .ToString()!
+                ) == targetPlayerSymbol
+            ) {
+                anyoneWon      = true;
+                turn.Visible   = false;
+                winner.Visible = true;
+                winner.Text    = $"Player\n{targetPlayerSymbol}\nWon";
+                return;
+            }
+        }
+
+        if (playerXClicks + playerOClicks != 9)
+            return;
+        anyoneWon        = true;
+        turn.Visible     = false;
+        winner.Visible   = true;
+        winner.Text      = "Draw";
+        winner.ForeColor = Color.Black;
     }
 }
