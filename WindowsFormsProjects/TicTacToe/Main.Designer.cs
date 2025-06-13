@@ -31,6 +31,7 @@ partial class Main {
     private void InitializeComponent() {
         title            = new System.Windows.Forms.Label();
         game             = new System.Windows.Forms.GroupBox();
+        playAgain        = new System.Windows.Forms.Button();
         position9        = new System.Windows.Forms.PictureBox();
         position8        = new System.Windows.Forms.PictureBox();
         position7        = new System.Windows.Forms.PictureBox();
@@ -87,6 +88,9 @@ partial class Main {
         // game
         // 
         game.Controls.Add(
+            playAgain
+        );
+        game.Controls.Add(
             position9
         );
         game.Controls.Add(
@@ -131,6 +135,30 @@ partial class Main {
         game.TabStop  =  false;
         game.Text     =  "Game";
         game.Paint    += game_Paint;
+        // 
+        // playAgain
+        // 
+        playAgain.Font = new System.Drawing.Font(
+            "Segoe UI",
+            12F,
+            System.Drawing.FontStyle.Bold,
+            System.Drawing.GraphicsUnit.Point,
+            ((byte) 0)
+        );
+        playAgain.Location = new System.Drawing.Point(
+            100,
+            175
+        );
+        playAgain.Name = "playAgain";
+        playAgain.Size = new System.Drawing.Size(
+            200,
+            50
+        );
+        playAgain.TabIndex                =  6;
+        playAgain.Text                    =  "Play Again";
+        playAgain.UseVisualStyleBackColor =  true;
+        playAgain.Visible                 =  false;
+        playAgain.Click                   += playAgain_Click;
         // 
         // position9
         // 
@@ -492,6 +520,8 @@ partial class Main {
             false
         );
     }
+
+    private System.Windows.Forms.Button playAgain;
 
     private System.Windows.Forms.PictureBox position3;
 

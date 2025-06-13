@@ -3,12 +3,19 @@ using System.Drawing.Drawing2D;
 namespace TicTacToe;
 
 public partial class Main : Form {
+    private enum RoundStatus {
+        PlayerXWon,
+        PlayerOWon,
+        Draw
+    }
+
     private bool playerXTurn = true;
-    private byte playerXClicks = 0,
-                 playerOClicks = 0;
-    private bool anyoneWon  = false;
-    private byte xPlayerWonCount = 0,
-                 oPlayerWonCount = 0;
+    private byte playerXClicks,
+                 playerOClicks;
+    private bool endRound;
+    private byte roundCount = 1;
+    private byte xPlayerWonCount,
+                 oPlayerWonCount;
 
     public Main() {
         InitializeComponent();
@@ -175,7 +182,7 @@ public partial class Main : Form {
     ) {
         if (
             position.Tag != null ||
-            anyoneWon
+            endRound
         )
             return;
         char playerSymbol = playerXTurn
@@ -266,7 +273,9 @@ public partial class Main : Form {
                 ) != targetPlayerSymbol)
                 continue;
             displayWhoWon(
-                $"Player\n{targetPlayerSymbol}\nWon",
+                targetPlayerSymbol == 'X'
+                        ? RoundStatus.PlayerXWon
+                        : RoundStatus.PlayerOWon,
                 Color.Green
             );
             return;
@@ -275,29 +284,47 @@ public partial class Main : Form {
         if (playerXClicks + playerOClicks != 9)
             return;
         displayWhoWon(
-            "Draw",
+            RoundStatus.Draw,
             Color.Black
         );
     }
 
     private void displayWhoWon(
-        string text,
-        Color  color
+        RoundStatus roundStatus,
+        Color       color
     ) {
-        anyoneWon          = true;
-        turn.Visible       = false;
-        winner.Visible     = true;
-        winner.Text        = text;
+        endRound       = true;
+        turn.Visible   = false;
+        winner.Visible = true;
+        winner.Text = roundStatus == RoundStatus.Draw
+                              ? "Draw"
+                              : $"Player\n{
+                                  (
+                                      roundStatus == RoundStatus.PlayerXWon
+                                              ? 'X'
+                                              : 'O'
+                                  )
+                              }\nWon";
         winner.ForeColor   = color;
         resetRound.Enabled = false;
-        increasePlayerWins();
+        increasePlayerWins(
+            roundStatus
+        );
     }
 
-    private void increasePlayerWins() {
-        if (!playerXTurn)
-            playerX_WinCount.Text = $"Player X = {++xPlayerWonCount} time(s)";
-        else
-            playerO_WinCount.Text = $"Player O = {++oPlayerWonCount} time(s)";
+    private void increasePlayerWins(
+        RoundStatus roundStatus
+    ) {
+        switch (roundStatus) {
+            case RoundStatus.PlayerXWon:
+                playerX_WinCount.Text = $"Player X = {++xPlayerWonCount} time(s)";
+            break;
+            case RoundStatus.PlayerOWon:
+                playerO_WinCount.Text = $"Player O = {++oPlayerWonCount} time(s)";
+            break;
+        }
+
+        playAgain.Visible = true;
     }
 
     private void resetRound_Click(
@@ -309,5 +336,21 @@ public partial class Main : Form {
         turn.Text     = "Player\nX\nTurn";
         playerXClicks = 0;
         playerOClicks = 0;
+        endRound      = false;
+    }
+
+    private void playAgain_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        resetRound_Click(
+            sender,
+            e
+        );
+        playAgain.Visible  = false;
+        round.Text         = $"Round {++roundCount}";
+        turn.Visible       = true;
+        winner.Visible     = false;
+        resetRound.Enabled = true;
     }
 }
