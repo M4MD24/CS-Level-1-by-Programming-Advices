@@ -1,4 +1,4 @@
-namespace DisplayArrowDirection;
+namespace DisplayArrowDirections;
 
 public partial class Main : Form {
     public Main() {
@@ -10,10 +10,10 @@ public partial class Main : Form {
         EventArgs e
     ) {
         Icon = new Icon(
-            @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\DisplayArrowDirection\DisplayArrowDirection\resources\ArrowDirectionLine.ico"
+            @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\DisplayArrowDirections\resources\ArrowDirectionLine.ico"
         );
         image.Image = Image.FromFile(
-            @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\DisplayArrowDirection\DisplayArrowDirection\resources\Question.png"
+            @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\DisplayArrowDirections\resources\Question.png"
         );
         initializeOptions();
     }
@@ -50,7 +50,7 @@ public partial class Main : Form {
         EventArgs e
     ) {
         image.Image = Image.FromFile(
-            $@"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\DisplayArrowDirection\DisplayArrowDirection\resources\arrow_direction\ArrowCircle{
+            $@"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\DisplayArrowDirections\resources\arrow_direction\ArrowCircle{
                 arrowDirections.Text.Replace(
                     " ",
                     ""

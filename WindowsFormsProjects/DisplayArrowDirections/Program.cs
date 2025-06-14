@@ -1,4 +1,4 @@
-namespace DisplayArrowDirection;
+namespace DisplayArrowDirections;
 
 static class Program {
     /// <summary>

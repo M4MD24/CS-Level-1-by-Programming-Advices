@@ -1,4 +1,4 @@
-﻿namespace DisplayArrowDirection;
+﻿namespace DisplayArrowDirections;
 
 partial class Main {
     /// <summary>
@@ -34,9 +34,9 @@ partial class Main {
         arrowDirections = new System.Windows.Forms.ComboBox();
         ((System.ComponentModel.ISupportInitialize) image).BeginInit();
         SuspendLayout();
-        // 
+        //
         // name
-        // 
+        //
         name.Font = new System.Drawing.Font(
             "Segoe UI",
             20.25F,
@@ -54,9 +54,9 @@ partial class Main {
         name.TabIndex  = 0;
         name.Text      = "Unknown";
         name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
+        //
         // image
-        // 
+        //
         image.Location = new System.Drawing.Point(
             50,
             50
@@ -69,9 +69,9 @@ partial class Main {
         image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         image.TabIndex = 1;
         image.TabStop  = false;
-        // 
+        //
         // arrowDirections
-        // 
+        //
         arrowDirections.DropDownStyle     = System.Windows.Forms.ComboBoxStyle.DropDownList;
         arrowDirections.FormattingEnabled = true;
         arrowDirections.Location = new System.Drawing.Point(
@@ -85,9 +85,9 @@ partial class Main {
         );
         arrowDirections.TabIndex             =  2;
         arrowDirections.SelectedIndexChanged += arrowDirections_SelectedIndexChanged;
-        // 
+        //
         // Main
-        // 
+        //
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
@@ -107,7 +107,7 @@ partial class Main {
             name
         );
         StartPosition =  System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          =  "Display Arrow Direction";
+        Text          =  "Display Arrow Directions";
         Load          += Main_Load;
         ((System.ComponentModel.ISupportInitialize) image).EndInit();
         ResumeLayout(
