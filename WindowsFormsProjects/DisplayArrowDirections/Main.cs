@@ -49,6 +49,7 @@ public partial class Main : Form {
         object    sender,
         EventArgs e
     ) {
+        name.Text = arrowDirections.Text;
         image.Image = Image.FromFile(
             $@"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsProjects\DisplayArrowDirections\resources\arrow_direction\ArrowCircle{
                 arrowDirections.Text.Replace(

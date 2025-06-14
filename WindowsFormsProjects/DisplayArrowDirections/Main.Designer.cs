@@ -34,29 +34,29 @@ partial class Main {
         arrowDirections = new System.Windows.Forms.ComboBox();
         ((System.ComponentModel.ISupportInitialize) image).BeginInit();
         SuspendLayout();
-        //
+        // 
         // name
-        //
+        // 
         name.Font = new System.Drawing.Font(
             "Segoe UI",
             20.25F,
             System.Drawing.FontStyle.Bold
         );
         name.Location = new System.Drawing.Point(
-            125,
+            100,
             0
         );
         name.Name = "name";
         name.Size = new System.Drawing.Size(
-            150,
+            200,
             50
         );
         name.TabIndex  = 0;
         name.Text      = "Unknown";
         name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        //
+        // 
         // image
-        //
+        // 
         image.Location = new System.Drawing.Point(
             50,
             50
@@ -69,9 +69,9 @@ partial class Main {
         image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         image.TabIndex = 1;
         image.TabStop  = false;
-        //
+        // 
         // arrowDirections
-        //
+        // 
         arrowDirections.DropDownStyle     = System.Windows.Forms.ComboBoxStyle.DropDownList;
         arrowDirections.FormattingEnabled = true;
         arrowDirections.Location = new System.Drawing.Point(
@@ -85,9 +85,9 @@ partial class Main {
         );
         arrowDirections.TabIndex             =  2;
         arrowDirections.SelectedIndexChanged += arrowDirections_SelectedIndexChanged;
-        //
+        // 
         // Main
-        //
+        // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
