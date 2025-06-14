@@ -39,6 +39,7 @@ partial class IntroductionAboutControls {
         pictureBox                              = new System.Windows.Forms.Button();
         drawing                                 = new System.Windows.Forms.Button();
         maskedTextBox                           = new System.Windows.Forms.Button();
+        comboBox                                = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
@@ -208,6 +209,22 @@ partial class IntroductionAboutControls {
         maskedTextBox.UseVisualStyleBackColor =  true;
         maskedTextBox.Click                   += maskedTextBox_Click;
         // 
+        // comboBox
+        // 
+        comboBox.Location = new System.Drawing.Point(
+            200,
+            300
+        );
+        comboBox.Name = "comboBox";
+        comboBox.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        comboBox.TabIndex                =  10;
+        comboBox.Text                    =  "ComboBox";
+        comboBox.UseVisualStyleBackColor =  true;
+        comboBox.Click                   += comboBox_Click;
+        // 
         // IntroductionAboutControls
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -218,6 +235,9 @@ partial class IntroductionAboutControls {
         ClientSize = new System.Drawing.Size(
             809,
             386
+        );
+        Controls.Add(
+            comboBox
         );
         Controls.Add(
             maskedTextBox
@@ -255,6 +275,8 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button comboBox;
 
     private System.Windows.Forms.Button maskedTextBox;
 

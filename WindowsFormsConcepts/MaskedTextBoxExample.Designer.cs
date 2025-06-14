@@ -48,7 +48,7 @@ partial class MaskedTextBoxExample {
         );
         title.ForeColor = System.Drawing.Color.CornflowerBlue;
         title.Location = new System.Drawing.Point(
-            225,
+            50,
             25
         );
         title.Name = "title";
@@ -64,7 +64,7 @@ partial class MaskedTextBoxExample {
         // 
         maskedTextBoxWithShortDate.Location = new System.Drawing.Point(
             50,
-            100
+            140
         );
         maskedTextBoxWithShortDate.Mask = "00/00/0000";
         maskedTextBoxWithShortDate.Name = "maskedTextBoxWithShortDate";
@@ -80,7 +80,7 @@ partial class MaskedTextBoxExample {
         maskedTextBoxWithCustomAndBeepOnError.BeepOnError = true;
         maskedTextBoxWithCustomAndBeepOnError.Location = new System.Drawing.Point(
             50,
-            175
+            215
         );
         maskedTextBoxWithCustomAndBeepOnError.Mask = "00/00/1400";
         maskedTextBoxWithCustomAndBeepOnError.Name = "maskedTextBoxWithCustomAndBeepOnError";
@@ -94,7 +94,7 @@ partial class MaskedTextBoxExample {
         // 
         submit.Location = new System.Drawing.Point(
             50,
-            210
+            250
         );
         submit.Name = "submit";
         submit.Size = new System.Drawing.Size(
@@ -114,7 +114,7 @@ partial class MaskedTextBoxExample {
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            784,
+            434,
             361
         );
         Controls.Add(

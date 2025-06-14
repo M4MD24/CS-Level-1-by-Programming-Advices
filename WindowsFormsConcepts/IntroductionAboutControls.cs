@@ -69,4 +69,11 @@ public partial class IntroductionAboutControls : Form {
     ) {
         new MaskedTextBoxExample().Show();
     }
+
+    private void comboBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new ComboBoxExample().Show();
+    }
 }

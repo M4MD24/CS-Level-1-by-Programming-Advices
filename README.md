@@ -116,7 +116,7 @@
                 4. [PictureBox](WindowsFormsConcepts/PictureBox)
                 5. [Drawing](WindowsFormsConcepts/Drawing.cs)
                 6. [MaskedTextBox](WindowsFormsConcepts/MaskedTextBoxExample.cs)
-                7. ComboBox
+                7. [ComboBox](WindowsFormsConcepts/ComboBoxExample.cs)
                 8. LinkLabel
                 9. CheckedListBox
                 10. DateTime Controls
