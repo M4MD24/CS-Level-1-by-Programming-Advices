@@ -38,6 +38,8 @@ partial class IntroductionAboutControls {
         textBox                                 = new System.Windows.Forms.Button();
         pictureBox                              = new System.Windows.Forms.Button();
         drawing                                 = new System.Windows.Forms.Button();
+        maskedTextBox                           = new System.Windows.Forms.Button();
+        comboBox                                = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
@@ -135,7 +137,7 @@ partial class IntroductionAboutControls {
         );
         checkBoxAndRadioButtonAndGroupBoxAndTag.Name = "checkBoxAndRadioButtonAndGroupBoxAndTag";
         checkBoxAndRadioButtonAndGroupBoxAndTag.Size = new System.Drawing.Size(
-            300,
+            350,
             50
         );
         checkBoxAndRadioButtonAndGroupBoxAndTag.TabIndex                =  5;
@@ -146,7 +148,7 @@ partial class IntroductionAboutControls {
         // textBox
         // 
         textBox.Location = new System.Drawing.Point(
-            375,
+            425,
             225
         );
         textBox.Name = "textBox";
@@ -162,7 +164,7 @@ partial class IntroductionAboutControls {
         // pictureBox
         // 
         pictureBox.Location = new System.Drawing.Point(
-            475,
+            525,
             225
         );
         pictureBox.Name = "pictureBox";
@@ -178,7 +180,7 @@ partial class IntroductionAboutControls {
         // drawing
         // 
         drawing.Location = new System.Drawing.Point(
-            600,
+            650,
             225
         );
         drawing.Name = "drawing";
@@ -191,6 +193,38 @@ partial class IntroductionAboutControls {
         drawing.UseVisualStyleBackColor =  true;
         drawing.Click                   += drawing_Click;
         // 
+        // maskedTextBox
+        // 
+        maskedTextBox.Location = new System.Drawing.Point(
+            50,
+            300
+        );
+        maskedTextBox.Name = "maskedTextBox";
+        maskedTextBox.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        maskedTextBox.TabIndex                =  9;
+        maskedTextBox.Text                    =  "MaskedTextBox";
+        maskedTextBox.UseVisualStyleBackColor =  true;
+        maskedTextBox.Click                   += maskedTextBox_Click;
+        // 
+        // comboBox
+        // 
+        comboBox.Location = new System.Drawing.Point(
+            200,
+            300
+        );
+        comboBox.Name = "comboBox";
+        comboBox.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        comboBox.TabIndex                =  10;
+        comboBox.Text                    =  "ComboBox";
+        comboBox.UseVisualStyleBackColor =  true;
+        comboBox.Click                   += comboBox_Click;
+        // 
         // IntroductionAboutControls
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -200,7 +234,13 @@ partial class IntroductionAboutControls {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             809,
-            311
+            386
+        );
+        Controls.Add(
+            comboBox
+        );
+        Controls.Add(
+            maskedTextBox
         );
         Controls.Add(
             drawing
@@ -235,6 +275,10 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button comboBox;
+
+    private System.Windows.Forms.Button maskedTextBox;
 
     private System.Windows.Forms.Button drawing;
 
