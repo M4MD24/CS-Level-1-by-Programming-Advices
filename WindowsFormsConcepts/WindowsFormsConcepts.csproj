@@ -30,6 +30,15 @@
       <Compile Update="CheckBoxAndRadioButtonAndGroupBoxAndTag.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="TextBoxExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="PictureBox\PictureBoxExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Drawing.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

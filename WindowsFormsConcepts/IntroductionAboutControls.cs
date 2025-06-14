@@ -1,3 +1,5 @@
+using WindowsFormsConcepts.PictureBox;
+
 namespace WindowsFormsConcepts;
 
 public partial class IntroductionAboutControls : Form {
@@ -38,5 +40,26 @@ public partial class IntroductionAboutControls : Form {
         EventArgs e
     ) {
         new CheckBoxAndRadioButtonAndGroupBoxAndTag().Show();
+    }
+
+    private void textBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new TextBoxExample().Show();
+    }
+
+    private void pictureBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new PictureBoxExample().Show();
+    }
+
+    private void drawing_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new Drawing().Show();
     }
 }
