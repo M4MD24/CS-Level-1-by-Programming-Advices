@@ -115,6 +115,7 @@
                 3. [TextBox](WindowsFormsConcepts/TextBoxExample.cs)
                 4. [PictureBox](WindowsFormsConcepts/PictureBox)
                 5. [Drawing](WindowsFormsConcepts/Drawing.cs)
+                6. [MaskedTextBox](WindowsFormsConcepts/MaskedTextBoxExample.cs)
             2. [Projects](WindowsFormsProjects)
                 1. [Pizza Order System](WindowsFormsProjects/PizzaOrderSystem)
                 2. [Display Number](WindowsFormsProjects/DisplayNumber)
