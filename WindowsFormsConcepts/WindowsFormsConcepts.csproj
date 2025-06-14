@@ -39,6 +39,12 @@
       <Compile Update="Drawing.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="MaskedTextBoxExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="ComboBoxExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
