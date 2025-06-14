@@ -119,3 +119,4 @@
                 1. [Pizza Order System](WindowsFormsProjects/PizzaOrderSystem)
                 2. [Display Number](WindowsFormsProjects/DisplayNumber)
                 3. [Tic-Tac-Toe](WindowsFormsProjects/TicTacToe)
+                4. [Display Arrow Directions](WindowsFormsProjects/DisplayArrowDirection)
