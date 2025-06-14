@@ -1,6 +1,6 @@
 # C# Level 1
 
-**Important Note:** To Run Any File Rename Main Method from "main" to "Main", Because can't run 2 Static "Main" Methods in One Project
+**Important Note for Console App Projects:** To Run Any File Rename Main Method from "main" to "Main", Because can't run 2 Static "Main" Methods in One Project
 
 1. [Concepts](src/_1_concepts)
     1. Library, Framework and Platform
