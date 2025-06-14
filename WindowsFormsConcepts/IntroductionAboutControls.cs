@@ -67,6 +67,6 @@ public partial class IntroductionAboutControls : Form {
         object    sender,
         EventArgs e
     ) {
-        new MaskedTextBox().Show();
+        new MaskedTextBoxExample().Show();
     }
 }

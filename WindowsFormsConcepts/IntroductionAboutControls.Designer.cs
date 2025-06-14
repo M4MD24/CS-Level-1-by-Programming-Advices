@@ -196,7 +196,7 @@ partial class IntroductionAboutControls {
         // 
         maskedTextBox.Location = new System.Drawing.Point(
             50,
-            292
+            300
         );
         maskedTextBox.Name = "maskedTextBox";
         maskedTextBox.Size = new System.Drawing.Size(

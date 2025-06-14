@@ -116,6 +116,23 @@
                 4. [PictureBox](WindowsFormsConcepts/PictureBox)
                 5. [Drawing](WindowsFormsConcepts/Drawing.cs)
                 6. [MaskedTextBox](WindowsFormsConcepts/MaskedTextBoxExample.cs)
+                7. ComboBox
+                8. LinkLabel
+                9. CheckedListBox
+                10. DateTime Controls
+                11. Timer
+                12. NotifyIcon
+                13. TreeView
+                14. ImageList
+                15. ProgressBar
+                16. ListView
+                17. Error Provider
+                18. TrackBar
+                19. NumericUpDown
+                20. Containers
+                21. Dialogs
+                22. Multiple Documents Interface (MDI) Container
+                23. Menus
             2. [Projects](WindowsFormsProjects)
                 1. [Pizza Order System](WindowsFormsProjects/PizzaOrderSystem)
                 2. [Display Number](WindowsFormsProjects/DisplayNumber)
