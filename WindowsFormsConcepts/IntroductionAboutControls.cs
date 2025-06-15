@@ -76,4 +76,18 @@ public partial class IntroductionAboutControls : Form {
     ) {
         new ComboBoxExample().Show();
     }
+
+    private void linkLabel_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new LinkLabelExample().Show();
+    }
+
+    private void checkedListBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new CheckedListBoxExample().Show();
+    }
 }

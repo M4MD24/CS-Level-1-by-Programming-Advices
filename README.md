@@ -117,8 +117,8 @@
                 5. [Drawing](WindowsFormsConcepts/Drawing.cs)
                 6. [MaskedTextBox](WindowsFormsConcepts/MaskedTextBoxExample.cs)
                 7. [ComboBox](WindowsFormsConcepts/ComboBoxExample.cs)
-                8. LinkLabel
-                9. CheckedListBox
+                8. [LinkLabel](WindowsFormsConcepts/LinkLabelExample.cs)
+                9. [CheckedListBox](WindowsFormsConcepts/CheckedListBoxExample.cs)
                 10. DateTime Controls
                 11. Timer
                 12. NotifyIcon
