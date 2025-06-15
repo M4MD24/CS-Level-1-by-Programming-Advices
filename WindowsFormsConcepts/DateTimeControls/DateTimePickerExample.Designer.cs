@@ -145,7 +145,7 @@ partial class DateTimePickerExample {
             title
         );
         StartPosition =  System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          =  "DateTimePickerExample";
+        Text          =  "DateTimePicker";
         Load          += DateTimePickerExample_Load;
         ResumeLayout(
             false

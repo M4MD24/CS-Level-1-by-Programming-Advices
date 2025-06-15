@@ -103,6 +103,6 @@ public partial class IntroductionAboutControls : Form {
         object    sender,
         EventArgs e
     ) {
-        throw new System.NotImplementedException();
+        new MonthCalendarExample().Show();
     }
 }
