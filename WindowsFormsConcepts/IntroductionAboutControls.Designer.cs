@@ -42,6 +42,10 @@ partial class IntroductionAboutControls {
         comboBox                                = new System.Windows.Forms.Button();
         linkLabel                               = new System.Windows.Forms.Button();
         checkedListBox                          = new System.Windows.Forms.Button();
+        dateTimePicker                          = new System.Windows.Forms.Button();
+        dateTimeControls                        = new System.Windows.Forms.GroupBox();
+        monthCalendar                           = new System.Windows.Forms.Button();
+        dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
@@ -203,7 +207,7 @@ partial class IntroductionAboutControls {
         );
         maskedTextBox.Name = "maskedTextBox";
         maskedTextBox.Size = new System.Drawing.Size(
-            125,
+            150,
             50
         );
         maskedTextBox.TabIndex                =  9;
@@ -214,12 +218,12 @@ partial class IntroductionAboutControls {
         // comboBox
         // 
         comboBox.Location = new System.Drawing.Point(
-            200,
+            225,
             300
         );
         comboBox.Name = "comboBox";
         comboBox.Size = new System.Drawing.Size(
-            100,
+            150,
             50
         );
         comboBox.TabIndex                =  10;
@@ -230,12 +234,12 @@ partial class IntroductionAboutControls {
         // linkLabel
         // 
         linkLabel.Location = new System.Drawing.Point(
-            325,
+            400,
             300
         );
         linkLabel.Name = "linkLabel";
         linkLabel.Size = new System.Drawing.Size(
-            100,
+            150,
             50
         );
         linkLabel.TabIndex                =  11;
@@ -246,18 +250,71 @@ partial class IntroductionAboutControls {
         // checkedListBox
         // 
         checkedListBox.Location = new System.Drawing.Point(
-            450,
+            575,
             300
         );
         checkedListBox.Name = "checkedListBox";
         checkedListBox.Size = new System.Drawing.Size(
-            100,
+            175,
             50
         );
         checkedListBox.TabIndex                =  12;
         checkedListBox.Text                    =  "CheckedListBox";
         checkedListBox.UseVisualStyleBackColor =  true;
         checkedListBox.Click                   += checkedListBox_Click;
+        // 
+        // dateTimePicker
+        // 
+        dateTimePicker.Location = new System.Drawing.Point(
+            25,
+            25
+        );
+        dateTimePicker.Name = "dateTimePicker";
+        dateTimePicker.Size = new System.Drawing.Size(
+            150,
+            50
+        );
+        dateTimePicker.TabIndex                =  13;
+        dateTimePicker.Text                    =  "DateTime Picker";
+        dateTimePicker.UseVisualStyleBackColor =  true;
+        dateTimePicker.Click                   += dateTimePicker_Click;
+        // 
+        // dateTimeControls
+        // 
+        dateTimeControls.Controls.Add(
+            monthCalendar
+        );
+        dateTimeControls.Controls.Add(
+            dateTimePicker
+        );
+        dateTimeControls.Location = new System.Drawing.Point(
+            50,
+            375
+        );
+        dateTimeControls.Name = "dateTimeControls";
+        dateTimeControls.Size = new System.Drawing.Size(
+            375,
+            100
+        );
+        dateTimeControls.TabIndex = 14;
+        dateTimeControls.TabStop  = false;
+        dateTimeControls.Text     = "DateTime Controls";
+        // 
+        // monthCalendar
+        // 
+        monthCalendar.Location = new System.Drawing.Point(
+            200,
+            25
+        );
+        monthCalendar.Name = "monthCalendar";
+        monthCalendar.Size = new System.Drawing.Size(
+            150,
+            50
+        );
+        monthCalendar.TabIndex                =  14;
+        monthCalendar.Text                    =  "Month Calendar";
+        monthCalendar.UseVisualStyleBackColor =  true;
+        monthCalendar.Click                   += monthCalendar_Click;
         // 
         // IntroductionAboutControls
         // 
@@ -268,7 +325,10 @@ partial class IntroductionAboutControls {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             809,
-            386
+            561
+        );
+        Controls.Add(
+            dateTimeControls
         );
         Controls.Add(
             checkedListBox
@@ -311,10 +371,21 @@ partial class IntroductionAboutControls {
         );
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text          = "Introduction About Controls";
+        dateTimeControls.ResumeLayout(
+            false
+        );
         ResumeLayout(
             false
         );
     }
+
+    private System.Windows.Forms.Button monthCalendar;
+
+    private System.Windows.Forms.GroupBox dateTimeControls;
+
+    private System.Windows.Forms.GroupBox groupBox1;
+
+    private System.Windows.Forms.Button dateTimePicker;
 
     private System.Windows.Forms.Button checkedListBox;
 

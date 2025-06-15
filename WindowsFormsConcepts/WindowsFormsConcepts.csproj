@@ -51,6 +51,9 @@
       <Compile Update="CheckedListBoxExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="DateTimeControls\DateTimePickerExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
