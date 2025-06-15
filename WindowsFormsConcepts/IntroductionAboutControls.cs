@@ -1,3 +1,4 @@
+using WindowsFormsConcepts.DateTimeControls;
 using WindowsFormsConcepts.PictureBox;
 
 namespace WindowsFormsConcepts;
@@ -89,5 +90,19 @@ public partial class IntroductionAboutControls : Form {
         EventArgs e
     ) {
         new CheckedListBoxExample().Show();
+    }
+
+    private void dateTimePicker_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new DateTimePickerExample().Show();
+    }
+
+    private void monthCalendar_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new MonthCalendarExample().Show();
     }
 }

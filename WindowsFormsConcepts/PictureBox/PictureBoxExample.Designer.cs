@@ -45,9 +45,9 @@ partial class PictureBoxExample {
         ((System.ComponentModel.ISupportInitialize) numberTwo).BeginInit();
         ((System.ComponentModel.ISupportInitialize) number).BeginInit();
         SuspendLayout();
-        //
+        // 
         // pictureBox
-        //
+        // 
         pictureBox.Font = new System.Drawing.Font(
             "Fira Code",
             27F,
@@ -68,9 +68,9 @@ partial class PictureBoxExample {
         pictureBox.TabIndex  = 0;
         pictureBox.Text      = "PictureBox";
         pictureBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        //
+        // 
         // numberOne
-        //
+        // 
         numberOne.Image = ((System.Drawing.Image) resources.GetObject(
                                   "numberOne.Image"
                               ));
@@ -86,9 +86,9 @@ partial class PictureBoxExample {
         numberOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         numberOne.TabIndex = 1;
         numberOne.TabStop  = false;
-        //
+        // 
         // numberTwo
-        //
+        // 
         numberTwo.Image = ((System.Drawing.Image) resources.GetObject(
                                   "numberTwo.Image"
                               ));
@@ -104,9 +104,9 @@ partial class PictureBoxExample {
         numberTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         numberTwo.TabIndex = 2;
         numberTwo.TabStop  = false;
-        //
+        // 
         // number
-        //
+        // 
         number.Location = new System.Drawing.Point(
             585,
             100
@@ -119,9 +119,9 @@ partial class PictureBoxExample {
         number.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         number.TabIndex = 3;
         number.TabStop  = false;
-        //
+        // 
         // one
-        //
+        // 
         one.Location = new System.Drawing.Point(
             550,
             315
@@ -135,9 +135,9 @@ partial class PictureBoxExample {
         one.Text                    =  "One";
         one.UseVisualStyleBackColor =  true;
         one.Click                   += one_Click;
-        //
+        // 
         // two
-        //
+        // 
         two.Location = new System.Drawing.Point(
             650,
             315
@@ -151,9 +151,9 @@ partial class PictureBoxExample {
         two.Text                    =  "Two";
         two.UseVisualStyleBackColor =  true;
         two.Click                   += two_Click;
-        //
+        // 
         // three
-        //
+        // 
         three.Location = new System.Drawing.Point(
             750,
             315
@@ -167,9 +167,9 @@ partial class PictureBoxExample {
         three.Text                    =  "Three";
         three.UseVisualStyleBackColor =  true;
         three.Click                   += three_Click;
-        //
+        // 
         // PictureBoxExample
-        //
+        // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
@@ -200,7 +200,8 @@ partial class PictureBoxExample {
         Controls.Add(
             pictureBox
         );
-        Text = "PictureBox";
+        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        Text          = "PictureBox";
         ((System.ComponentModel.ISupportInitialize) numberOne).EndInit();
         ((System.ComponentModel.ISupportInitialize) numberTwo).EndInit();
         ((System.ComponentModel.ISupportInitialize) number).EndInit();
