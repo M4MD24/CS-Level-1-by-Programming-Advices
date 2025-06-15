@@ -1,4 +1,4 @@
-﻿namespace DisplayArrowDirection;
+﻿namespace DisplayArrowDirections;
 
 partial class Main {
     /// <summary>
@@ -43,12 +43,12 @@ partial class Main {
             System.Drawing.FontStyle.Bold
         );
         name.Location = new System.Drawing.Point(
-            125,
+            100,
             0
         );
         name.Name = "name";
         name.Size = new System.Drawing.Size(
-            150,
+            200,
             50
         );
         name.TabIndex  = 0;
@@ -107,7 +107,7 @@ partial class Main {
             name
         );
         StartPosition =  System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          =  "Display Arrow Direction";
+        Text          =  "Display Arrow Directions";
         Load          += Main_Load;
         ((System.ComponentModel.ISupportInitialize) image).EndInit();
         ResumeLayout(
