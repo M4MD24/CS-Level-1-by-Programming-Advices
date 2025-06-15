@@ -83,4 +83,11 @@ public partial class IntroductionAboutControls : Form {
     ) {
         new LinkLabelExample().Show();
     }
+
+    private void checkedListBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new CheckedListBoxExample().Show();
+    }
 }

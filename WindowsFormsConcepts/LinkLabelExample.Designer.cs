@@ -36,9 +36,9 @@ partial class LinkLabelExample {
         linkLabelWithLinkBehavior       = new System.Windows.Forms.LinkLabel();
         linkLabelWithURL_AndVisitedLink = new System.Windows.Forms.LinkLabel();
         SuspendLayout();
-        //
+        // 
         // linkLabel
-        //
+        // 
         linkLabel.Font = new System.Drawing.Font(
             "Segoe UI",
             12F
@@ -55,9 +55,9 @@ partial class LinkLabelExample {
         linkLabel.TabIndex = 1;
         linkLabel.TabStop  = true;
         linkLabel.Text     = "LinkLabel";
-        //
+        // 
         // title
-        //
+        // 
         title.Font = new System.Drawing.Font(
             "Fira Code",
             27F,
@@ -78,9 +78,9 @@ partial class LinkLabelExample {
         title.TabIndex  = 0;
         title.Text      = "LinkLabel";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        //
+        // 
         // linkLabelWithLinkBehavior
-        //
+        // 
         linkLabelWithLinkBehavior.Font = new System.Drawing.Font(
             "Segoe UI",
             12F
@@ -98,9 +98,9 @@ partial class LinkLabelExample {
         linkLabelWithLinkBehavior.TabIndex = 2;
         linkLabelWithLinkBehavior.TabStop  = true;
         linkLabelWithLinkBehavior.Text     = "LinkLabel with Link Behavior";
-        //
+        // 
         // linkLabelWithURL_AndVisitedLink
-        //
+        // 
         linkLabelWithURL_AndVisitedLink.Font = new System.Drawing.Font(
             "Segoe UI",
             12F
@@ -119,9 +119,9 @@ partial class LinkLabelExample {
         linkLabelWithURL_AndVisitedLink.TabStop     =  true;
         linkLabelWithURL_AndVisitedLink.Text        =  "LinkLabel with URL and VisitedLink";
         linkLabelWithURL_AndVisitedLink.LinkClicked += linkLabelWithURL_AndVisitedLink_LinkClicked;
-        //
+        // 
         // LinkLabelExample
-        //
+        // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F

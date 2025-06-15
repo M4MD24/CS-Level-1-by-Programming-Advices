@@ -41,6 +41,7 @@ partial class IntroductionAboutControls {
         maskedTextBox                           = new System.Windows.Forms.Button();
         comboBox                                = new System.Windows.Forms.Button();
         linkLabel                               = new System.Windows.Forms.Button();
+        checkedListBox                          = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBoxesAndButtonsAndFormsAndLabels
@@ -242,6 +243,22 @@ partial class IntroductionAboutControls {
         linkLabel.UseVisualStyleBackColor =  true;
         linkLabel.Click                   += linkLabel_Click;
         // 
+        // checkedListBox
+        // 
+        checkedListBox.Location = new System.Drawing.Point(
+            450,
+            300
+        );
+        checkedListBox.Name = "checkedListBox";
+        checkedListBox.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        checkedListBox.TabIndex                =  12;
+        checkedListBox.Text                    =  "CheckedListBox";
+        checkedListBox.UseVisualStyleBackColor =  true;
+        checkedListBox.Click                   += checkedListBox_Click;
+        // 
         // IntroductionAboutControls
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -252,6 +269,9 @@ partial class IntroductionAboutControls {
         ClientSize = new System.Drawing.Size(
             809,
             386
+        );
+        Controls.Add(
+            checkedListBox
         );
         Controls.Add(
             linkLabel
@@ -295,6 +315,8 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button checkedListBox;
 
     private System.Windows.Forms.Button linkLabel;
 

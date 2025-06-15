@@ -48,6 +48,9 @@
       <Compile Update="LinkLabelExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="CheckedListBoxExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
