@@ -45,6 +45,9 @@
       <Compile Update="ComboBoxExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="LinkLabelExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
