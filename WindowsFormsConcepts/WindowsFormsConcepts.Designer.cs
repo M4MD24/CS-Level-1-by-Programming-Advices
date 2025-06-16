@@ -45,6 +45,7 @@ partial class WindowsFormsConcepts {
         dateTimePicker            = new System.Windows.Forms.Button();
         timer                     = new System.Windows.Forms.Button();
         notifyIcon                = new System.Windows.Forms.Button();
+        treeViewAndImageList      = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
@@ -282,6 +283,22 @@ partial class WindowsFormsConcepts {
         notifyIcon.UseVisualStyleBackColor =  true;
         notifyIcon.Click                   += notifyIcon_Click;
         // 
+        // treeViewAndImageList
+        // 
+        treeViewAndImageList.Location = new System.Drawing.Point(
+            275,
+            350
+        );
+        treeViewAndImageList.Name = "treeViewAndImageList";
+        treeViewAndImageList.Size = new System.Drawing.Size(
+            150,
+            50
+        );
+        treeViewAndImageList.TabIndex                =  14;
+        treeViewAndImageList.Text                    =  "TreeView and ImageList";
+        treeViewAndImageList.UseVisualStyleBackColor =  true;
+        treeViewAndImageList.Click                   += treeViewAndImageList_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -292,6 +309,9 @@ partial class WindowsFormsConcepts {
         ClientSize = new System.Drawing.Size(
             809,
             461
+        );
+        Controls.Add(
+            treeViewAndImageList
         );
         Controls.Add(
             notifyIcon
@@ -338,6 +358,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button treeViewAndImageList;
 
     private System.Windows.Forms.Button notifyIcon;
 

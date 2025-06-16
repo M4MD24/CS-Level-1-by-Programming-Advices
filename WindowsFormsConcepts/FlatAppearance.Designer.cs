@@ -31,34 +31,10 @@ partial class FlatAppearance {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        label1                         = new System.Windows.Forms.Label();
         title                          = new System.Windows.Forms.Label();
         customButtonWithFlatAppearance = new System.Windows.Forms.Button();
         SuspendLayout();
-        // 
-        // label1
-        // 
-        label1.Font = new System.Drawing.Font(
-            "Fira Code",
-            27F,
-            System.Drawing.FontStyle.Bold,
-            System.Drawing.GraphicsUnit.Point,
-            ((byte) 0)
-        );
-        label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-        label1.Location = new System.Drawing.Point(
-            35,
-            207
-        );
-        label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(
-            600,
-            50
-        );
-        label1.TabIndex  = 2;
-        label1.Text      = "Formatting and Alignments";
-        label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
+        //
         // title
         // 
         title.Font = new System.Drawing.Font(
@@ -135,8 +111,6 @@ partial class FlatAppearance {
     private System.Windows.Forms.Button customButtonWithFlatAppearance;
 
     private System.Windows.Forms.Label title;
-
-    private System.Windows.Forms.Label label1;
 
     #endregion
 }

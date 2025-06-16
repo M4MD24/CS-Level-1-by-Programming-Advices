@@ -123,18 +123,17 @@
                     1. [DateTimePicker](WindowsFormsConcepts/DateTimeControls/DateTimePickerExample.cs)
                     2. [Month Calendar](WindowsFormsConcepts/DateTimeControls/MonthCalendarExample.cs)
                 11. [Timer](WindowsFormsConcepts/TimerExample.cs)
-                12. NotifyIcon
-                13. TreeView
-                14. ImageList
-                15. ProgressBar
-                16. ListView
-                17. Error Provider
-                18. TrackBar
-                19. NumericUpDown
-                20. Containers
-                21. Dialogs
-                22. Multiple Documents Interface (MDI) Container
-                23. Menus
+                12. [NotifyIcon](WindowsFormsConcepts/NotifyIconExample.cs)
+                13. [TreeView and ImageList](WindowsFormsConcepts/TreeViewAndImageList/TreeViewAndImageList.cs)
+                14. ProgressBar
+                15. ListView
+                16. Error Provider
+                17. TrackBar
+                18. NumericUpDown
+                19. Containers
+                20. Dialogs
+                21. Multiple Documents Interface (MDI) Container
+                22. Menus
             2. [Projects](WindowsFormsProjects)
                 1. [Pizza Order System](WindowsFormsProjects/PizzaOrderSystem)
                 2. [Display Number](WindowsFormsProjects/DisplayNumber)

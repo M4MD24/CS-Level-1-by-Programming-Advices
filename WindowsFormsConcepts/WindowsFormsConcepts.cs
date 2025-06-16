@@ -91,4 +91,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new NotifyIconExample().Show();
     }
+
+    private void treeViewAndImageList_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new TreeViewAndImageList.TreeViewAndImageList().Show();
+    }
 }
