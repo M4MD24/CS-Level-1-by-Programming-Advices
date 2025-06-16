@@ -69,6 +69,9 @@
       <Compile Update="ProgressBarExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="ListView\ListViewExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

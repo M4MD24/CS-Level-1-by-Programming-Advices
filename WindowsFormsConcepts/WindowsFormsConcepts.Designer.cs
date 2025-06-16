@@ -47,6 +47,7 @@ partial class WindowsFormsConcepts {
         notifyIcon                = new System.Windows.Forms.Button();
         treeViewAndImageList      = new System.Windows.Forms.Button();
         progressBar               = new System.Windows.Forms.Button();
+        listView                  = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
@@ -276,7 +277,7 @@ partial class WindowsFormsConcepts {
         );
         notifyIcon.Name = "notifyIcon";
         notifyIcon.Size = new System.Drawing.Size(
-            100,
+            125,
             50
         );
         notifyIcon.TabIndex                =  13;
@@ -287,7 +288,7 @@ partial class WindowsFormsConcepts {
         // treeViewAndImageList
         // 
         treeViewAndImageList.Location = new System.Drawing.Point(
-            275,
+            300,
             350
         );
         treeViewAndImageList.Name = "treeViewAndImageList";
@@ -303,7 +304,7 @@ partial class WindowsFormsConcepts {
         // progressBar
         // 
         progressBar.Location = new System.Drawing.Point(
-            475,
+            500,
             350
         );
         progressBar.Name = "progressBar";
@@ -316,6 +317,22 @@ partial class WindowsFormsConcepts {
         progressBar.UseVisualStyleBackColor =  true;
         progressBar.Click                   += progressBar_Click;
         // 
+        // listView
+        // 
+        listView.Location = new System.Drawing.Point(
+            650,
+            350
+        );
+        listView.Name = "listView";
+        listView.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        listView.TabIndex                =  16;
+        listView.Text                    =  "ListView";
+        listView.UseVisualStyleBackColor =  true;
+        listView.Click                   += listView_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -326,6 +343,9 @@ partial class WindowsFormsConcepts {
         ClientSize = new System.Drawing.Size(
             809,
             461
+        );
+        Controls.Add(
+            listView
         );
         Controls.Add(
             progressBar
@@ -378,6 +398,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button listView;
 
     private System.Windows.Forms.Button progressBar;
 
