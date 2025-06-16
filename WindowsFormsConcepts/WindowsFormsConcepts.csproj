@@ -66,6 +66,9 @@
       <Compile Update="TreeViewAndImageList\TreeViewAndImageList.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="ProgressBarExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

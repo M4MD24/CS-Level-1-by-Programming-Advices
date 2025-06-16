@@ -46,6 +46,7 @@ partial class WindowsFormsConcepts {
         timer                     = new System.Windows.Forms.Button();
         notifyIcon                = new System.Windows.Forms.Button();
         treeViewAndImageList      = new System.Windows.Forms.Button();
+        progressBar               = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
@@ -291,13 +292,29 @@ partial class WindowsFormsConcepts {
         );
         treeViewAndImageList.Name = "treeViewAndImageList";
         treeViewAndImageList.Size = new System.Drawing.Size(
-            150,
+            175,
             50
         );
         treeViewAndImageList.TabIndex                =  14;
         treeViewAndImageList.Text                    =  "TreeView and ImageList";
         treeViewAndImageList.UseVisualStyleBackColor =  true;
         treeViewAndImageList.Click                   += treeViewAndImageList_Click;
+        // 
+        // progressBar
+        // 
+        progressBar.Location = new System.Drawing.Point(
+            475,
+            350
+        );
+        progressBar.Name = "progressBar";
+        progressBar.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        progressBar.TabIndex                =  15;
+        progressBar.Text                    =  "ProgressBar";
+        progressBar.UseVisualStyleBackColor =  true;
+        progressBar.Click                   += progressBar_Click;
         // 
         // WindowsFormsConcepts
         // 
@@ -309,6 +326,9 @@ partial class WindowsFormsConcepts {
         ClientSize = new System.Drawing.Size(
             809,
             461
+        );
+        Controls.Add(
+            progressBar
         );
         Controls.Add(
             treeViewAndImageList
@@ -358,6 +378,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button progressBar;
 
     private System.Windows.Forms.Button treeViewAndImageList;
 

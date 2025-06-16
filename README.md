@@ -125,7 +125,7 @@
                 11. [Timer](WindowsFormsConcepts/TimerExample.cs)
                 12. [NotifyIcon](WindowsFormsConcepts/NotifyIconExample.cs)
                 13. [TreeView and ImageList](WindowsFormsConcepts/TreeViewAndImageList/TreeViewAndImageList.cs)
-                14. ProgressBar
+                14. [ProgressBar](WindowsFormsConcepts/ProgressBarExample.cs)
                 15. ListView
                 16. Error Provider
                 17. TrackBar

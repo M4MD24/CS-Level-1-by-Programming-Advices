@@ -98,4 +98,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new TreeViewAndImageList.TreeViewAndImageList().Show();
     }
+
+    private void progressBar_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new ProgressBarExample().Show();
+    }
 }
