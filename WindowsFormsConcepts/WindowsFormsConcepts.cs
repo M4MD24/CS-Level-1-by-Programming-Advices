@@ -77,4 +77,18 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new MonthCalendarExample().Show();
     }
+
+    private void timer_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new TimerExample().Show();
+    }
+
+    private void notifyIcon_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new NotifyIconExample().Show();
+    }
 }

@@ -60,6 +60,9 @@
       <Compile Update="TimerExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="NotifyIconExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
