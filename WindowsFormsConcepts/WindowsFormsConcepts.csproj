@@ -57,6 +57,9 @@
       <Compile Update="DateTimeControls\MonthCalendarExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="TimerExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

@@ -105,4 +105,11 @@ public partial class IntroductionAboutControls : Form {
     ) {
         new MonthCalendarExample().Show();
     }
+
+    private void timer_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new TimerExample().Show();
+    }
 }

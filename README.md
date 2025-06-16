@@ -122,7 +122,7 @@
                 10. [DateTime Controls](WindowsFormsConcepts/DateTimeControls)
                     1. [DateTimePicker](WindowsFormsConcepts/DateTimeControls/DateTimePickerExample.cs)
                     2. [Month Calendar](WindowsFormsConcepts/DateTimeControls/MonthCalendarExample.cs)
-                11. Timer
+                11. [Timer](WindowsFormsConcepts/TimerExample.cs)
                 12. NotifyIcon
                 13. TreeView
                 14. ImageList

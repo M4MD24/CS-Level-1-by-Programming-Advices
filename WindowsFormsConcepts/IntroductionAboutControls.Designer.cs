@@ -45,6 +45,7 @@ partial class IntroductionAboutControls {
         dateTimePicker                          = new System.Windows.Forms.Button();
         dateTimeControls                        = new System.Windows.Forms.GroupBox();
         monthCalendar                           = new System.Windows.Forms.Button();
+        timer                                   = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
@@ -274,7 +275,7 @@ partial class IntroductionAboutControls {
             150,
             50
         );
-        dateTimePicker.TabIndex                =  13;
+        dateTimePicker.TabIndex                =  14;
         dateTimePicker.Text                    =  "DateTime Picker";
         dateTimePicker.UseVisualStyleBackColor =  true;
         dateTimePicker.Click                   += dateTimePicker_Click;
@@ -296,7 +297,7 @@ partial class IntroductionAboutControls {
             375,
             100
         );
-        dateTimeControls.TabIndex = 14;
+        dateTimeControls.TabIndex = 13;
         dateTimeControls.TabStop  = false;
         dateTimeControls.Text     = "DateTime Controls";
         // 
@@ -311,10 +312,26 @@ partial class IntroductionAboutControls {
             150,
             50
         );
-        monthCalendar.TabIndex                =  14;
+        monthCalendar.TabIndex                =  15;
         monthCalendar.Text                    =  "Month Calendar";
         monthCalendar.UseVisualStyleBackColor =  true;
         monthCalendar.Click                   += monthCalendar_Click;
+        // 
+        // timer
+        // 
+        timer.Location = new System.Drawing.Point(
+            450,
+            400
+        );
+        timer.Name = "timer";
+        timer.Size = new System.Drawing.Size(
+            75,
+            50
+        );
+        timer.TabIndex                =  16;
+        timer.Text                    =  "Timer";
+        timer.UseVisualStyleBackColor =  true;
+        timer.Click                   += timer_Click;
         // 
         // IntroductionAboutControls
         // 
@@ -326,6 +343,9 @@ partial class IntroductionAboutControls {
         ClientSize = new System.Drawing.Size(
             809,
             561
+        );
+        Controls.Add(
+            timer
         );
         Controls.Add(
             dateTimeControls
@@ -378,6 +398,8 @@ partial class IntroductionAboutControls {
             false
         );
     }
+
+    private System.Windows.Forms.Button timer;
 
     private System.Windows.Forms.Button monthCalendar;
 
