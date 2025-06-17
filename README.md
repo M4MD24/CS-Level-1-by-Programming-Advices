@@ -127,7 +127,7 @@
                 13. [TreeView and ImageList](WindowsFormsConcepts/TreeViewAndImageList/TreeViewAndImageList.cs)
                 14. [ProgressBar](WindowsFormsConcepts/ProgressBarExample.cs)
                 15. [ListView](WindowsFormsConcepts/ListView)
-                16. Error Provider
+                16. [ErrorProvider](WindowsFormsConcepts/ErrorProviderExample.cs)
                 17. TrackBar
                 18. NumericUpDown
                 19. Containers

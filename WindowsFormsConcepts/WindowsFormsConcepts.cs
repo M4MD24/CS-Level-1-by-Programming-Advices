@@ -113,4 +113,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new ListViewExample().Show();
     }
+
+    private void errorProvider_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new ErrorProviderExample().Show();
+    }
 }

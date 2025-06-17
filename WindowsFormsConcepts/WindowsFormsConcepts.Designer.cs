@@ -48,6 +48,7 @@ partial class WindowsFormsConcepts {
         treeViewAndImageList      = new System.Windows.Forms.Button();
         progressBar               = new System.Windows.Forms.Button();
         listView                  = new System.Windows.Forms.Button();
+        errorProvider             = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
@@ -333,6 +334,22 @@ partial class WindowsFormsConcepts {
         listView.UseVisualStyleBackColor =  true;
         listView.Click                   += listView_Click;
         // 
+        // errorProvider
+        // 
+        errorProvider.Location = new System.Drawing.Point(
+            50,
+            425
+        );
+        errorProvider.Name = "errorProvider";
+        errorProvider.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        errorProvider.TabIndex                =  17;
+        errorProvider.Text                    =  "ErrorProvider";
+        errorProvider.UseVisualStyleBackColor =  true;
+        errorProvider.Click                   += errorProvider_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -342,7 +359,10 @@ partial class WindowsFormsConcepts {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             809,
-            461
+            511
+        );
+        Controls.Add(
+            errorProvider
         );
         Controls.Add(
             listView
@@ -398,6 +418,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button errorProvider;
 
     private System.Windows.Forms.Button listView;
 

@@ -72,6 +72,9 @@
       <Compile Update="ListView\ListViewExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="ErrorProviderExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
