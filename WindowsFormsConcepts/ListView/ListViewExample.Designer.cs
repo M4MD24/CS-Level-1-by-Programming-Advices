@@ -31,12 +31,19 @@ partial class ListViewExample {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title              = new System.Windows.Forms.Label();
-        listView           = new System.Windows.Forms.ListView();
+        components = new System.ComponentModel.Container();
+        title      = new System.Windows.Forms.Label();
+        items      = new System.Windows.Forms.ListView();
+        largeImages = new System.Windows.Forms.ImageList(
+            components
+        );
+        smallImages = new System.Windows.Forms.ImageList(
+            components
+        );
         add                = new System.Windows.Forms.Button();
         select             = new System.Windows.Forms.Button();
         remove             = new System.Windows.Forms.Button();
-        fillRandomItems    = new System.Windows.Forms.Button();
+        addRandomItem      = new System.Windows.Forms.Button();
         view               = new System.Windows.Forms.GroupBox();
         details            = new System.Windows.Forms.RadioButton();
         list               = new System.Windows.Forms.RadioButton();
@@ -76,19 +83,40 @@ partial class ListViewExample {
         title.Text      = "ListView";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // listView
+        // items
         // 
-        listView.Location = new System.Drawing.Point(
+        items.LargeImageList = largeImages;
+        items.Location = new System.Drawing.Point(
             50,
             100
         );
-        listView.Name = "listView";
-        listView.Size = new System.Drawing.Size(
+        items.Name = "items";
+        items.Size = new System.Drawing.Size(
             800,
             250
         );
-        listView.TabIndex                        = 1;
-        listView.UseCompatibleStateImageBehavior = false;
+        items.SmallImageList                  = smallImages;
+        items.TabIndex                        = 1;
+        items.UseCompatibleStateImageBehavior = false;
+        items.View                            = System.Windows.Forms.View.Tile;
+        // 
+        // largeImages
+        // 
+        largeImages.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+        largeImages.ImageSize = new System.Drawing.Size(
+            16,
+            16
+        );
+        largeImages.TransparentColor = System.Drawing.Color.Transparent;
+        // 
+        // smallImages
+        // 
+        smallImages.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+        smallImages.ImageSize = new System.Drawing.Size(
+            16,
+            16
+        );
+        smallImages.TransparentColor = System.Drawing.Color.Transparent;
         // 
         // add
         // 
@@ -101,9 +129,10 @@ partial class ListViewExample {
             75,
             25
         );
-        add.TabIndex                = 4;
-        add.Text                    = "Add";
-        add.UseVisualStyleBackColor = true;
+        add.TabIndex                =  8;
+        add.Text                    =  "Add";
+        add.UseVisualStyleBackColor =  true;
+        add.Click                   += add_Click;
         // 
         // select
         // 
@@ -116,9 +145,10 @@ partial class ListViewExample {
             75,
             25
         );
-        select.TabIndex                = 6;
-        select.Text                    = "Select";
-        select.UseVisualStyleBackColor = true;
+        select.TabIndex                =  10;
+        select.Text                    =  "Select";
+        select.UseVisualStyleBackColor =  true;
+        select.Click                   += select_Click;
         // 
         // remove
         // 
@@ -131,24 +161,26 @@ partial class ListViewExample {
             75,
             25
         );
-        remove.TabIndex                = 5;
-        remove.Text                    = "Remove";
-        remove.UseVisualStyleBackColor = true;
+        remove.TabIndex                =  9;
+        remove.Text                    =  "Remove";
+        remove.UseVisualStyleBackColor =  true;
+        remove.Click                   += remove_Click;
         // 
-        // fillRandomItems
+        // addRandomItem
         // 
-        fillRandomItems.Location = new System.Drawing.Point(
+        addRandomItem.Location = new System.Drawing.Point(
             50,
             425
         );
-        fillRandomItems.Name = "fillRandomItems";
-        fillRandomItems.Size = new System.Drawing.Size(
+        addRandomItem.Name = "addRandomItem";
+        addRandomItem.Size = new System.Drawing.Size(
             125,
             25
         );
-        fillRandomItems.TabIndex                = 6;
-        fillRandomItems.Text                    = "Fill Random Items";
-        fillRandomItems.UseVisualStyleBackColor = true;
+        addRandomItem.TabIndex                =  11;
+        addRandomItem.Text                    =  "Add Random Item";
+        addRandomItem.UseVisualStyleBackColor =  true;
+        addRandomItem.Click                   += addRandomItem_Click;
         // 
         // view
         // 
@@ -176,7 +208,7 @@ partial class ListViewExample {
             325,
             125
         );
-        view.TabIndex = 7;
+        view.TabIndex = 12;
         view.TabStop  = false;
         view.Text     = "View";
         // 
@@ -191,10 +223,10 @@ partial class ListViewExample {
             75,
             25
         );
-        details.TabIndex                = 4;
-        details.TabStop                 = true;
-        details.Text                    = "Details";
-        details.UseVisualStyleBackColor = true;
+        details.TabIndex                =  17;
+        details.Text                    =  "Details";
+        details.UseVisualStyleBackColor =  true;
+        details.CheckedChanged          += details_CheckedChanged;
         // 
         // list
         // 
@@ -207,13 +239,14 @@ partial class ListViewExample {
             50,
             25
         );
-        list.TabIndex                = 3;
-        list.TabStop                 = true;
-        list.Text                    = "List";
-        list.UseVisualStyleBackColor = true;
+        list.TabIndex                =  16;
+        list.Text                    =  "List";
+        list.UseVisualStyleBackColor =  true;
+        list.CheckedChanged          += list_CheckedChanged;
         // 
         // tile
         // 
+        tile.Checked = true;
         tile.Location = new System.Drawing.Point(
             150,
             30
@@ -223,10 +256,11 @@ partial class ListViewExample {
             50,
             25
         );
-        tile.TabIndex                = 2;
-        tile.TabStop                 = true;
-        tile.Text                    = "Tile";
-        tile.UseVisualStyleBackColor = true;
+        tile.TabIndex                =  15;
+        tile.TabStop                 =  true;
+        tile.Text                    =  "Tile";
+        tile.UseVisualStyleBackColor =  true;
+        tile.CheckedChanged          += tile_CheckedChanged;
         // 
         // smallIcon
         // 
@@ -239,10 +273,10 @@ partial class ListViewExample {
             100,
             25
         );
-        smallIcon.TabIndex                = 1;
-        smallIcon.TabStop                 = true;
-        smallIcon.Text                    = "Small Icon";
-        smallIcon.UseVisualStyleBackColor = true;
+        smallIcon.TabIndex                =  14;
+        smallIcon.Text                    =  "Small Icon";
+        smallIcon.UseVisualStyleBackColor =  true;
+        smallIcon.CheckedChanged          += smallIcon_CheckedChanged;
         // 
         // largeIcon
         // 
@@ -255,10 +289,10 @@ partial class ListViewExample {
             100,
             25
         );
-        largeIcon.TabIndex                = 0;
-        largeIcon.TabStop                 = true;
-        largeIcon.Text                    = "Large Icon";
-        largeIcon.UseVisualStyleBackColor = true;
+        largeIcon.TabIndex                =  13;
+        largeIcon.Text                    =  "Large Icon";
+        largeIcon.UseVisualStyleBackColor =  true;
+        largeIcon.CheckedChanged          += largeIcon_CheckedChanged;
         // 
         // enteredTitle
         // 
@@ -280,14 +314,14 @@ partial class ListViewExample {
             350,
             425
         );
-        enteredDescription.MaxLength = 20;
+        enteredDescription.MaxLength = 40;
         enteredDescription.Multiline = true;
         enteredDescription.Name      = "enteredDescription";
         enteredDescription.Size = new System.Drawing.Size(
             150,
             75
         );
-        enteredDescription.TabIndex = 8;
+        enteredDescription.TabIndex = 3;
         enteredDescription.WordWrap = false;
         // 
         // color
@@ -310,7 +344,7 @@ partial class ListViewExample {
             150,
             135
         );
-        color.TabIndex = 8;
+        color.TabIndex = 4;
         color.TabStop  = false;
         color.Text     = "Color";
         // 
@@ -325,7 +359,7 @@ partial class ListViewExample {
             60,
             25
         );
-        green.TabIndex                = 2;
+        green.TabIndex                = 7;
         green.TabStop                 = true;
         green.Text                    = "Green";
         green.UseVisualStyleBackColor = true;
@@ -341,7 +375,7 @@ partial class ListViewExample {
             50,
             25
         );
-        blue.TabIndex                = 1;
+        blue.TabIndex                = 6;
         blue.TabStop                 = true;
         blue.Text                    = "Blue";
         blue.UseVisualStyleBackColor = true;
@@ -357,7 +391,7 @@ partial class ListViewExample {
             50,
             25
         );
-        red.TabIndex                = 0;
+        red.TabIndex                = 5;
         red.TabStop                 = true;
         red.Text                    = "Red";
         red.UseVisualStyleBackColor = true;
@@ -386,7 +420,7 @@ partial class ListViewExample {
             view
         );
         Controls.Add(
-            fillRandomItems
+            addRandomItem
         );
         Controls.Add(
             remove
@@ -398,13 +432,14 @@ partial class ListViewExample {
             add
         );
         Controls.Add(
-            listView
+            items
         );
         Controls.Add(
             title
         );
-        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          = "ListView";
+        StartPosition =  System.Windows.Forms.FormStartPosition.CenterScreen;
+        Text          =  "ListView";
+        Load          += ListViewExample_Load;
         view.ResumeLayout(
             false
         );
@@ -416,6 +451,10 @@ partial class ListViewExample {
         );
         PerformLayout();
     }
+
+    private System.Windows.Forms.ImageList largeImages;
+
+    private System.Windows.Forms.ImageList smallImages;
 
     private System.Windows.Forms.RadioButton green;
 
@@ -438,7 +477,7 @@ partial class ListViewExample {
 
     private System.Windows.Forms.GroupBox view;
 
-    private System.Windows.Forms.Button fillRandomItems;
+    private System.Windows.Forms.Button addRandomItem;
 
     private System.Windows.Forms.Button remove;
 
@@ -448,7 +487,7 @@ partial class ListViewExample {
 
     private System.Windows.Forms.Label title;
 
-    private System.Windows.Forms.ListView listView;
+    private System.Windows.Forms.ListView items;
 
     #endregion
 }
