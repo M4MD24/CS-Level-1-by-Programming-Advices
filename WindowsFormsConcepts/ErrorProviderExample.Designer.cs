@@ -181,7 +181,7 @@ partial class ErrorProviderExample {
             title
         );
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          = "ErrorProviderExample";
+        Text          = "ErrorProvider";
         ((System.ComponentModel.ISupportInitialize) errorProviderSample).EndInit();
         fullName.ResumeLayout(
             false

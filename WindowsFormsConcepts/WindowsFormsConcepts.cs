@@ -120,4 +120,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new ErrorProviderExample().Show();
     }
+
+    private void trackBar_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new TrackBarExample().Show();
+    }
 }

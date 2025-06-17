@@ -49,6 +49,7 @@ partial class WindowsFormsConcepts {
         progressBar               = new System.Windows.Forms.Button();
         listView                  = new System.Windows.Forms.Button();
         errorProvider             = new System.Windows.Forms.Button();
+        trackBar                  = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
@@ -350,6 +351,22 @@ partial class WindowsFormsConcepts {
         errorProvider.UseVisualStyleBackColor =  true;
         errorProvider.Click                   += errorProvider_Click;
         // 
+        // trackBar
+        // 
+        trackBar.Location = new System.Drawing.Point(
+            200,
+            425
+        );
+        trackBar.Name = "trackBar";
+        trackBar.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        trackBar.TabIndex                =  18;
+        trackBar.Text                    =  "TrackBar";
+        trackBar.UseVisualStyleBackColor =  true;
+        trackBar.Click                   += trackBar_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -360,6 +377,9 @@ partial class WindowsFormsConcepts {
         ClientSize = new System.Drawing.Size(
             809,
             511
+        );
+        Controls.Add(
+            trackBar
         );
         Controls.Add(
             errorProvider
@@ -418,6 +438,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button trackBar;
 
     private System.Windows.Forms.Button errorProvider;
 

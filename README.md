@@ -128,7 +128,7 @@
                 14. [ProgressBar](WindowsFormsConcepts/ProgressBarExample.cs)
                 15. [ListView](WindowsFormsConcepts/ListView)
                 16. [ErrorProvider](WindowsFormsConcepts/ErrorProviderExample.cs)
-                17. TrackBar
+                17. [TrackBar](WindowsFormsConcepts/TrackBarExample.cs)
                 18. NumericUpDown
                 19. Containers
                 20. Dialogs
