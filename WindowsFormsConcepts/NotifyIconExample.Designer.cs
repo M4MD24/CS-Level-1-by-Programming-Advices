@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 namespace WindowsFormsConcepts;
 
-partial class FlatAppearance {
+partial class NotifyIconExample {
     /// <summary>
     /// Required designer variable.
     /// </summary>
@@ -31,10 +31,14 @@ partial class FlatAppearance {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title                          = new System.Windows.Forms.Label();
-        customButtonWithFlatAppearance = new System.Windows.Forms.Button();
+        components     = new System.ComponentModel.Container();
+        title          = new System.Windows.Forms.Label();
+        showNotifyIcon = new System.Windows.Forms.Button();
+        notifyIconSample = new System.Windows.Forms.NotifyIcon(
+            components
+        );
         SuspendLayout();
-        //
+        // 
         // title
         // 
         title.Font = new System.Drawing.Font(
@@ -44,71 +48,69 @@ partial class FlatAppearance {
             System.Drawing.GraphicsUnit.Point,
             ((byte) 0)
         );
-        title.ForeColor = System.Drawing.Color.DeepSkyBlue;
+        title.ForeColor = System.Drawing.Color.DarkGreen;
         title.Location = new System.Drawing.Point(
             50,
             25
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
-            400,
+            250,
             50
         );
         title.TabIndex  = 0;
-        title.Text      = "Flat Appearance";
+        title.Text      = "NotifyIcon";
         title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // customButtonWithFlatAppearance
+        // showNotifyIcon
         // 
-        customButtonWithFlatAppearance.BackColor                         = System.Drawing.Color.Crimson;
-        customButtonWithFlatAppearance.FlatAppearance.BorderColor        = System.Drawing.Color.Black;
-        customButtonWithFlatAppearance.FlatAppearance.BorderSize         = 4;
-        customButtonWithFlatAppearance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-        customButtonWithFlatAppearance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
-        customButtonWithFlatAppearance.FlatStyle                         = System.Windows.Forms.FlatStyle.Flat;
-        customButtonWithFlatAppearance.Location = new System.Drawing.Point(
+        showNotifyIcon.Location = new System.Drawing.Point(
             100,
-            275
+            100
         );
-        customButtonWithFlatAppearance.Name = "customButtonWithFlatAppearance";
-        customButtonWithFlatAppearance.Size = new System.Drawing.Size(
-            300,
-            50
+        showNotifyIcon.Name = "showNotifyIcon";
+        showNotifyIcon.Size = new System.Drawing.Size(
+            150,
+            25
         );
-        customButtonWithFlatAppearance.TabIndex                = 1;
-        customButtonWithFlatAppearance.Text                    = "Custom Button with Flat Appearance";
-        customButtonWithFlatAppearance.UseVisualStyleBackColor = false;
+        showNotifyIcon.TabIndex                =  1;
+        showNotifyIcon.Text                    =  "Show NotifyIcon";
+        showNotifyIcon.UseVisualStyleBackColor =  true;
+        showNotifyIcon.Click                   += showNotifyIcon_Click;
         // 
-        // FlatAppearance
+        // notifyIconSample
+        // 
+        notifyIconSample.Text              =  "NotifyIcon Sample";
+        notifyIconSample.Visible           =  true;
+        notifyIconSample.BalloonTipClicked += notifyIconSample_BalloonTipClicked;
+        // 
+        // NotifyIconExample
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        BackColor     = System.Drawing.SystemColors.Control;
         ClientSize = new System.Drawing.Size(
-            484,
-            361
+            334,
+            161
         );
         Controls.Add(
-            customButtonWithFlatAppearance
+            showNotifyIcon
         );
         Controls.Add(
             title
         );
-        Location = new System.Drawing.Point(
-            15,
-            15
-        );
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          = "Flat Appearance";
+        Text          = "NotifyIcon";
         ResumeLayout(
             false
         );
     }
 
-    private System.Windows.Forms.Button customButtonWithFlatAppearance;
+    private System.Windows.Forms.NotifyIcon notifyIconSample;
+
+    private System.Windows.Forms.Button showNotifyIcon;
 
     private System.Windows.Forms.Label title;
 

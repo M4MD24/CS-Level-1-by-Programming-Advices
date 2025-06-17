@@ -43,6 +43,13 @@ partial class WindowsFormsConcepts {
         dateTimeControls          = new System.Windows.Forms.GroupBox();
         monthCalendar             = new System.Windows.Forms.Button();
         dateTimePicker            = new System.Windows.Forms.Button();
+        timer                     = new System.Windows.Forms.Button();
+        notifyIcon                = new System.Windows.Forms.Button();
+        treeViewAndImageList      = new System.Windows.Forms.Button();
+        progressBar               = new System.Windows.Forms.Button();
+        listView                  = new System.Windows.Forms.Button();
+        errorProvider             = new System.Windows.Forms.Button();
+        trackBar                  = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         SuspendLayout();
         // 
@@ -248,6 +255,118 @@ partial class WindowsFormsConcepts {
         dateTimePicker.UseVisualStyleBackColor =  true;
         dateTimePicker.Click                   += dateTimePicker_Click;
         // 
+        // timer
+        // 
+        timer.Location = new System.Drawing.Point(
+            50,
+            350
+        );
+        timer.Name = "timer";
+        timer.Size = new System.Drawing.Size(
+            75,
+            50
+        );
+        timer.TabIndex                =  12;
+        timer.Text                    =  "Timer";
+        timer.UseVisualStyleBackColor =  true;
+        timer.Click                   += timer_Click;
+        // 
+        // notifyIcon
+        // 
+        notifyIcon.Location = new System.Drawing.Point(
+            150,
+            350
+        );
+        notifyIcon.Name = "notifyIcon";
+        notifyIcon.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        notifyIcon.TabIndex                =  13;
+        notifyIcon.Text                    =  "NotifyIcon";
+        notifyIcon.UseVisualStyleBackColor =  true;
+        notifyIcon.Click                   += notifyIcon_Click;
+        // 
+        // treeViewAndImageList
+        // 
+        treeViewAndImageList.Location = new System.Drawing.Point(
+            300,
+            350
+        );
+        treeViewAndImageList.Name = "treeViewAndImageList";
+        treeViewAndImageList.Size = new System.Drawing.Size(
+            175,
+            50
+        );
+        treeViewAndImageList.TabIndex                =  14;
+        treeViewAndImageList.Text                    =  "TreeView and ImageList";
+        treeViewAndImageList.UseVisualStyleBackColor =  true;
+        treeViewAndImageList.Click                   += treeViewAndImageList_Click;
+        // 
+        // progressBar
+        // 
+        progressBar.Location = new System.Drawing.Point(
+            500,
+            350
+        );
+        progressBar.Name = "progressBar";
+        progressBar.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        progressBar.TabIndex                =  15;
+        progressBar.Text                    =  "ProgressBar";
+        progressBar.UseVisualStyleBackColor =  true;
+        progressBar.Click                   += progressBar_Click;
+        // 
+        // listView
+        // 
+        listView.Location = new System.Drawing.Point(
+            650,
+            350
+        );
+        listView.Name = "listView";
+        listView.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        listView.TabIndex                =  16;
+        listView.Text                    =  "ListView";
+        listView.UseVisualStyleBackColor =  true;
+        listView.Click                   += listView_Click;
+        // 
+        // errorProvider
+        // 
+        errorProvider.Location = new System.Drawing.Point(
+            50,
+            425
+        );
+        errorProvider.Name = "errorProvider";
+        errorProvider.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        errorProvider.TabIndex                =  17;
+        errorProvider.Text                    =  "ErrorProvider";
+        errorProvider.UseVisualStyleBackColor =  true;
+        errorProvider.Click                   += errorProvider_Click;
+        // 
+        // trackBar
+        // 
+        trackBar.Location = new System.Drawing.Point(
+            200,
+            425
+        );
+        trackBar.Name = "trackBar";
+        trackBar.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        trackBar.TabIndex                =  18;
+        trackBar.Text                    =  "TrackBar";
+        trackBar.UseVisualStyleBackColor =  true;
+        trackBar.Click                   += trackBar_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -257,7 +376,28 @@ partial class WindowsFormsConcepts {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             809,
-            361
+            511
+        );
+        Controls.Add(
+            trackBar
+        );
+        Controls.Add(
+            errorProvider
+        );
+        Controls.Add(
+            listView
+        );
+        Controls.Add(
+            progressBar
+        );
+        Controls.Add(
+            treeViewAndImageList
+        );
+        Controls.Add(
+            notifyIcon
+        );
+        Controls.Add(
+            timer
         );
         Controls.Add(
             dateTimeControls
@@ -298,6 +438,20 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button trackBar;
+
+    private System.Windows.Forms.Button errorProvider;
+
+    private System.Windows.Forms.Button listView;
+
+    private System.Windows.Forms.Button progressBar;
+
+    private System.Windows.Forms.Button treeViewAndImageList;
+
+    private System.Windows.Forms.Button notifyIcon;
+
+    private System.Windows.Forms.Button timer;
 
     private System.Windows.Forms.Button monthCalendar;
 

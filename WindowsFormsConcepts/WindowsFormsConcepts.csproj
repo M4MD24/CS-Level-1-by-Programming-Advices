@@ -57,6 +57,27 @@
       <Compile Update="DateTimeControls\MonthCalendarExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="TimerExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="NotifyIconExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="TreeViewAndImageList\TreeViewAndImageList.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="ProgressBarExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="ListView\ListViewExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="ErrorProviderExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="TrackBarExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
