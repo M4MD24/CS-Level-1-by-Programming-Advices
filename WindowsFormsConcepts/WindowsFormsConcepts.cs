@@ -155,4 +155,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new TrackBarExample().Show();
     }
+
+    private void numericUpDown_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new NumericUpDownExample().Show();
+    }
 }

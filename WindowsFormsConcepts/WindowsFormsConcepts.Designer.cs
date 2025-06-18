@@ -55,6 +55,7 @@ partial class WindowsFormsConcepts {
         newForms                                = new System.Windows.Forms.Button();
         flatAppearance                          = new System.Windows.Forms.Button();
         textBoxesAndButtonsAndFormsAndLabels    = new System.Windows.Forms.Button();
+        numericUpDown                           = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
         SuspendLayout();
@@ -95,9 +96,9 @@ partial class WindowsFormsConcepts {
         textBox.Text                    =  "TextBox";
         textBox.UseVisualStyleBackColor =  true;
         textBox.Click                   += textBox_Click;
-        //
+        // 
         // pictureBox
-        //
+        // 
         pictureBox.Location = new System.Drawing.Point(
             150,
             325
@@ -111,9 +112,9 @@ partial class WindowsFormsConcepts {
         pictureBox.Text                    =  "PictureBox";
         pictureBox.UseVisualStyleBackColor =  true;
         pictureBox.Click                   += pictureBox_Click;
-        //
+        // 
         // drawing
-        //
+        // 
         drawing.Location = new System.Drawing.Point(
             275,
             325
@@ -127,9 +128,9 @@ partial class WindowsFormsConcepts {
         drawing.Text                    =  "Drawing";
         drawing.UseVisualStyleBackColor =  true;
         drawing.Click                   += drawing_Click;
-        //
+        // 
         // maskedTextBox
-        //
+        // 
         maskedTextBox.Location = new System.Drawing.Point(
             400,
             325
@@ -143,9 +144,9 @@ partial class WindowsFormsConcepts {
         maskedTextBox.Text                    =  "MaskedTextBox";
         maskedTextBox.UseVisualStyleBackColor =  true;
         maskedTextBox.Click                   += maskedTextBox_Click;
-        //
+        // 
         // comboBox
-        //
+        // 
         comboBox.Location = new System.Drawing.Point(
             550,
             325
@@ -159,9 +160,9 @@ partial class WindowsFormsConcepts {
         comboBox.Text                    =  "ComboBox";
         comboBox.UseVisualStyleBackColor =  true;
         comboBox.Click                   += comboBox_Click;
-        //
+        // 
         // linkLabel
-        //
+        // 
         linkLabel.Location = new System.Drawing.Point(
             675,
             325
@@ -175,9 +176,9 @@ partial class WindowsFormsConcepts {
         linkLabel.Text                    =  "LinkLabel";
         linkLabel.UseVisualStyleBackColor =  true;
         linkLabel.Click                   += linkLabel_Click;
-        //
+        // 
         // checkedListBox
-        //
+        // 
         checkedListBox.Location = new System.Drawing.Point(
             50,
             425
@@ -191,9 +192,9 @@ partial class WindowsFormsConcepts {
         checkedListBox.Text                    =  "CheckedListBox";
         checkedListBox.UseVisualStyleBackColor =  true;
         checkedListBox.Click                   += checkedListBox_Click;
-        //
+        // 
         // dateTimeControls
-        //
+        // 
         dateTimeControls.Controls.Add(
             monthCalendar
         );
@@ -212,9 +213,9 @@ partial class WindowsFormsConcepts {
         dateTimeControls.TabIndex = 14;
         dateTimeControls.TabStop  = false;
         dateTimeControls.Text     = "DateTime Controls";
-        //
+        // 
         // monthCalendar
-        //
+        // 
         monthCalendar.Location = new System.Drawing.Point(
             175,
             25
@@ -228,9 +229,9 @@ partial class WindowsFormsConcepts {
         monthCalendar.Text                    =  "MonthCalendar";
         monthCalendar.UseVisualStyleBackColor =  true;
         monthCalendar.Click                   += monthCalendar_Click;
-        //
+        // 
         // dateTimePicker
-        //
+        // 
         dateTimePicker.Location = new System.Drawing.Point(
             25,
             25
@@ -244,9 +245,9 @@ partial class WindowsFormsConcepts {
         dateTimePicker.Text                    =  "DateTimePicker";
         dateTimePicker.UseVisualStyleBackColor =  true;
         dateTimePicker.Click                   += dateTimePicker_Click;
-        //
+        // 
         // timer
-        //
+        // 
         timer.Location = new System.Drawing.Point(
             550,
             425
@@ -260,9 +261,9 @@ partial class WindowsFormsConcepts {
         timer.Text                    =  "Timer";
         timer.UseVisualStyleBackColor =  true;
         timer.Click                   += timer_Click;
-        //
+        // 
         // notifyIcon
-        //
+        // 
         notifyIcon.Location = new System.Drawing.Point(
             650,
             425
@@ -276,9 +277,9 @@ partial class WindowsFormsConcepts {
         notifyIcon.Text                    =  "NotifyIcon";
         notifyIcon.UseVisualStyleBackColor =  true;
         notifyIcon.Click                   += notifyIcon_Click;
-        //
+        // 
         // treeViewAndImageList
-        //
+        // 
         treeViewAndImageList.Location = new System.Drawing.Point(
             50,
             525
@@ -292,9 +293,9 @@ partial class WindowsFormsConcepts {
         treeViewAndImageList.Text                    =  "TreeView and ImageList";
         treeViewAndImageList.UseVisualStyleBackColor =  true;
         treeViewAndImageList.Click                   += treeViewAndImageList_Click;
-        //
+        // 
         // progressBar
-        //
+        // 
         progressBar.Location = new System.Drawing.Point(
             250,
             525
@@ -308,9 +309,9 @@ partial class WindowsFormsConcepts {
         progressBar.Text                    =  "ProgressBar";
         progressBar.UseVisualStyleBackColor =  true;
         progressBar.Click                   += progressBar_Click;
-        //
+        // 
         // listView
-        //
+        // 
         listView.Location = new System.Drawing.Point(
             400,
             525
@@ -324,9 +325,9 @@ partial class WindowsFormsConcepts {
         listView.Text                    =  "ListView";
         listView.UseVisualStyleBackColor =  true;
         listView.Click                   += listView_Click;
-        //
+        // 
         // errorProvider
-        //
+        // 
         errorProvider.Location = new System.Drawing.Point(
             525,
             525
@@ -340,9 +341,9 @@ partial class WindowsFormsConcepts {
         errorProvider.Text                    =  "ErrorProvider";
         errorProvider.UseVisualStyleBackColor =  true;
         errorProvider.Click                   += errorProvider_Click;
-        //
+        // 
         // trackBar
-        //
+        // 
         trackBar.Location = new System.Drawing.Point(
             675,
             525
@@ -356,9 +357,9 @@ partial class WindowsFormsConcepts {
         trackBar.Text                    =  "TrackBar";
         trackBar.UseVisualStyleBackColor =  true;
         trackBar.Click                   += trackBar_Click;
-        //
+        // 
         // introductionToControls
-        //
+        // 
         introductionToControls.Controls.Add(
             checkBoxAndRadioButtonAndGroupBoxAndTag
         );
@@ -386,9 +387,9 @@ partial class WindowsFormsConcepts {
         introductionToControls.TabIndex = 1;
         introductionToControls.TabStop  = false;
         introductionToControls.Text     = "Introduction About Controls";
-        //
+        // 
         // checkBoxAndRadioButtonAndGroupBoxAndTag
-        //
+        // 
         checkBoxAndRadioButtonAndGroupBoxAndTag.Location = new System.Drawing.Point(
             250,
             97
@@ -402,9 +403,9 @@ partial class WindowsFormsConcepts {
         checkBoxAndRadioButtonAndGroupBoxAndTag.Text                    =  "CheckBox and RadioButton and GroupBox and Tag";
         checkBoxAndRadioButtonAndGroupBoxAndTag.UseVisualStyleBackColor =  true;
         checkBoxAndRadioButtonAndGroupBoxAndTag.Click                   += checkBoxAndRadioButtonAndGroupBoxAndTag_Click;
-        //
+        // 
         // messageBox
-        //
+        // 
         messageBox.Location = new System.Drawing.Point(
             25,
             97
@@ -418,9 +419,9 @@ partial class WindowsFormsConcepts {
         messageBox.Text                    =  "Message Box";
         messageBox.UseVisualStyleBackColor =  true;
         messageBox.Click                   += messageBox_Click;
-        //
+        // 
         // newForms
-        //
+        // 
         newForms.Location = new System.Drawing.Point(
             575,
             25
@@ -434,9 +435,9 @@ partial class WindowsFormsConcepts {
         newForms.Text                    =  "New Forms";
         newForms.UseVisualStyleBackColor =  true;
         newForms.Click                   += newForms_Click;
-        //
+        // 
         // flatAppearance
-        //
+        // 
         flatAppearance.Location = new System.Drawing.Point(
             375,
             25
@@ -450,9 +451,9 @@ partial class WindowsFormsConcepts {
         flatAppearance.Text                    =  "Flat Appearance";
         flatAppearance.UseVisualStyleBackColor =  true;
         flatAppearance.Click                   += flatAppearance_Click;
-        //
+        // 
         // textBoxesAndButtonsAndFormsAndLabels
-        //
+        // 
         textBoxesAndButtonsAndFormsAndLabels.Location = new System.Drawing.Point(
             25,
             25
@@ -466,9 +467,25 @@ partial class WindowsFormsConcepts {
         textBoxesAndButtonsAndFormsAndLabels.Text                    =  "TextBoxes and Buttons and Forms and Labels";
         textBoxesAndButtonsAndFormsAndLabels.UseVisualStyleBackColor =  true;
         textBoxesAndButtonsAndFormsAndLabels.Click                   += textBoxesAndButtonsAndFormsAndLabels_Click;
-        //
+        // 
+        // numericUpDown
+        // 
+        numericUpDown.Location = new System.Drawing.Point(
+            50,
+            600
+        );
+        numericUpDown.Name = "numericUpDown";
+        numericUpDown.Size = new System.Drawing.Size(
+            150,
+            50
+        );
+        numericUpDown.TabIndex                =  24;
+        numericUpDown.Text                    =  "NumericUpDown";
+        numericUpDown.UseVisualStyleBackColor =  true;
+        numericUpDown.Click                   += numericUpDown_Click;
+        // 
         // WindowsFormsConcepts
-        //
+        // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
@@ -476,7 +493,10 @@ partial class WindowsFormsConcepts {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             809,
-            611
+            686
+        );
+        Controls.Add(
+            numericUpDown
         );
         Controls.Add(
             introductionToControls
@@ -541,6 +561,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button numericUpDown;
 
     private System.Windows.Forms.Button checkBoxAndRadioButtonAndGroupBoxAndTag;
 

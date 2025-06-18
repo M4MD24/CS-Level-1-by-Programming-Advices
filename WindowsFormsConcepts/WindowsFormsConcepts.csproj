@@ -78,6 +78,9 @@
       <Compile Update="TrackBarExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="NumericUpDownExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
