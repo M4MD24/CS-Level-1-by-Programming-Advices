@@ -9,11 +9,39 @@ public partial class WindowsFormsConcepts : Form {
         InitializeComponent();
     }
 
-    private void introductionAboutControls_Click(
+    private void textBoxesAndButtonsAndFormsAndLabels_Click(
         object    sender,
         EventArgs e
     ) {
-        new IntroductionAboutControls().Show();
+        new TextBoxesAndButtonsAndFormsAndLabels().Show();
+    }
+
+    private void flatAppearance_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new FlatAppearance().Show();
+    }
+
+    private void newForms_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new NewForms().Show();
+    }
+
+    private void messageBox_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new MessageBoxExample().Show();
+    }
+
+    private void checkBoxAndRadioButtonAndGroupBoxAndTag_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new CheckBoxAndRadioButtonAndGroupBoxAndTag().Show();
     }
 
     private void textBox_Click(
