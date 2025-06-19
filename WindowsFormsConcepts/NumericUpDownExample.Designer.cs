@@ -132,7 +132,8 @@ partial class NumericUpDownExample {
         Controls.Add(
             title
         );
-        Text = "NumericUpDown";
+        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        Text          = "NumericUpDown";
         ((System.ComponentModel.ISupportInitialize) numericUpDown).EndInit();
         ResumeLayout(
             false

@@ -162,4 +162,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new NumericUpDownExample().Show();
     }
+
+    private void tabControl_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new TabControlExample().Show();
+    }
 }

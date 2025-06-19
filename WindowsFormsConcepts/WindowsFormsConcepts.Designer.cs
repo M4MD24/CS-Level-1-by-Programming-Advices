@@ -56,6 +56,7 @@ partial class WindowsFormsConcepts {
         flatAppearance                          = new System.Windows.Forms.Button();
         textBoxesAndButtonsAndFormsAndLabels    = new System.Windows.Forms.Button();
         numericUpDown                           = new System.Windows.Forms.Button();
+        tabControl                              = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
         SuspendLayout();
@@ -484,6 +485,22 @@ partial class WindowsFormsConcepts {
         numericUpDown.UseVisualStyleBackColor =  true;
         numericUpDown.Click                   += numericUpDown_Click;
         // 
+        // tabControl
+        // 
+        tabControl.Location = new System.Drawing.Point(
+            225,
+            600
+        );
+        tabControl.Name = "tabControl";
+        tabControl.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        tabControl.TabIndex                =  25;
+        tabControl.Text                    =  "TabControl";
+        tabControl.UseVisualStyleBackColor =  true;
+        tabControl.Click                   += tabControl_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -494,6 +511,9 @@ partial class WindowsFormsConcepts {
         ClientSize = new System.Drawing.Size(
             809,
             686
+        );
+        Controls.Add(
+            tabControl
         );
         Controls.Add(
             numericUpDown
@@ -561,6 +581,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button tabControl;
 
     private System.Windows.Forms.Button numericUpDown;
 
