@@ -133,7 +133,7 @@
                 19. [Containers](WindowsFormsConcepts/Containers)
                     1. [TabControl](WindowsFormsConcepts/Containers/TabControlExample.cs)
                     2. [Panel](WindowsFormsConcepts/Containers/PanelExample.cs)
-                    3. ~~GroupBox vs Panel~~
+                    3. GroupBox vs Panel
                 20. ~~Dialogs~~
                 21. ~~Multiple Documents Interface (MDI) Container~~
                 22. ~~Menus~~

@@ -33,13 +33,13 @@ partial class PanelExample {
     private void InitializeComponent() {
         title = new System.Windows.Forms.Label();
         panel = new System.Windows.Forms.Panel();
+        text7 = new System.Windows.Forms.Label();
         text6 = new System.Windows.Forms.Label();
         text5 = new System.Windows.Forms.Label();
         text4 = new System.Windows.Forms.Label();
         text3 = new System.Windows.Forms.Label();
         text2 = new System.Windows.Forms.Label();
         text1 = new System.Windows.Forms.Label();
-        text7 = new System.Windows.Forms.Label();
         panel.SuspendLayout();
         SuspendLayout();
         // 
@@ -98,6 +98,26 @@ partial class PanelExample {
             225
         );
         panel.TabIndex = 1;
+        // 
+        // text7
+        // 
+        text7.Font = new System.Drawing.Font(
+            "Segoe UI",
+            12F,
+            System.Drawing.FontStyle.Bold
+        );
+        text7.Location = new System.Drawing.Point(
+            18,
+            300
+        );
+        text7.Name = "text7";
+        text7.Size = new System.Drawing.Size(
+            100,
+            25
+        );
+        text7.TabIndex  = 8;
+        text7.Text      = "Text Seven";
+        text7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // text6
         // 
@@ -218,26 +238,6 @@ partial class PanelExample {
         text1.TabIndex  = 2;
         text1.Text      = "Text One";
         text1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // text7
-        // 
-        text7.Font = new System.Drawing.Font(
-            "Segoe UI",
-            12F,
-            System.Drawing.FontStyle.Bold
-        );
-        text7.Location = new System.Drawing.Point(
-            18,
-            300
-        );
-        text7.Name = "text7";
-        text7.Size = new System.Drawing.Size(
-            100,
-            25
-        );
-        text7.TabIndex  = 8;
-        text7.Text      = "Text Seven";
-        text7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // PanelExample
         // 
