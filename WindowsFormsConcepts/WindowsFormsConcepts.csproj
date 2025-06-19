@@ -78,6 +78,9 @@
       <Compile Update="IntroductionAboutControls\MessageBoxExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="Containers\PanelExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

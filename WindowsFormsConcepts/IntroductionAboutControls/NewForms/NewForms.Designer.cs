@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.IntroductionAboutControls;
 
 partial class NewForms {
     /// <summary>

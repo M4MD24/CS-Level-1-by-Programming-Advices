@@ -57,8 +57,11 @@ partial class WindowsFormsConcepts {
         textBoxesAndButtonsAndFormsAndLabels    = new System.Windows.Forms.Button();
         numericUpDown                           = new System.Windows.Forms.Button();
         tabControl                              = new System.Windows.Forms.Button();
+        panel                                   = new System.Windows.Forms.Button();
+        containers                              = new System.Windows.Forms.GroupBox();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
+        containers.SuspendLayout();
         SuspendLayout();
         // 
         // title
@@ -473,7 +476,7 @@ partial class WindowsFormsConcepts {
         // 
         numericUpDown.Location = new System.Drawing.Point(
             50,
-            600
+            625
         );
         numericUpDown.Name = "numericUpDown";
         numericUpDown.Size = new System.Drawing.Size(
@@ -488,18 +491,55 @@ partial class WindowsFormsConcepts {
         // tabControl
         // 
         tabControl.Location = new System.Drawing.Point(
-            225,
-            600
+            33,
+            25
         );
         tabControl.Name = "tabControl";
         tabControl.Size = new System.Drawing.Size(
-            100,
+            142,
             50
         );
-        tabControl.TabIndex                =  25;
+        tabControl.TabIndex                =  26;
         tabControl.Text                    =  "TabControl";
         tabControl.UseVisualStyleBackColor =  true;
         tabControl.Click                   += tabControl_Click;
+        // 
+        // panel
+        // 
+        panel.Location = new System.Drawing.Point(
+            200,
+            25
+        );
+        panel.Name = "panel";
+        panel.Size = new System.Drawing.Size(
+            94,
+            50
+        );
+        panel.TabIndex                =  27;
+        panel.Text                    =  "Panel";
+        panel.UseVisualStyleBackColor =  true;
+        panel.Click                   += panel_Click;
+        // 
+        // containers
+        // 
+        containers.Controls.Add(
+            panel
+        );
+        containers.Controls.Add(
+            tabControl
+        );
+        containers.Location = new System.Drawing.Point(
+            225,
+            600
+        );
+        containers.Name = "containers";
+        containers.Size = new System.Drawing.Size(
+            325,
+            100
+        );
+        containers.TabIndex = 25;
+        containers.TabStop  = false;
+        containers.Text     = "Containers";
         // 
         // WindowsFormsConcepts
         // 
@@ -510,10 +550,10 @@ partial class WindowsFormsConcepts {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             809,
-            686
+            776
         );
         Controls.Add(
-            tabControl
+            containers
         );
         Controls.Add(
             numericUpDown
@@ -577,10 +617,17 @@ partial class WindowsFormsConcepts {
         introductionToControls.ResumeLayout(
             false
         );
+        containers.ResumeLayout(
+            false
+        );
         ResumeLayout(
             false
         );
     }
+
+    private System.Windows.Forms.GroupBox containers;
+
+    private System.Windows.Forms.Button panel;
 
     private System.Windows.Forms.Button tabControl;
 

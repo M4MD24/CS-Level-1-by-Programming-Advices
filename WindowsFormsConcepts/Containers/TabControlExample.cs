@@ -1,4 +1,4 @@
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.Containers;
 
 public partial class TabControlExample : Form {
     public TabControlExample() {

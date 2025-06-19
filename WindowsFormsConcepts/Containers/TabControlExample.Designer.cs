@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.Containers;
 
 partial class TabControlExample {
     /// <summary>
@@ -54,9 +54,11 @@ partial class TabControlExample {
         // title
         // 
         title.Font = new System.Drawing.Font(
-            "Segoe UI",
+            "Fira Code",
             27F,
-            System.Drawing.FontStyle.Bold
+            System.Drawing.FontStyle.Bold,
+            System.Drawing.GraphicsUnit.Point,
+            ((byte) 0)
         );
         title.ForeColor = System.Drawing.Color.RosyBrown;
         title.Location = new System.Drawing.Point(

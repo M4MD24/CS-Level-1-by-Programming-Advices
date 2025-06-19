@@ -1,4 +1,6 @@
+using WindowsFormsConcepts.Containers;
 using WindowsFormsConcepts.DateTimeControls;
+using WindowsFormsConcepts.IntroductionAboutControls;
 using WindowsFormsConcepts.ListView;
 using WindowsFormsConcepts.PictureBox;
 
@@ -168,5 +170,12 @@ public partial class WindowsFormsConcepts : Form {
         EventArgs e
     ) {
         new TabControlExample().Show();
+    }
+
+    private void panel_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new PanelExample().Show();
     }
 }

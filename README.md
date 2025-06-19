@@ -132,11 +132,11 @@
                 18. [NumericUpDown](WindowsFormsConcepts/NumericUpDownExample.cs)
                 19. [Containers](WindowsFormsConcepts/Containers)
                     1. [TabControl](WindowsFormsConcepts/Containers/TabControlExample.cs)
-                    2. Panel
-                    3. GroupBox vs Panel
-                20. Dialogs
-                21. Multiple Documents Interface (MDI) Container
-                22. Menus
+                    2. [Panel](WindowsFormsConcepts/Containers/PanelExample.cs)
+                    3. ~~GroupBox vs Panel~~
+                20. ~~Dialogs~~
+                21. ~~Multiple Documents Interface (MDI) Container~~
+                22. ~~Menus~~
             2. [Projects](WindowsFormsProjects)
                 1. [Pizza Order System](WindowsFormsProjects/PizzaOrderSystem)
                 2. [Display Number](WindowsFormsProjects/DisplayNumber)

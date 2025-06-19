@@ -1,4 +1,4 @@
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.IntroductionAboutControls;
 
 public partial class MessageBoxExample : Form {
     public MessageBoxExample() {
