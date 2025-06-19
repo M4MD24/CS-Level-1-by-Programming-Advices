@@ -1,6 +1,6 @@
-using WindowsFormsConcepts.Forms;
+using WindowsFormsConcepts.IntroductionAboutControls.Forms;
 
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.IntroductionAboutControls;
 
 public partial class NewForms : Form {
     public NewForms() {

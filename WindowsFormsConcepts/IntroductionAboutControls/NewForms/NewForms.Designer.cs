@@ -1,8 +1,8 @@
 using System.ComponentModel;
 
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.IntroductionAboutControls;
 
-partial class FlatAppearance {
+partial class NewForms {
     /// <summary>
     /// Required designer variable.
     /// </summary>
@@ -31,10 +31,11 @@ partial class FlatAppearance {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title                          = new System.Windows.Forms.Label();
-        customButtonWithFlatAppearance = new System.Windows.Forms.Button();
+        title          = new System.Windows.Forms.Label();
+        showForm       = new System.Windows.Forms.Button();
+        showDialogForm = new System.Windows.Forms.Button();
         SuspendLayout();
-        //
+        // 
         // title
         // 
         title.Font = new System.Drawing.Font(
@@ -44,71 +45,82 @@ partial class FlatAppearance {
             System.Drawing.GraphicsUnit.Point,
             ((byte) 0)
         );
-        title.ForeColor = System.Drawing.Color.DeepSkyBlue;
+        title.ForeColor = System.Drawing.Color.Chocolate;
         title.Location = new System.Drawing.Point(
             50,
-            25
+            50
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
-            400,
-            50
-        );
-        title.TabIndex  = 0;
-        title.Text      = "Flat Appearance";
-        title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // customButtonWithFlatAppearance
-        // 
-        customButtonWithFlatAppearance.BackColor                         = System.Drawing.Color.Crimson;
-        customButtonWithFlatAppearance.FlatAppearance.BorderColor        = System.Drawing.Color.Black;
-        customButtonWithFlatAppearance.FlatAppearance.BorderSize         = 4;
-        customButtonWithFlatAppearance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-        customButtonWithFlatAppearance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
-        customButtonWithFlatAppearance.FlatStyle                         = System.Windows.Forms.FlatStyle.Flat;
-        customButtonWithFlatAppearance.Location = new System.Drawing.Point(
-            100,
-            275
-        );
-        customButtonWithFlatAppearance.Name = "customButtonWithFlatAppearance";
-        customButtonWithFlatAppearance.Size = new System.Drawing.Size(
             300,
             50
         );
-        customButtonWithFlatAppearance.TabIndex                = 1;
-        customButtonWithFlatAppearance.Text                    = "Custom Button with Flat Appearance";
-        customButtonWithFlatAppearance.UseVisualStyleBackColor = false;
+        title.TabIndex  = 0;
+        title.Text      = "New Forms";
+        title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // FlatAppearance
+        // showForm
+        // 
+        showForm.Location = new System.Drawing.Point(
+            50,
+            176
+        );
+        showForm.Name = "showForm";
+        showForm.Size = new System.Drawing.Size(
+            100,
+            50
+        );
+        showForm.TabIndex                =  1;
+        showForm.Text                    =  "Show Form";
+        showForm.UseVisualStyleBackColor =  true;
+        showForm.Click                   += showForm_Click;
+        // 
+        // showDialogForm
+        // 
+        showDialogForm.Location = new System.Drawing.Point(
+            225,
+            176
+        );
+        showDialogForm.Name = "showDialogForm";
+        showDialogForm.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        showDialogForm.TabIndex                =  2;
+        showDialogForm.Text                    =  "Show Dialog Form";
+        showDialogForm.UseVisualStyleBackColor =  true;
+        showDialogForm.Click                   += showDialogForm_Click;
+        // 
+        // NewForms
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
             15F
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        BackColor     = System.Drawing.SystemColors.Control;
         ClientSize = new System.Drawing.Size(
-            484,
-            361
+            384,
+            261
         );
         Controls.Add(
-            customButtonWithFlatAppearance
+            showDialogForm
+        );
+        Controls.Add(
+            showForm
         );
         Controls.Add(
             title
         );
-        Location = new System.Drawing.Point(
-            15,
-            15
-        );
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        Text          = "Flat Appearance";
+        Text          = "New Forms";
         ResumeLayout(
             false
         );
     }
 
-    private System.Windows.Forms.Button customButtonWithFlatAppearance;
+    private System.Windows.Forms.Button showDialogForm;
+
+    private System.Windows.Forms.Button showForm;
 
     private System.Windows.Forms.Label title;
 
