@@ -41,6 +41,8 @@ partial class DialogsExample {
         fontDialogSample      = new System.Windows.Forms.FontDialog();
         saveFile              = new System.Windows.Forms.Button();
         saveFileDialogSample  = new System.Windows.Forms.SaveFileDialog();
+        openFile              = new System.Windows.Forms.Button();
+        openFileDialogSample  = new System.Windows.Forms.OpenFileDialog();
         colorDialog.SuspendLayout();
         SuspendLayout();
         // 
@@ -138,7 +140,7 @@ partial class DialogsExample {
         colorDialog.Name = "colorDialog";
         colorDialog.Size = new System.Drawing.Size(
             225,
-            150
+            125
         );
         colorDialog.TabIndex = 2;
         colorDialog.TabStop  = false;
@@ -180,7 +182,23 @@ partial class DialogsExample {
         saveFile.UseVisualStyleBackColor =  true;
         saveFile.Click                   += saveFile_Click;
         // 
-        // Dialogs
+        // openFile
+        // 
+        openFile.Location = new System.Drawing.Point(
+            425,
+            250
+        );
+        openFile.Name = "openFile";
+        openFile.Size = new System.Drawing.Size(
+            125,
+            30
+        );
+        openFile.TabIndex                =  7;
+        openFile.Text                    =  "Open File";
+        openFile.UseVisualStyleBackColor =  true;
+        openFile.Click                   += openFile_Click;
+        // 
+        // DialogsExample
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
             7F,
@@ -190,6 +208,9 @@ partial class DialogsExample {
         ClientSize = new System.Drawing.Size(
             584,
             386
+        );
+        Controls.Add(
+            openFile
         );
         Controls.Add(
             saveFile
@@ -215,6 +236,10 @@ partial class DialogsExample {
             false
         );
     }
+
+    private System.Windows.Forms.OpenFileDialog openFileDialogSample;
+
+    private System.Windows.Forms.Button openFile;
 
     private System.Windows.Forms.SaveFileDialog saveFileDialogSample;
 

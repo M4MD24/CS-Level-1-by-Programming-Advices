@@ -55,11 +55,38 @@ public partial class DialogsExample : Form {
         saveFileDialogSample.Filter           = @"txt files (*.txt)|*.txt|All Files (*.*)|*.*";
         saveFileDialogSample.FilterIndex      = 2;
         if (saveFileDialogSample.ShowDialog() == DialogResult.OK)
-            MessageBox.Show(
-                saveFileDialogSample.FileName,
-                @"FileName",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
+            showFileName(
+                saveFileDialogSample.FileName
             );
+    }
+
+    private void openFile_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        openFileDialogSample.Multiselect = true;
+        if (openFileDialogSample.ShowDialog() == DialogResult.OK)
+            if (openFileDialogSample.FileNames.Length > 1) {
+                string fileNames = "";
+                foreach (string fileName in openFileDialogSample.FileNames)
+                    fileNames += fileName + Environment.NewLine;
+                showFileName(
+                    fileNames
+                );
+            } else
+                showFileName(
+                    openFileDialogSample.FileName
+                );
+    }
+
+    private void showFileName(
+        string fileName
+    ) {
+        MessageBox.Show(
+            fileName,
+            @"FileName",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information
+        );
     }
 }

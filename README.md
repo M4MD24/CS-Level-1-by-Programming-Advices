@@ -138,7 +138,7 @@
                     1. ColorDialog
                     2. FontDialog
                     3. SaveFileDialog
-                    4. ~~FileOpenDialog~~
+                    4. OpenFileDialog
                     5. ~~FolderBrowserDialog~~
                 21. ~~Multiple Documents Interface (MDI) Container~~
                 22. ~~Menus~~
