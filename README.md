@@ -141,7 +141,9 @@
                     4. OpenFileDialog
                     5. FolderBrowserDialog
                 21. [Multiple Documents Interface (MDI) Container](WindowsFormsConcepts/MultipleDocumentsInterfaceContainer)
-                22. ~~Menus~~
+                22. [Menus](WindowsFormsConcepts/Menus)
+                    1. [MenuStrip](WindowsFormsConcepts/Menus/MenuStripExample.cs)
+                    2. ~~Context Menu~~
             2. [Projects](WindowsFormsProjects)
                 1. [Pizza Order System](WindowsFormsProjects/PizzaOrderSystem)
                 2. [Display Number](WindowsFormsProjects/DisplayNumber)

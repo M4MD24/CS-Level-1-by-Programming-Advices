@@ -61,9 +61,13 @@ partial class WindowsFormsConcepts {
         containers                              = new System.Windows.Forms.GroupBox();
         dialogs                                 = new System.Windows.Forms.Button();
         multipleDocumentsInterfaceContainer     = new System.Windows.Forms.Button();
+        menus                                   = new System.Windows.Forms.GroupBox();
+        contextMenu                             = new System.Windows.Forms.Button();
+        menuStrip                               = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
         containers.SuspendLayout();
+        menus.SuspendLayout();
         SuspendLayout();
         // 
         // title
@@ -547,7 +551,7 @@ partial class WindowsFormsConcepts {
         // 
         dialogs.Location = new System.Drawing.Point(
             50,
-            650
+            675
         );
         dialogs.Name = "dialogs";
         dialogs.Size = new System.Drawing.Size(
@@ -563,7 +567,7 @@ partial class WindowsFormsConcepts {
         // 
         multipleDocumentsInterfaceContainer.Location = new System.Drawing.Point(
             225,
-            650
+            675
         );
         multipleDocumentsInterfaceContainer.Name = "multipleDocumentsInterfaceContainer";
         multipleDocumentsInterfaceContainer.Size = new System.Drawing.Size(
@@ -575,6 +579,59 @@ partial class WindowsFormsConcepts {
         multipleDocumentsInterfaceContainer.UseVisualStyleBackColor =  true;
         multipleDocumentsInterfaceContainer.Click                   += multipleDocumentsInterfaceContainer_Click;
         // 
+        // menus
+        // 
+        menus.Controls.Add(
+            contextMenu
+        );
+        menus.Controls.Add(
+            menuStrip
+        );
+        menus.Location = new System.Drawing.Point(
+            575,
+            650
+        );
+        menus.Name = "menus";
+        menus.Size = new System.Drawing.Size(
+            375,
+            100
+        );
+        menus.TabIndex = 30;
+        menus.TabStop  = false;
+        menus.Text     = "Menus";
+        // 
+        // contextMenu
+        // 
+        contextMenu.Location = new System.Drawing.Point(
+            175,
+            25
+        );
+        contextMenu.Name = "contextMenu";
+        contextMenu.Size = new System.Drawing.Size(
+            175,
+            50
+        );
+        contextMenu.TabIndex                =  16;
+        contextMenu.Text                    =  "Context Menu";
+        contextMenu.UseVisualStyleBackColor =  true;
+        contextMenu.Click                   += contextMenu_Click;
+        // 
+        // menuStrip
+        // 
+        menuStrip.Location = new System.Drawing.Point(
+            25,
+            25
+        );
+        menuStrip.Name = "menuStrip";
+        menuStrip.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        menuStrip.TabIndex                =  15;
+        menuStrip.Text                    =  "MenuStrip";
+        menuStrip.UseVisualStyleBackColor =  true;
+        menuStrip.Click                   += menuStrip_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -584,7 +641,10 @@ partial class WindowsFormsConcepts {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             984,
-            736
+            786
+        );
+        Controls.Add(
+            menus
         );
         Controls.Add(
             multipleDocumentsInterfaceContainer
@@ -660,10 +720,18 @@ partial class WindowsFormsConcepts {
         containers.ResumeLayout(
             false
         );
+        menus.ResumeLayout(
+            false
+        );
         ResumeLayout(
             false
         );
     }
+
+    private System.Windows.Forms.Button contextMenu;
+
+    private System.Windows.Forms.GroupBox menus;
+    private System.Windows.Forms.Button   menuStrip;
 
     private System.Windows.Forms.Button multipleDocumentsInterfaceContainer;
 
