@@ -1,5 +1,6 @@
 using WindowsFormsConcepts.Containers;
 using WindowsFormsConcepts.DateTimeControls;
+using WindowsFormsConcepts.Dialogs;
 using WindowsFormsConcepts.IntroductionAboutControls;
 using WindowsFormsConcepts.ListView;
 using WindowsFormsConcepts.PictureBox;
@@ -177,5 +178,12 @@ public partial class WindowsFormsConcepts : Form {
         EventArgs e
     ) {
         new PanelExample().Show();
+    }
+
+    private void colorDialog_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new DialogsExample().Show();
     }
 }

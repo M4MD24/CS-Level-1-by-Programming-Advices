@@ -59,6 +59,7 @@ partial class WindowsFormsConcepts {
         tabControl                              = new System.Windows.Forms.Button();
         panel                                   = new System.Windows.Forms.Button();
         containers                              = new System.Windows.Forms.GroupBox();
+        dialogs                                 = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
         containers.SuspendLayout();
@@ -78,7 +79,7 @@ partial class WindowsFormsConcepts {
         );
         title.Name = "title";
         title.Size = new System.Drawing.Size(
-            725,
+            900,
             50
         );
         title.TabIndex  = 0;
@@ -184,12 +185,12 @@ partial class WindowsFormsConcepts {
         // checkedListBox
         // 
         checkedListBox.Location = new System.Drawing.Point(
-            50,
-            425
+            800,
+            325
         );
         checkedListBox.Name = "checkedListBox";
         checkedListBox.Size = new System.Drawing.Size(
-            125,
+            150,
             50
         );
         checkedListBox.TabIndex                =  13;
@@ -206,7 +207,7 @@ partial class WindowsFormsConcepts {
             dateTimePicker
         );
         dateTimeControls.Location = new System.Drawing.Point(
-            200,
+            50,
             400
         );
         dateTimeControls.Name = "dateTimeControls";
@@ -253,7 +254,7 @@ partial class WindowsFormsConcepts {
         // timer
         // 
         timer.Location = new System.Drawing.Point(
-            550,
+            400,
             425
         );
         timer.Name = "timer";
@@ -269,12 +270,12 @@ partial class WindowsFormsConcepts {
         // notifyIcon
         // 
         notifyIcon.Location = new System.Drawing.Point(
-            650,
+            500,
             425
         );
         notifyIcon.Name = "notifyIcon";
         notifyIcon.Size = new System.Drawing.Size(
-            125,
+            100,
             50
         );
         notifyIcon.TabIndex                =  18;
@@ -285,8 +286,8 @@ partial class WindowsFormsConcepts {
         // treeViewAndImageList
         // 
         treeViewAndImageList.Location = new System.Drawing.Point(
-            50,
-            525
+            625,
+            425
         );
         treeViewAndImageList.Name = "treeViewAndImageList";
         treeViewAndImageList.Size = new System.Drawing.Size(
@@ -301,8 +302,8 @@ partial class WindowsFormsConcepts {
         // progressBar
         // 
         progressBar.Location = new System.Drawing.Point(
-            250,
-            525
+            825,
+            425
         );
         progressBar.Name = "progressBar";
         progressBar.Size = new System.Drawing.Size(
@@ -317,8 +318,8 @@ partial class WindowsFormsConcepts {
         // listView
         // 
         listView.Location = new System.Drawing.Point(
-            400,
-            525
+            50,
+            550
         );
         listView.Name = "listView";
         listView.Size = new System.Drawing.Size(
@@ -333,8 +334,8 @@ partial class WindowsFormsConcepts {
         // errorProvider
         // 
         errorProvider.Location = new System.Drawing.Point(
-            525,
-            525
+            175,
+            550
         );
         errorProvider.Name = "errorProvider";
         errorProvider.Size = new System.Drawing.Size(
@@ -349,8 +350,8 @@ partial class WindowsFormsConcepts {
         // trackBar
         // 
         trackBar.Location = new System.Drawing.Point(
-            675,
-            525
+            325,
+            550
         );
         trackBar.Name = "trackBar";
         trackBar.Size = new System.Drawing.Size(
@@ -385,7 +386,7 @@ partial class WindowsFormsConcepts {
         );
         introductionToControls.Name = "introductionToControls";
         introductionToControls.Size = new System.Drawing.Size(
-            725,
+            900,
             175
         );
         introductionToControls.TabIndex = 1;
@@ -395,12 +396,12 @@ partial class WindowsFormsConcepts {
         // checkBoxAndRadioButtonAndGroupBoxAndTag
         // 
         checkBoxAndRadioButtonAndGroupBoxAndTag.Location = new System.Drawing.Point(
-            250,
-            97
+            325,
+            100
         );
         checkBoxAndRadioButtonAndGroupBoxAndTag.Name = "checkBoxAndRadioButtonAndGroupBoxAndTag";
         checkBoxAndRadioButtonAndGroupBoxAndTag.Size = new System.Drawing.Size(
-            450,
+            550,
             50
         );
         checkBoxAndRadioButtonAndGroupBoxAndTag.TabIndex                =  6;
@@ -412,11 +413,11 @@ partial class WindowsFormsConcepts {
         // 
         messageBox.Location = new System.Drawing.Point(
             25,
-            97
+            100
         );
         messageBox.Name = "messageBox";
         messageBox.Size = new System.Drawing.Size(
-            200,
+            275,
             50
         );
         messageBox.TabIndex                =  5;
@@ -427,12 +428,12 @@ partial class WindowsFormsConcepts {
         // newForms
         // 
         newForms.Location = new System.Drawing.Point(
-            575,
+            675,
             25
         );
         newForms.Name = "newForms";
         newForms.Size = new System.Drawing.Size(
-            125,
+            200,
             50
         );
         newForms.TabIndex                =  4;
@@ -443,12 +444,12 @@ partial class WindowsFormsConcepts {
         // flatAppearance
         // 
         flatAppearance.Location = new System.Drawing.Point(
-            375,
+            400,
             25
         );
         flatAppearance.Name = "flatAppearance";
         flatAppearance.Size = new System.Drawing.Size(
-            175,
+            250,
             50
         );
         flatAppearance.TabIndex                =  3;
@@ -464,7 +465,7 @@ partial class WindowsFormsConcepts {
         );
         textBoxesAndButtonsAndFormsAndLabels.Name = "textBoxesAndButtonsAndFormsAndLabels";
         textBoxesAndButtonsAndFormsAndLabels.Size = new System.Drawing.Size(
-            325,
+            350,
             50
         );
         textBoxesAndButtonsAndFormsAndLabels.TabIndex                =  2;
@@ -475,12 +476,12 @@ partial class WindowsFormsConcepts {
         // numericUpDown
         // 
         numericUpDown.Location = new System.Drawing.Point(
-            50,
-            625
+            450,
+            550
         );
         numericUpDown.Name = "numericUpDown";
         numericUpDown.Size = new System.Drawing.Size(
-            150,
+            175,
             50
         );
         numericUpDown.TabIndex                =  24;
@@ -491,12 +492,12 @@ partial class WindowsFormsConcepts {
         // tabControl
         // 
         tabControl.Location = new System.Drawing.Point(
-            33,
+            25,
             25
         );
         tabControl.Name = "tabControl";
         tabControl.Size = new System.Drawing.Size(
-            142,
+            125,
             50
         );
         tabControl.TabIndex                =  26;
@@ -507,12 +508,12 @@ partial class WindowsFormsConcepts {
         // panel
         // 
         panel.Location = new System.Drawing.Point(
-            200,
+            175,
             25
         );
         panel.Name = "panel";
         panel.Size = new System.Drawing.Size(
-            94,
+            100,
             50
         );
         panel.TabIndex                =  27;
@@ -529,17 +530,33 @@ partial class WindowsFormsConcepts {
             tabControl
         );
         containers.Location = new System.Drawing.Point(
-            225,
-            600
+            650,
+            525
         );
         containers.Name = "containers";
         containers.Size = new System.Drawing.Size(
-            325,
+            300,
             100
         );
         containers.TabIndex = 25;
         containers.TabStop  = false;
         containers.Text     = "Containers";
+        // 
+        // dialogs
+        // 
+        dialogs.Location = new System.Drawing.Point(
+            50,
+            650
+        );
+        dialogs.Name = "dialogs";
+        dialogs.Size = new System.Drawing.Size(
+            150,
+            50
+        );
+        dialogs.TabIndex                =  28;
+        dialogs.Text                    =  "Dialogs";
+        dialogs.UseVisualStyleBackColor =  true;
+        dialogs.Click                   += colorDialog_Click;
         // 
         // WindowsFormsConcepts
         // 
@@ -549,8 +566,11 @@ partial class WindowsFormsConcepts {
         );
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
-            809,
-            776
+            984,
+            736
+        );
+        Controls.Add(
+            dialogs
         );
         Controls.Add(
             containers
@@ -625,6 +645,8 @@ partial class WindowsFormsConcepts {
         );
     }
 
+    private System.Windows.Forms.Button dialogs;
+
     private System.Windows.Forms.GroupBox containers;
 
     private System.Windows.Forms.Button panel;
@@ -643,7 +665,7 @@ partial class WindowsFormsConcepts {
 
     private System.Windows.Forms.GroupBox introductionToControls;
 
-    private System.Windows.Forms.Button   textBoxesAndButtonsAndFormsAndLabels;
+    private System.Windows.Forms.Button textBoxesAndButtonsAndFormsAndLabels;
 
     private System.Windows.Forms.Button trackBar;
 

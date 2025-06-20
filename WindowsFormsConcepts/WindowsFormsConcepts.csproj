@@ -81,6 +81,9 @@
       <Compile Update="Containers\PanelExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="Dialogs\DialogsExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
