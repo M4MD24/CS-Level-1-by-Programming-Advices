@@ -60,6 +60,7 @@ partial class WindowsFormsConcepts {
         panel                                   = new System.Windows.Forms.Button();
         containers                              = new System.Windows.Forms.GroupBox();
         dialogs                                 = new System.Windows.Forms.Button();
+        multipleDocumentsInterfaceContainer     = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
         containers.SuspendLayout();
@@ -558,6 +559,22 @@ partial class WindowsFormsConcepts {
         dialogs.UseVisualStyleBackColor =  true;
         dialogs.Click                   += colorDialog_Click;
         // 
+        // multipleDocumentsInterfaceContainer
+        // 
+        multipleDocumentsInterfaceContainer.Location = new System.Drawing.Point(
+            225,
+            650
+        );
+        multipleDocumentsInterfaceContainer.Name = "multipleDocumentsInterfaceContainer";
+        multipleDocumentsInterfaceContainer.Size = new System.Drawing.Size(
+            325,
+            50
+        );
+        multipleDocumentsInterfaceContainer.TabIndex                =  29;
+        multipleDocumentsInterfaceContainer.Text                    =  "Multiple Documents Interface (MDI) Container";
+        multipleDocumentsInterfaceContainer.UseVisualStyleBackColor =  true;
+        multipleDocumentsInterfaceContainer.Click                   += multipleDocumentsInterfaceContainer_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -568,6 +585,9 @@ partial class WindowsFormsConcepts {
         ClientSize = new System.Drawing.Size(
             984,
             736
+        );
+        Controls.Add(
+            multipleDocumentsInterfaceContainer
         );
         Controls.Add(
             dialogs
@@ -644,6 +664,8 @@ partial class WindowsFormsConcepts {
             false
         );
     }
+
+    private System.Windows.Forms.Button multipleDocumentsInterfaceContainer;
 
     private System.Windows.Forms.Button dialogs;
 

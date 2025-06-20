@@ -1,4 +1,5 @@
 using WindowsFormsConcepts.IntroductionAboutControls.Forms;
+using ExampleForm = WindowsFormsConcepts.MultipleDocumentsInterfaceContainer.Forms.ExampleForm;
 
 namespace WindowsFormsConcepts.IntroductionAboutControls;
 

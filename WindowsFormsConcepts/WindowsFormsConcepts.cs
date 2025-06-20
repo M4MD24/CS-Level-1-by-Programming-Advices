@@ -3,6 +3,7 @@ using WindowsFormsConcepts.DateTimeControls;
 using WindowsFormsConcepts.Dialogs;
 using WindowsFormsConcepts.IntroductionAboutControls;
 using WindowsFormsConcepts.ListView;
+using WindowsFormsConcepts.MultipleDocumentsInterfaceContainer;
 using WindowsFormsConcepts.PictureBox;
 
 namespace WindowsFormsConcepts;
@@ -185,5 +186,12 @@ public partial class WindowsFormsConcepts : Form {
         EventArgs e
     ) {
         new DialogsExample().Show();
+    }
+
+    private void multipleDocumentsInterfaceContainer_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new MultipleDocumentsInterfaceContainerExample().Show();
     }
 }

@@ -134,13 +134,13 @@
                     1. [TabControl](WindowsFormsConcepts/Containers/TabControlExample.cs)
                     2. [Panel](WindowsFormsConcepts/Containers/PanelExample.cs)
                     3. GroupBox vs Panel
-                20. [Dialogs](WindowsFormsConcepts/Dialogs.cs)
+                20. [Dialogs](WindowsFormsConcepts/Dialogs/DialogsExample.cs)
                     1. ColorDialog
                     2. FontDialog
                     3. SaveFileDialog
                     4. OpenFileDialog
                     5. FolderBrowserDialog
-                21. ~~Multiple Documents Interface (MDI) Container~~
+                21. [Multiple Documents Interface (MDI) Container](WindowsFormsConcepts/MultipleDocumentsInterfaceContainer)
                 22. ~~Menus~~
             2. [Projects](WindowsFormsProjects)
                 1. [Pizza Order System](WindowsFormsProjects/PizzaOrderSystem)
