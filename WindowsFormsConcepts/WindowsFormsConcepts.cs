@@ -178,4 +178,11 @@ public partial class WindowsFormsConcepts : Form {
     ) {
         new PanelExample().Show();
     }
+
+    private void colorDialog_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new Dialogs().Show();
+    }
 }
