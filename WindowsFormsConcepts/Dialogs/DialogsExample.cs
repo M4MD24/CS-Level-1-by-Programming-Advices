@@ -1,7 +1,7 @@
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.Dialogs;
 
-public partial class Dialogs : Form {
-    public Dialogs() {
+public partial class DialogsExample : Form {
+    public DialogsExample() {
         InitializeComponent();
     }
 
@@ -43,5 +43,23 @@ public partial class Dialogs : Form {
         EventArgs e
     ) {
         text.Font = fontDialogSample.Font;
+    }
+
+    private void saveFile_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        saveFileDialogSample.InitialDirectory = @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsConcepts\Dialogs\Files";
+        saveFileDialogSample.Title            = @"Save File Dialog";
+        saveFileDialogSample.DefaultExt       = "txt";
+        saveFileDialogSample.Filter           = @"txt files (*.txt)|*.txt|All Files (*.*)|*.*";
+        saveFileDialogSample.FilterIndex      = 2;
+        if (saveFileDialogSample.ShowDialog() == DialogResult.OK)
+            MessageBox.Show(
+                saveFileDialogSample.FileName,
+                @"FileName",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
     }
 }

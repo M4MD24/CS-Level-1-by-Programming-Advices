@@ -1,5 +1,6 @@
 using WindowsFormsConcepts.Containers;
 using WindowsFormsConcepts.DateTimeControls;
+using WindowsFormsConcepts.Dialogs;
 using WindowsFormsConcepts.IntroductionAboutControls;
 using WindowsFormsConcepts.ListView;
 using WindowsFormsConcepts.PictureBox;
@@ -183,6 +184,6 @@ public partial class WindowsFormsConcepts : Form {
         object    sender,
         EventArgs e
     ) {
-        new Dialogs().Show();
+        new DialogsExample().Show();
     }
 }

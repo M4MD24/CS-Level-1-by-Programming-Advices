@@ -81,9 +81,13 @@
       <Compile Update="Containers\PanelExample.cs">
         <SubType>Form</SubType>
       </Compile>
-      <Compile Update="Dialogs.cs">
+      <Compile Update="Dialogs\DialogsExample.cs">
         <SubType>Form</SubType>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Dialogs\Files\" />
     </ItemGroup>
 
 </Project>

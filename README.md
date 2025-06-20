@@ -137,7 +137,7 @@
                 20. [Dialogs](WindowsFormsConcepts/Dialogs.cs)
                     1. ColorDialog
                     2. FontDialog
-                    3. ~~FileSaveDialog~~
+                    3. SaveFileDialog
                     4. ~~FileOpenDialog~~
                     5. ~~FolderBrowserDialog~~
                 21. ~~Multiple Documents Interface (MDI) Container~~

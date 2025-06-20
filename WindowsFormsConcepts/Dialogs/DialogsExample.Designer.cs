@@ -1,8 +1,8 @@
 using System.ComponentModel;
 
-namespace WindowsFormsConcepts;
+namespace WindowsFormsConcepts.Dialogs;
 
-partial class Dialogs {
+partial class DialogsExample {
     /// <summary>
     /// Required designer variable.
     /// </summary>
@@ -39,6 +39,8 @@ partial class Dialogs {
         changeFont            = new System.Windows.Forms.Button();
         colorDialogSample     = new System.Windows.Forms.ColorDialog();
         fontDialogSample      = new System.Windows.Forms.FontDialog();
+        saveFile              = new System.Windows.Forms.Button();
+        saveFileDialogSample  = new System.Windows.Forms.SaveFileDialog();
         colorDialog.SuspendLayout();
         SuspendLayout();
         // 
@@ -162,6 +164,22 @@ partial class Dialogs {
         // 
         fontDialogSample.Apply += fontDialogSample_Apply;
         // 
+        // saveFile
+        // 
+        saveFile.Location = new System.Drawing.Point(
+            275,
+            300
+        );
+        saveFile.Name = "saveFile";
+        saveFile.Size = new System.Drawing.Size(
+            125,
+            30
+        );
+        saveFile.TabIndex                =  6;
+        saveFile.Text                    =  "Save File";
+        saveFile.UseVisualStyleBackColor =  true;
+        saveFile.Click                   += saveFile_Click;
+        // 
         // Dialogs
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -172,6 +190,9 @@ partial class Dialogs {
         ClientSize = new System.Drawing.Size(
             584,
             386
+        );
+        Controls.Add(
+            saveFile
         );
         Controls.Add(
             changeFont
@@ -194,6 +215,10 @@ partial class Dialogs {
             false
         );
     }
+
+    private System.Windows.Forms.SaveFileDialog saveFileDialogSample;
+
+    private System.Windows.Forms.Button saveFile;
 
     private System.Windows.Forms.FontDialog fontDialogSample;
 
