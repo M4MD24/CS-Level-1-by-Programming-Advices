@@ -64,7 +64,8 @@ public partial class DialogsExample : Form {
         object    sender,
         EventArgs e
     ) {
-        openFileDialogSample.Multiselect = true;
+        openFileDialogSample.InitialDirectory = @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsConcepts\Dialogs\Files";
+        openFileDialogSample.Multiselect      = true;
         if (openFileDialogSample.ShowDialog() == DialogResult.OK)
             if (openFileDialogSample.FileNames.Length > 1) {
                 string fileNames = "";
@@ -88,5 +89,17 @@ public partial class DialogsExample : Form {
             MessageBoxButtons.OK,
             MessageBoxIcon.Information
         );
+    }
+
+    private void folderBrowser_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        folderBrowserDialogSample.InitialDirectory    = @"D:\Projects\Learn\ProgrammingAdvices\CS-Level-1-by-Programming-Advices\WindowsFormsConcepts\Dialogs";
+        folderBrowserDialogSample.ShowNewFolderButton = true;
+        if (folderBrowserDialogSample.ShowDialog() == DialogResult.OK)
+            showFileName(
+                folderBrowserDialogSample.SelectedPath
+            );
     }
 }

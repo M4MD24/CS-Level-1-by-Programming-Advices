@@ -31,18 +31,20 @@ partial class DialogsExample {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        title                 = new System.Windows.Forms.Label();
-        text                  = new System.Windows.Forms.Label();
-        changeForeColor       = new System.Windows.Forms.Button();
-        changeBackgroundColor = new System.Windows.Forms.Button();
-        colorDialog           = new System.Windows.Forms.GroupBox();
-        changeFont            = new System.Windows.Forms.Button();
-        colorDialogSample     = new System.Windows.Forms.ColorDialog();
-        fontDialogSample      = new System.Windows.Forms.FontDialog();
-        saveFile              = new System.Windows.Forms.Button();
-        saveFileDialogSample  = new System.Windows.Forms.SaveFileDialog();
-        openFile              = new System.Windows.Forms.Button();
-        openFileDialogSample  = new System.Windows.Forms.OpenFileDialog();
+        title                     = new System.Windows.Forms.Label();
+        text                      = new System.Windows.Forms.Label();
+        changeForeColor           = new System.Windows.Forms.Button();
+        changeBackgroundColor     = new System.Windows.Forms.Button();
+        colorDialog               = new System.Windows.Forms.GroupBox();
+        changeFont                = new System.Windows.Forms.Button();
+        colorDialogSample         = new System.Windows.Forms.ColorDialog();
+        fontDialogSample          = new System.Windows.Forms.FontDialog();
+        saveFile                  = new System.Windows.Forms.Button();
+        saveFileDialogSample      = new System.Windows.Forms.SaveFileDialog();
+        openFile                  = new System.Windows.Forms.Button();
+        openFileDialogSample      = new System.Windows.Forms.OpenFileDialog();
+        folderBrowserDialogSample = new System.Windows.Forms.FolderBrowserDialog();
+        folderBrowser             = new System.Windows.Forms.Button();
         colorDialog.SuspendLayout();
         SuspendLayout();
         // 
@@ -198,6 +200,22 @@ partial class DialogsExample {
         openFile.UseVisualStyleBackColor =  true;
         openFile.Click                   += openFile_Click;
         // 
+        // folderBrowser
+        // 
+        folderBrowser.Location = new System.Drawing.Point(
+            425,
+            300
+        );
+        folderBrowser.Name = "folderBrowser";
+        folderBrowser.Size = new System.Drawing.Size(
+            125,
+            30
+        );
+        folderBrowser.TabIndex                =  8;
+        folderBrowser.Text                    =  "Folder Browser";
+        folderBrowser.UseVisualStyleBackColor =  true;
+        folderBrowser.Click                   += folderBrowser_Click;
+        // 
         // DialogsExample
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -208,6 +226,9 @@ partial class DialogsExample {
         ClientSize = new System.Drawing.Size(
             584,
             386
+        );
+        Controls.Add(
+            folderBrowser
         );
         Controls.Add(
             openFile
@@ -236,6 +257,10 @@ partial class DialogsExample {
             false
         );
     }
+
+    private System.Windows.Forms.Button folderBrowser;
+
+    private System.Windows.Forms.FolderBrowserDialog folderBrowserDialogSample;
 
     private System.Windows.Forms.OpenFileDialog openFileDialogSample;
 

@@ -139,7 +139,7 @@
                     2. FontDialog
                     3. SaveFileDialog
                     4. OpenFileDialog
-                    5. ~~FolderBrowserDialog~~
+                    5. FolderBrowserDialog
                 21. ~~Multiple Documents Interface (MDI) Container~~
                 22. ~~Menus~~
             2. [Projects](WindowsFormsProjects)
