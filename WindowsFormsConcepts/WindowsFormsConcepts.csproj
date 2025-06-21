@@ -84,6 +84,15 @@
       <Compile Update="Dialogs\DialogsExample.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="MultipleDocumentsInterfaceContainer\MultipleDocumentsInterfaceContainerExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Menus\MenuStrip\MenuStripExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Menus\ContextMenuStripExample.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

@@ -3,6 +3,9 @@ using WindowsFormsConcepts.DateTimeControls;
 using WindowsFormsConcepts.Dialogs;
 using WindowsFormsConcepts.IntroductionAboutControls;
 using WindowsFormsConcepts.ListView;
+using WindowsFormsConcepts.Menus;
+using WindowsFormsConcepts.Menus.MenuStrip;
+using WindowsFormsConcepts.MultipleDocumentsInterfaceContainer;
 using WindowsFormsConcepts.PictureBox;
 
 namespace WindowsFormsConcepts;
@@ -185,5 +188,26 @@ public partial class WindowsFormsConcepts : Form {
         EventArgs e
     ) {
         new DialogsExample().Show();
+    }
+
+    private void multipleDocumentsInterfaceContainer_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new MultipleDocumentsInterfaceContainerExample().Show();
+    }
+
+    private void menuStrip_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new MenuStripExample().Show();
+    }
+
+    private void contextMenuStrip_Click(
+        object    sender,
+        EventArgs e
+    ) {
+        new ContextMenuStripExample().Show();
     }
 }

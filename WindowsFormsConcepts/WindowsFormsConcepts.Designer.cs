@@ -60,9 +60,14 @@ partial class WindowsFormsConcepts {
         panel                                   = new System.Windows.Forms.Button();
         containers                              = new System.Windows.Forms.GroupBox();
         dialogs                                 = new System.Windows.Forms.Button();
+        multipleDocumentsInterfaceContainer     = new System.Windows.Forms.Button();
+        menus                                   = new System.Windows.Forms.GroupBox();
+        contextMenuStrip                        = new System.Windows.Forms.Button();
+        menuStrip                               = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
         containers.SuspendLayout();
+        menus.SuspendLayout();
         SuspendLayout();
         // 
         // title
@@ -546,7 +551,7 @@ partial class WindowsFormsConcepts {
         // 
         dialogs.Location = new System.Drawing.Point(
             50,
-            650
+            675
         );
         dialogs.Name = "dialogs";
         dialogs.Size = new System.Drawing.Size(
@@ -558,6 +563,75 @@ partial class WindowsFormsConcepts {
         dialogs.UseVisualStyleBackColor =  true;
         dialogs.Click                   += colorDialog_Click;
         // 
+        // multipleDocumentsInterfaceContainer
+        // 
+        multipleDocumentsInterfaceContainer.Location = new System.Drawing.Point(
+            225,
+            675
+        );
+        multipleDocumentsInterfaceContainer.Name = "multipleDocumentsInterfaceContainer";
+        multipleDocumentsInterfaceContainer.Size = new System.Drawing.Size(
+            325,
+            50
+        );
+        multipleDocumentsInterfaceContainer.TabIndex                =  29;
+        multipleDocumentsInterfaceContainer.Text                    =  "Multiple Documents Interface (MDI) Container";
+        multipleDocumentsInterfaceContainer.UseVisualStyleBackColor =  true;
+        multipleDocumentsInterfaceContainer.Click                   += multipleDocumentsInterfaceContainer_Click;
+        // 
+        // menus
+        // 
+        menus.Controls.Add(
+            contextMenuStrip
+        );
+        menus.Controls.Add(
+            menuStrip
+        );
+        menus.Location = new System.Drawing.Point(
+            575,
+            650
+        );
+        menus.Name = "menus";
+        menus.Size = new System.Drawing.Size(
+            375,
+            100
+        );
+        menus.TabIndex = 30;
+        menus.TabStop  = false;
+        menus.Text     = "Menus";
+        // 
+        // contextMenuStrip
+        // 
+        contextMenuStrip.Location = new System.Drawing.Point(
+            175,
+            25
+        );
+        contextMenuStrip.Name = "contextMenuStrip";
+        contextMenuStrip.Size = new System.Drawing.Size(
+            175,
+            50
+        );
+        contextMenuStrip.TabIndex                =  16;
+        contextMenuStrip.Text                    =  "ContextMenuStrip";
+        contextMenuStrip.UseVisualStyleBackColor =  true;
+        contextMenuStrip.Click                   += contextMenuStrip_Click;
+        // 
+        // menuStrip
+        // 
+        menuStrip.Location = new System.Drawing.Point(
+            25,
+            25
+        );
+        menuStrip.Name = "menuStrip";
+        menuStrip.Size = new System.Drawing.Size(
+            125,
+            50
+        );
+        menuStrip.TabIndex                =  15;
+        menuStrip.Text                    =  "MenuStrip";
+        menuStrip.UseVisualStyleBackColor =  true;
+        menuStrip.Click                   += menuStrip_Click;
+        // 
         // WindowsFormsConcepts
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(
@@ -567,7 +641,13 @@ partial class WindowsFormsConcepts {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(
             984,
-            736
+            786
+        );
+        Controls.Add(
+            menus
+        );
+        Controls.Add(
+            multipleDocumentsInterfaceContainer
         );
         Controls.Add(
             dialogs
@@ -640,10 +720,20 @@ partial class WindowsFormsConcepts {
         containers.ResumeLayout(
             false
         );
+        menus.ResumeLayout(
+            false
+        );
         ResumeLayout(
             false
         );
     }
+
+    private System.Windows.Forms.Button contextMenuStrip;
+
+    private System.Windows.Forms.GroupBox menus;
+    private System.Windows.Forms.Button   menuStrip;
+
+    private System.Windows.Forms.Button multipleDocumentsInterfaceContainer;
 
     private System.Windows.Forms.Button dialogs;
 
