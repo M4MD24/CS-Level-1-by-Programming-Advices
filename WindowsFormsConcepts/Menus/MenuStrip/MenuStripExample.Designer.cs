@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace WindowsFormsConcepts.Menus;
+namespace WindowsFormsConcepts.Menus.MenuStrip;
 
 partial class MenuStripExample {
     /// <summary>

@@ -4,6 +4,7 @@ using WindowsFormsConcepts.Dialogs;
 using WindowsFormsConcepts.IntroductionAboutControls;
 using WindowsFormsConcepts.ListView;
 using WindowsFormsConcepts.Menus;
+using WindowsFormsConcepts.Menus.MenuStrip;
 using WindowsFormsConcepts.MultipleDocumentsInterfaceContainer;
 using WindowsFormsConcepts.PictureBox;
 
@@ -203,8 +204,10 @@ public partial class WindowsFormsConcepts : Form {
         new MenuStripExample().Show();
     }
 
-    private void contextMenu_Click(
+    private void contextMenuStrip_Click(
         object    sender,
         EventArgs e
-    ) {}
+    ) {
+        new ContextMenuStripExample().Show();
+    }
 }

@@ -1,4 +1,4 @@
-namespace WindowsFormsConcepts.Menus;
+namespace WindowsFormsConcepts.Menus.MenuStrip;
 
 public partial class MenuStripExample : Form {
     public MenuStripExample() {
@@ -7,7 +7,7 @@ public partial class MenuStripExample : Form {
     }
 
     private void loadMenuStrip() {
-        menuStripSample = new MenuStrip();
+        menuStripSample = new System.Windows.Forms.MenuStrip();
 
         ToolStripMenuItem fileMenu = new ToolStripMenuItem(
             "&File"

@@ -62,7 +62,7 @@ partial class WindowsFormsConcepts {
         dialogs                                 = new System.Windows.Forms.Button();
         multipleDocumentsInterfaceContainer     = new System.Windows.Forms.Button();
         menus                                   = new System.Windows.Forms.GroupBox();
-        contextMenu                             = new System.Windows.Forms.Button();
+        contextMenuStrip                        = new System.Windows.Forms.Button();
         menuStrip                               = new System.Windows.Forms.Button();
         dateTimeControls.SuspendLayout();
         introductionToControls.SuspendLayout();
@@ -582,7 +582,7 @@ partial class WindowsFormsConcepts {
         // menus
         // 
         menus.Controls.Add(
-            contextMenu
+            contextMenuStrip
         );
         menus.Controls.Add(
             menuStrip
@@ -600,21 +600,21 @@ partial class WindowsFormsConcepts {
         menus.TabStop  = false;
         menus.Text     = "Menus";
         // 
-        // contextMenu
+        // contextMenuStrip
         // 
-        contextMenu.Location = new System.Drawing.Point(
+        contextMenuStrip.Location = new System.Drawing.Point(
             175,
             25
         );
-        contextMenu.Name = "contextMenu";
-        contextMenu.Size = new System.Drawing.Size(
+        contextMenuStrip.Name = "contextMenuStrip";
+        contextMenuStrip.Size = new System.Drawing.Size(
             175,
             50
         );
-        contextMenu.TabIndex                =  16;
-        contextMenu.Text                    =  "Context Menu";
-        contextMenu.UseVisualStyleBackColor =  true;
-        contextMenu.Click                   += contextMenu_Click;
+        contextMenuStrip.TabIndex                =  16;
+        contextMenuStrip.Text                    =  "ContextMenuStrip";
+        contextMenuStrip.UseVisualStyleBackColor =  true;
+        contextMenuStrip.Click                   += contextMenuStrip_Click;
         // 
         // menuStrip
         // 
@@ -728,7 +728,7 @@ partial class WindowsFormsConcepts {
         );
     }
 
-    private System.Windows.Forms.Button contextMenu;
+    private System.Windows.Forms.Button contextMenuStrip;
 
     private System.Windows.Forms.GroupBox menus;
     private System.Windows.Forms.Button   menuStrip;
