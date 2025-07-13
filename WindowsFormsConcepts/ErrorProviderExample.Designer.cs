@@ -197,8 +197,6 @@ partial class ErrorProviderExample {
     private System.Windows.Forms.Label    firstNameQuestion;
     private System.Windows.Forms.GroupBox fullName;
 
-    private System.Windows.Forms.Label label1;
-
     private System.Windows.Forms.TextBox firstNameAnswer;
     private System.Windows.Forms.Label   secondNameQuestion;
 

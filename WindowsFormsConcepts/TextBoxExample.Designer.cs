@@ -355,8 +355,6 @@ partial class TextBoxExample {
 
     private System.Windows.Forms.TextBox textBox1;
 
-    private System.Windows.Forms.GroupBox groupBox1;
-
     private System.Windows.Forms.TextBox textBoxWithMultilineAndWithoutWordWrap;
 
     private System.Windows.Forms.TextBox textBoxWithMultiline;
