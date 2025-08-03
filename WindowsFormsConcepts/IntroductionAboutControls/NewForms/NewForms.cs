@@ -1,3 +1,5 @@
+using System;
+using System.Windows.Forms;
 using WindowsFormsConcepts.IntroductionAboutControls.Forms;
 using ExampleForm = WindowsFormsConcepts.MultipleDocumentsInterfaceContainer.Forms.ExampleForm;
 

@@ -1,3 +1,7 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
 namespace WindowsFormsConcepts.Menus.MenuStrip;
 
 public partial class MenuStripExample : Form {
@@ -13,7 +17,7 @@ public partial class MenuStripExample : Form {
             "&File"
         );
 
-        const string IMAGES_PATH = "D:\\Projects\\Learn\\ProgrammingAdvices\\CS-Level-1-by-Programming-Advices\\WindowsFormsConcepts\\Menus\\resources\\";
+        const string IMAGES_PATH = "D:\\Projects\\Learn\\ProgrammingAdvices\\CS-Level-1-by-Programming-Advices\\WindowsFormsConcepts\\Menus\\MenuStrip\\resources\\";
 
         ToolStripMenuItem newFile = new(
                               "&New File",

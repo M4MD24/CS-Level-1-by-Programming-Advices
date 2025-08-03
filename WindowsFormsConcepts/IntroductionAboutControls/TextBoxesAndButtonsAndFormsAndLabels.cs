@@ -1,3 +1,7 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
 namespace WindowsFormsConcepts.IntroductionAboutControls;
 
 public partial class TextBoxesAndButtonsAndFormsAndLabels : Form {

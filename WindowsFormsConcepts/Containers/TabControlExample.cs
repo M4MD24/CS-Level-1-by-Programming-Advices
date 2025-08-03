@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace WindowsFormsConcepts.Containers;
 
 public partial class TabControlExample : Form {

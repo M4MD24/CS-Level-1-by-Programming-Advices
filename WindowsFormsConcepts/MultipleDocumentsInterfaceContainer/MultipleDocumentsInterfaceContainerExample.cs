@@ -1,3 +1,5 @@
+using System;
+using System.Windows.Forms;
 using WindowsFormsConcepts.MultipleDocumentsInterfaceContainer.Forms;
 
 namespace WindowsFormsConcepts.MultipleDocumentsInterfaceContainer;

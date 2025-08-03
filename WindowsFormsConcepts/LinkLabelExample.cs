@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace WindowsFormsConcepts;
 
 public partial class LinkLabelExample : Form {
